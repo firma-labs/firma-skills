@@ -16,5 +16,9 @@
     "theos"
   ],
   "skills": "./skills",
-  "agents": "./agents"
+  "agents": [
+    "./agents/brand-copy-architect.md",
+    "./agents/claude-skills-curator.md",
+    "./agents/firma-vision-scribe.md"
+  ]
 }
