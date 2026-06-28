@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;min-height:340px;box-sizing:border-box;
+       padding:28px;display:flex;align-items:center;justify-content:center;position:relative;}
+  /* soft iridescent glow under the card */
+  #glow{position:absolute;width:480px;height:240px;border-radius:50%;filter:blur(48px);opacity:.5;
+        background:var(--iridescent);z-index:0;transition:opacity .3s;}
+  #card{position:relative;z-index:1;width:560px;}
+  body.is-ink{background:#2b282e;}
+  body.is-ink #glow{opacity:.32;}
+</style>
+</head>
+<body>
+  <div id="glow"></div>
+  <div id="card"></div>
+
+  <script src="../assets/dotmatrix.js"></script>
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <script type="text/babel">
+    const { useEffect } = React;
+
+    const PERIOD_SETS = {
+      "Daily · Weekly · Monthly": ["Daily","Weekly","Monthly"],
+      "Seed · Series · Frontier": ["Seed","Series","Frontier"],
+      "30d · 90d · 1y":           ["30d","90d","1y"],
+      "Q · H · Y":                ["Q","H","Y"],
+    };
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "profile": "peak",
+      "theme": "light",
+      "accent": "blue",
+      "label": "Momentum",
+      "periodSet": "Daily · Weekly · Monthly",
+      "footL": "Early",
+      "footR": "Frontier"
+    }/*EDITMODE-END*/;
+
+    function App() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+      useEffect(() => {
+        document.body.classList.toggle('is-ink', t.theme === 'ink');
+        const periods = PERIOD_SETS[t.periodSet] || PERIOD_SETS["Daily · Weekly · Monthly"];
+        buildDotMatrixCard(document.getElementById('card'), {
+          label: t.label,
+          periods,
+          period: periods[periods.length - 1],
+          columns: DOTMATRIX_PROFILES[t.profile] || DOTMATRIX_PROFILES.peak,
+          theme: t.theme,
+          accent: t.accent,
+          footL: t.footL,
+          footR: t.footR,
+          caption: "illustrative",
+        });
+      }, [t]);
+
+      return (
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Layout" />
+          <TweakSelect label="Profile" value={t.profile}
+            options={["peak","plateau","ramp","twin","wave","volatile"]}
+            onChange={(v) => setTweak('profile', v)} />
+          <TweakSelect label="Periods" value={t.periodSet}
+            options={Object.keys(PERIOD_SETS)}
+            onChange={(v) => setTweak('periodSet', v)} />
+
+          <TweakSection label="Style" />
+          <TweakRadio label="Theme" value={t.theme}
+            options={["light","ink"]}
+            onChange={(v) => setTweak('theme', v)} />
+          <TweakRadio label="Accent" value={t.accent}
+            options={["blue","iridescent","none"]}
+            onChange={(v) => setTweak('accent', v)} />
+
+          <TweakSection label="Copy" />
+          <TweakText label="Label" value={t.label}
+            onChange={(v) => setTweak('label', v)} />
+          <TweakText label="Foot left" value={t.footL}
+            onChange={(v) => setTweak('footL', v)} />
+          <TweakText label="Foot right" value={t.footR}
+            onChange={(v) => setTweak('footR', v)} />
+        </TweaksPanel>
+      );
+    }
+
+    const host = document.createElement('div');
+    document.body.appendChild(host);
+    ReactDOM.createRoot(host).render(<App />);
+  </script>
+</body>
+</html>

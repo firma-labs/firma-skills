@@ -1,0 +1,20 @@
+{
+  "name": "firma",
+  "version": "1.0.0",
+  "description": "Firma Labs toolkit — design-system skills (Firmamint, THEOS, Frontier/Onym, Motion) and brand/vault agents.",
+  "author": {
+    "name": "Firma Labs",
+    "url": "https://github.com/firma-labs"
+  },
+  "homepage": "https://github.com/firma-labs/firma-skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "firma",
+    "design-system",
+    "branding",
+    "firmamint",
+    "theos"
+  ],
+  "skills": "./skills",
+  "agents": "./agents"
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Glass materials</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:var(--font-text);color:#F4F5F7}
+
+  /* Stage — saturated, warm/cool scene so the luminosity tile reads as a desaturating filter */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(45% 55% at 18% 22%, #F4B25A 0%, transparent 65%),
+      radial-gradient(40% 50% at 82% 30%, #E66565 0%, transparent 65%),
+      radial-gradient(55% 60% at 25% 85%, #2E5BD2 0%, transparent 70%),
+      radial-gradient(45% 55% at 80% 88%, #6E3FB5 0%, transparent 65%),
+      linear-gradient(180deg, #1A1330 0%, #0A0B16 100%);
+  }
+  /* organic painterly texture so the blur has texture to chew on */
+  .stage::before{
+    content:'';position:absolute;inset:-6%;
+    background:
+      radial-gradient(8% 6% at 32% 28%, rgba(255,220,160,0.55), transparent 70%),
+      radial-gradient(7% 5% at 72% 18%, rgba(255,140,140,0.45), transparent 70%),
+      radial-gradient(10% 8% at 22% 72%, rgba(120,160,255,0.55), transparent 70%),
+      radial-gradient(7% 6% at 78% 78%, rgba(170,120,230,0.50), transparent 70%),
+      radial-gradient(5% 4% at 50% 50%, rgba(255,255,255,0.30), transparent 70%);
+    filter:blur(20px);
+    pointer-events:none;
+  }
+
+  .grid{
+    position:relative;z-index:1;
+    display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
+    padding:32px;height:100%;box-sizing:border-box;
+    align-content:center;
+  }
+
+  /* The visionOS recipe — exactly as spec'd:
+     · fill #808080 / 30% with mix-blend-mode: luminosity (desaturates the scene behind)
+     · 1.4px diagonal-gradient stroke (top-left bright, mid faint, bottom-right hint)
+     · drop shadow 0 2px 4px rgba(0,0,0,0.10)
+     · backdrop-filter blur — varies by thickness  */
+  .tile{
+    position:relative;
+    aspect-ratio:1;
+    border-radius:20px;
+    background:rgba(128,128,128,0.30);
+    mix-blend-mode:luminosity;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10);
+    isolation:isolate;
+  }
+  /* Backdrop-filter applied via ::before so it stacks correctly with mix-blend-mode */
+  .tile::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:var(--blur);
+    -webkit-backdrop-filter:var(--blur);
+    z-index:-1;
+  }
+  /* The diagonal-gradient hairline border — own pseudo-element so we can use a gradient stroke */
+  .tile::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.4px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.40) 0%,
+      rgba(255,255,255,0.01) 40%,
+      rgba(255,255,255,0.01) 57%,
+      rgba(255,255,255,0.10) 100%);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+  }
+
+  /* Thicknesses — only the blur radius changes per visionOS spec */
+  .tile.recessed{ --blur: blur(20px); }
+  .tile.thin    { --blur: blur(35px); }
+  .tile.regular { --blur: blur(50px); }
+  .tile.thick   { --blur: blur(80px); }
+
+  /* Each tile sits in a labelled cell so the mix-blend stays clean */
+  .cell{
+    display:flex;flex-direction:column;align-items:stretch;gap:14px;min-width:0;
+  }
+  .label{
+    display:flex;justify-content:space-between;align-items:baseline;
+    color:rgba(244,245,247,0.92);
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
+  }
+  .label .name{
+    font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:-0.01em;
+  }
+  .label .meta{
+    font-size:10px;font-family:ui-monospace,SF Mono,Menlo,monospace;
+    color:rgba(244,245,247,0.6);
+    text-transform:lowercase;letter-spacing:.02em;
+  }
+
+  /* Header strip */
+  .head{
+    position:absolute;top:18px;left:32px;right:32px;z-index:2;
+    display:flex;justify-content:space-between;align-items:baseline;
+    color:rgba(244,245,247,0.95);
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
+  }
+  .head h1{
+    margin:0;font-family:var(--font-display);font-weight:700;font-size:18px;letter-spacing:-0.01em;
+  }
+  .head .recipe{
+    font-size:10px;font-family:ui-monospace,SF Mono,Menlo,monospace;
+    color:rgba(244,245,247,0.7);text-transform:lowercase;letter-spacing:.02em;
+  }
+</style></head><body>
+<div class="stage">
+  <div class="head">
+    <h1>Glass · materials</h1>
+    <span class="recipe">#808080 30% · luminosity · diagonal hairline · drop 0 2 4 / 10%</span>
+  </div>
+
+  <div class="grid">
+    <div class="cell">
+      <div class="tile recessed"></div>
+      <div class="label"><span class="name">Recessed</span><span class="meta">blur 20</span></div>
+    </div>
+    <div class="cell">
+      <div class="tile thin"></div>
+      <div class="label"><span class="name">Thin</span><span class="meta">blur 35</span></div>
+    </div>
+    <div class="cell">
+      <div class="tile regular"></div>
+      <div class="label"><span class="name">Regular</span><span class="meta">blur 50</span></div>
+    </div>
+    <div class="cell">
+      <div class="tile thick"></div>
+      <div class="label"><span class="name">Thick</span><span class="meta">blur 80</span></div>
+    </div>
+  </div>
+</div>
+</body></html>

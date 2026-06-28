@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../onym.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:340px;box-sizing:border-box;
+       padding:28px;display:flex;align-items:center;justify-content:center;}
+  #card{width:560px;}
+</style>
+</head>
+<body>
+  <div id="card"></div>
+  <script src="../assets/dotmatrix.js"></script>
+  <script>
+    // Pure monochrome: no accent (charcoal dots only), light theme. No glow.
+    buildDotMatrixCard(document.getElementById('card'), {
+      label: "Momentum", periods:["Quarter","Half","Year"], period:"Year",
+      accent:"none",
+      footL:"Patient", footR:"Disciplined", caption:"illustrative"
+    });
+  </script>
+</body>
+</html>

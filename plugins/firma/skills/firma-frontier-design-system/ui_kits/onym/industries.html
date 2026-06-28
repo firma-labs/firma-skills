@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Industries — Onym Capital</title>
+<link rel="stylesheet" href="../../onym.css">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--font-body);
+       -webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  @media (max-width: 900px){
+    .on-navlinks{display:none !important}
+    .on-ind-grid{grid-template-columns:1fr !important}
+    .on-ind-index{grid-template-columns:1fr !important}
+  }
+  @keyframes onLayFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="../../assets/dotmatrix.js"></script>
+<script type="text/babel" src="atoms.jsx"></script>
+<script type="text/babel" src="nav-hero.jsx"></script>
+<script type="text/babel" src="sections.jsx"></script>
+<script type="text/babel" src="industries-glyph.jsx"></script>
+<script type="text/babel" src="page-industries.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "layout": "Grid"
+  }/*EDITMODE-END*/;
+
+  function Page() {
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+    return (
+      <React.Fragment>
+        <Nav />
+        <IndustriesBody layout={t.layout} />
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Industries layout" />
+          <TweakRadio label="Style" value={t.layout}
+            options={["Grid", "Index"]}
+            onChange={(v) => setTweak("layout", v)} />
+          <p style={{ fontFamily: "var(--font-mono)", fontSize: 10.5, lineHeight: 1.5,
+            letterSpacing: "0.02em", color: "var(--d-ink-3, #7c7884)", margin: "10px 4px 0" }}>
+            Grid: signature cards, hover re-seeds the dot-matrix glyph.<br />
+            Index: editorial sector list, hover reveals detail + glyph.
+          </p>
+        </TweaksPanel>
+      </React.Fragment>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(<Page />);
+</script>
+</body>
+</html>

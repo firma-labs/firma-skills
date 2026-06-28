@@ -1,0 +1,100 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Brand marks</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;height:100%;font-family:'Supreme',system-ui,sans-serif;color:#1A1A1A}
+  .wrap{display:grid;grid-template-columns:1fr 1fr 1fr;height:100%;gap:0}
+  .pane{position:relative;display:flex;align-items:center;justify-content:center;padding:20px;overflow:hidden;min-width:0}
+  .light{background:#FFFFFF;color:#1A1A1A}
+  .dark{background:#3F3F3F;color:#FFFFFF}
+  .icon-pane{
+    background:
+      radial-gradient(120% 80% at 30% 20%, #FFFFFF 0%, transparent 55%),
+      radial-gradient(100% 80% at 100% 100%, #E8E8ED 0%, transparent 60%),
+      #F2F2F7;
+  }
+
+  /* ─── Lockup ─── */
+  .lockup{display:flex;align-items:center;gap:10px;line-height:1;white-space:nowrap}
+  .mark{flex:0 0 auto;display:block;object-fit:contain;width:42px;height:42px}
+  .dark .mark{filter:invert(1) brightness(2)}
+  .word{font-family:'Supreme',system-ui,sans-serif;font-weight:700;letter-spacing:-0.025em;line-height:1;font-size:42px}
+
+  /* striped overlay through OS — matches the disc */
+  .os-wrap{position:relative;display:inline-block}
+  .os-wrap.striped::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:repeating-linear-gradient(
+      to bottom,
+      var(--stripe-bg) 0,
+      var(--stripe-bg) var(--stripe-h),
+      transparent var(--stripe-h),
+      transparent calc(var(--stripe-h) + var(--stripe-gap))
+    );
+  }
+  .light .os-wrap.striped{--stripe-bg:#FFFFFF}
+  .dark  .os-wrap.striped{--stripe-bg:#3F3F3F}
+
+  /* ─── App icon (iOS squircle) ─── */
+  /* App icon: an iOS-style squircle on dark, with the canonical disc artwork inset */
+  .app-icon{
+    position:relative;
+    width:120px;height:120px;
+    border-radius:28px;
+    background:
+      radial-gradient(140% 100% at 30% 20%, #4F4F4F 0%, #3F3F3F 60%, #353535 100%);
+    box-shadow:
+      0 1px 0 rgba(255,255,255,0.12) inset,
+      0 -1px 0 rgba(0,0,0,0.35) inset,
+      0 8px 22px -6px rgba(0,0,0,0.3),
+      0 18px 40px -12px rgba(0,0,0,0.22);
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  /* subtle top gloss */
+  .app-icon::before{
+    content:'';position:absolute;left:0;right:0;top:0;height:55%;
+    border-radius:inherit;
+    background:linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0));
+    pointer-events:none;
+  }
+  /* The canonical disc artwork (transparent PNG) sized inside the squircle */
+  .app-icon img{
+    position:relative;z-index:1;
+    width:80%;height:auto;display:block;
+    object-fit:contain;
+  }
+
+  .label{position:absolute;left:14px;bottom:12px;z-index:2;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.10em;font-family:ui-monospace,SF Mono,Menlo,monospace}
+  .light .label{color:rgba(26,26,26,.45)}
+  .dark .label{color:rgba(255,255,255,.6)}
+  .icon-pane .label{color:rgba(26,26,26,.45)}
+</style></head>
+<body>
+<div class="wrap">
+
+  <div class="pane light">
+    <div class="lockup">
+      <img class="mark" src="../assets/theos-mark.png" alt="">
+      <span class="word"><span>THE</span><span class="os-wrap striped" style="--stripe-h:.85px;--stripe-gap:.65px;">OS</span></span>
+    </div>
+    <div class="label">on light</div>
+  </div>
+
+  <div class="pane dark">
+    <div class="lockup">
+      <img class="mark" src="../assets/theos-mark.png" alt="">
+      <span class="word"><span>THE</span><span class="os-wrap striped" style="--stripe-h:.85px;--stripe-gap:.65px;">OS</span></span>
+    </div>
+    <div class="label">on dark</div>
+  </div>
+
+  <div class="pane icon-pane">
+    <div class="app-icon">
+      <img src="../brand-assets/disc-mark-canonical-white.png" alt="theo app icon"/>
+    </div>
+    <div class="label">app icon</div>
+  </div>
+
+</div>
+</body></html>

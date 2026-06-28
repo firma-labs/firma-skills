@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:230px;box-sizing:border-box;
+       padding:34px 32px;display:flex;gap:26px;align-items:center;justify-content:center;}
+  .e{display:flex;flex-direction:column;align-items:center;gap:16px;}
+  .card{width:120px;height:84px;border-radius:var(--r-card);background:#fff;border:1px solid var(--paper-line);}
+  .lbl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.04em;color:var(--ink-2);text-align:center;line-height:1.6;}
+  /* acid-yellow glow: solid, tucked directly underneath the card */
+  .glow{box-shadow:0 13px 20px -13px rgba(231,255,0,.9), 0 4px 11px rgba(56,53,59,.10);}
+  .glow-warm{box-shadow:0 13px 20px -13px rgba(255,150,120,.78), 0 4px 11px rgba(56,53,59,.09);}
+</style>
+</head>
+<body>
+  <div class="e"><div class="card" style="box-shadow:var(--shadow-card)"></div><span class="lbl">CARD<br>resting</span></div>
+  <div class="e"><div class="card" style="box-shadow:var(--shadow-soft)"></div><span class="lbl">SOFT<br>floating</span></div>
+  <div class="e"><div class="card glow-warm"></div><span class="lbl">WARM GLOW<br>peach halo</span></div>
+  <div class="e"><div class="card glow"></div><span class="lbl">ACID GLOW<br>yellow halo</span></div>
+</body>
+</html>

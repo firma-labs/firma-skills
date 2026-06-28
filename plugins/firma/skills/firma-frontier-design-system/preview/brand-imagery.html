@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:260px;box-sizing:border-box;
+       padding:24px 28px;display:flex;gap:16px;}
+  .im{flex:1;border-radius:var(--r-card);overflow:hidden;position:relative;border:1px solid var(--paper-line);}
+  .im img{width:100%;height:100%;object-fit:cover;display:block;}
+  .cap{position:absolute;left:14px;bottom:12px;font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;
+       text-transform:uppercase;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.3);}
+</style>
+</head>
+<body>
+  <div class="im"><img src="../assets/iridescent-mesh.png" alt="Iridescent mesh wave"><span class="cap">ambient mesh — the “soul”</span></div>
+  <div class="im" style="flex:.62;"><img src="../assets/neuraesthetic-bust.png" alt="Neuraesthetic gradient bust"><span class="cap">neuraesthetic</span></div>
+  <div class="im" style="flex:.62;"><img src="../assets/gradient-wave-tall.png" alt="Tall iridescent wave"><span class="cap">vertical glow</span></div>
+</body>
+</html>

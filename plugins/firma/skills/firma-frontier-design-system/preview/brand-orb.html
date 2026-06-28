@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:220px;box-sizing:border-box;
+       padding:24px 26px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+  .o{display:flex;flex-direction:column;align-items:center;gap:12px;}
+  .plain{width:96px;height:96px;display:flex;align-items:center;justify-content:center;}
+  .plain img{width:78px;height:78px;display:block;}
+  .swatch{width:96px;height:96px;border-radius:var(--r-md);background:var(--ink);
+          display:flex;align-items:center;justify-content:center;}
+  .swatch img{width:72px;height:72px;display:block;}
+  .lbl{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);text-align:center;}
+</style>
+</head>
+<body>
+  <div class="o"><div class="plain"><img src="../assets/orb-acid-smooth.png" alt="Acid orb"></div><span class="lbl">Acid<br>on white</span></div>
+  <div class="o"><div class="plain"><img src="../assets/orb-ink-official.png" alt="Black orb"></div><span class="lbl">Black<br>on white</span></div>
+  <div class="o"><div class="swatch"><img src="../assets/orb-mask-official.png" alt="White orb"></div><span class="lbl">White<br>on ink</span></div>
+  <div class="o"><div class="swatch"><img src="../assets/orb-yellow-official.png" alt="Yellow orb"></div><span class="lbl">Yellow<br>on ink</span></div>
+  <div class="o"><div class="swatch"><img src="../assets/orb-acid-smooth.png" alt="Acid orb on ink"></div><span class="lbl">Acid<br>on ink</span></div>
+</body>
+</html>

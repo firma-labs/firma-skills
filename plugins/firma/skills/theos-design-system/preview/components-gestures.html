@@ -1,0 +1,212 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Gesture vocabulary</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:'Supreme',system-ui,sans-serif;color:#F4F5F7;-webkit-font-smoothing:antialiased}
+
+  /* Sky ground — matches the iOS Control Center reference */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(80% 60% at 22% 18%, rgba(255,255,255,0.55) 0%, transparent 55%),
+      radial-gradient(70% 50% at 78% 28%, rgba(255,255,255,0.30) 0%, transparent 60%),
+      radial-gradient(90% 70% at 50% 110%, rgba(20,40,80,0.65) 0%, transparent 60%),
+      linear-gradient(180deg, #6E97C4 0%, #8FB1D3 45%, #B4CCE0 100%);
+  }
+  .stage::before{
+    content:"";position:absolute;inset:-10%;pointer-events:none;
+    background:
+      radial-gradient(45% 18% at 30% 35%, rgba(255,255,255,0.50) 0%, transparent 70%),
+      radial-gradient(60% 22% at 75% 60%, rgba(255,255,255,0.32) 0%, transparent 70%),
+      radial-gradient(35% 14% at 15% 80%, rgba(255,255,255,0.28) 0%, transparent 70%);
+    filter:blur(10px);
+  }
+
+  /* Header */
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:5;
+    padding:22px 32px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+  }
+  .h-title{font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7;text-shadow:0 1px 4px rgba(0,0,0,0.30)}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,0.78);text-shadow:0 1px 3px rgba(0,0,0,0.30)}
+
+  /* 3×2 grid — large circles with breathing room */
+  .grid{
+    position:relative;z-index:3;
+    display:grid;grid-template-columns:repeat(3,1fr);
+    gap:48px 36px;
+    padding:84px 56px 56px;
+    height:100%;box-sizing:border-box;
+    align-content:center;
+  }
+
+  .cell{
+    display:flex;flex-direction:column;align-items:center;gap:18px;
+  }
+
+  /* Big frosted glass disc — Control-Center recipe */
+  .disc{
+    position:relative;
+    width:140px;height:140px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.22);
+    box-shadow:
+      0 2px 4px rgba(0,0,0,0.10),
+      0 24px 48px -16px rgba(20,40,80,0.40),
+      inset 0 1px 0 rgba(255,255,255,0.55),
+      inset 0 -1px 0 rgba(0,0,0,0.06);
+    isolation:isolate;
+  }
+  .disc::before{
+    content:"";position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:blur(40px) saturate(140%);-webkit-backdrop-filter:blur(40px) saturate(140%);
+    z-index:-1;
+  }
+  .disc::after{
+    /* soft diagonal rim — bright top-left, fading to soft bottom-right */
+    content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.5px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.85) 0%,
+      rgba(255,255,255,0.10) 38%,
+      rgba(255,255,255,0.04) 60%,
+      rgba(255,255,255,0.30) 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+            mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;mask-composite:exclude;
+  }
+
+  /* Glyph — solid white, drop shadow for depth */
+  .glyph{
+    position:relative;
+    width:62px;height:62px;color:#FFFFFF;
+    filter:drop-shadow(0 2px 4px rgba(20,40,80,0.18));
+  }
+
+  .label{text-align:center}
+  .name{
+    font-family:'Supreme',system-ui,sans-serif;
+    font-size:15px;font-weight:600;letter-spacing:-0.01em;
+    color:#F4F5F7;line-height:1.15;
+    text-shadow:0 1px 3px rgba(0,0,0,0.25);
+  }
+  .verb{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:10px;font-weight:600;letter-spacing:.06em;
+    text-transform:lowercase;
+    color:rgba(244,245,247,0.78);
+    margin-top:5px;
+    text-shadow:0 1px 3px rgba(0,0,0,0.25);
+  }
+
+  svg{display:block}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Gesture vocabulary</span>
+    <span class="h-meta">six glyphs · frosted glass</span>
+  </div>
+
+  <!-- Solid-fill glyphs (Control-Center / SF-Symbols idiom) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <!-- Gaze · eye, solid fill -->
+      <symbol id="g-gaze" viewBox="0 0 64 64">
+        <path fill="currentColor" d="M32 14C18 14 7 24 4 32c3 8 14 18 28 18s25-10 28-18c-3-8-14-18-28-18Zm0 28a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z"/>
+        <circle cx="32" cy="32" r="5" fill="#6E97C4"/>
+      </symbol>
+
+      <!-- Nod · head + downward arrow -->
+      <symbol id="g-nod" viewBox="0 0 64 64">
+        <circle cx="32" cy="20" r="11" fill="currentColor"/>
+        <path fill="currentColor" d="M28 33h8v10h-8z"/>
+        <path fill="currentColor" d="M19 44h26l-13 12z"/>
+      </symbol>
+
+      <!-- Pinch · two fingers meeting at a node -->
+      <symbol id="g-pinch" viewBox="0 0 64 64">
+        <path fill="currentColor" d="M14 14a3 3 0 0 1 4 0l12 12-4 4L14 18a3 3 0 0 1 0-4Z"/>
+        <path fill="currentColor" d="M50 14a3 3 0 0 0-4 0L34 26l4 4 12-12a3 3 0 0 0 0-4Z"/>
+        <circle cx="32" cy="32" r="6" fill="currentColor"/>
+        <rect x="18" y="44" width="28" height="6" rx="3" fill="currentColor"/>
+      </symbol>
+
+      <!-- Head turn · circular arrow + dot -->
+      <symbol id="g-turn" viewBox="0 0 64 64">
+        <path fill="currentColor" d="M32 12a20 20 0 0 1 20 20h-6a14 14 0 1 0-4.4 10.2l4.2 4.2A20 20 0 1 1 32 12Z"/>
+        <path fill="currentColor" d="M52 12v14h-14z"/>
+        <circle cx="32" cy="32" r="5" fill="currentColor"/>
+      </symbol>
+
+      <!-- Utter · solid waveform bars -->
+      <symbol id="g-utter" viewBox="0 0 64 64">
+        <rect x="6" y="29" width="6" height="6" rx="3" fill="currentColor"/>
+        <rect x="16" y="22" width="6" height="20" rx="3" fill="currentColor"/>
+        <rect x="26" y="14" width="6" height="36" rx="3" fill="currentColor"/>
+        <rect x="36" y="22" width="6" height="20" rx="3" fill="currentColor"/>
+        <rect x="46" y="27" width="6" height="10" rx="3" fill="currentColor"/>
+        <rect x="56" y="30" width="2" height="4" rx="1" fill="currentColor"/>
+      </symbol>
+
+      <!-- Brow · raised brows + eyes -->
+      <symbol id="g-brow" viewBox="0 0 64 64">
+        <path fill="currentColor" d="M10 22c4-6 9-9 14-9s10 3 14 9l-3 3c-3-4-7-6-11-6s-8 2-11 6Z" transform="translate(-2,0)"/>
+        <path fill="currentColor" d="M10 22c4-6 9-9 14-9s10 3 14 9l-3 3c-3-4-7-6-11-6s-8 2-11 6Z" transform="translate(28,0)"/>
+        <circle cx="22" cy="40" r="5" fill="currentColor"/>
+        <circle cx="42" cy="40" r="5" fill="currentColor"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="grid">
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-gaze"/></svg></div>
+      <div class="label">
+        <div class="name">Gaze · dwell</div>
+        <div class="verb">focus a surface</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-nod"/></svg></div>
+      <div class="label">
+        <div class="name">Nod</div>
+        <div class="verb">confirm · send</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-pinch"/></svg></div>
+      <div class="label">
+        <div class="name">Pinch</div>
+        <div class="verb">place · pin</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-turn"/></svg></div>
+      <div class="label">
+        <div class="name">Head turn</div>
+        <div class="verb">let go · dismiss</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-utter"/></svg></div>
+      <div class="label">
+        <div class="name">Utter</div>
+        <div class="verb">summon · ask</div>
+      </div>
+    </div>
+
+    <div class="cell">
+      <div class="disc"><svg class="glyph" viewBox="0 0 64 64"><use href="#g-brow"/></svg></div>
+      <div class="label">
+        <div class="name">Brow raise</div>
+        <div class="verb">peek · preview</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Spacing scale</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;height:100%;font-family:'Supreme',system-ui,sans-serif;color:#F4F5F7;-webkit-font-smoothing:antialiased}
+  .stage{
+    position:relative;height:100%;box-sizing:border-box;
+    background:#3f3f3f;
+    padding:60px 36px 36px;
+    overflow:hidden;
+  }
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:5;
+    padding:22px 32px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+  }
+  .h-title{font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,0.62)}
+
+  .row{
+    display:flex;align-items:flex-end;gap:36px;
+    height:100%;
+  }
+  .stack{
+    display:flex;flex-direction:column;align-items:center;gap:14px;
+    flex:0 0 auto;
+  }
+  .swatch{
+    background:#F4F5F7;
+    border-radius:4px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.20);
+  }
+  .meta{
+    display:flex;flex-direction:column;align-items:center;gap:3px;
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:10px;font-weight:600;letter-spacing:.06em;
+  }
+  .px{color:#F4F5F7}
+  .tok{color:rgba(244,245,247,0.55);text-transform:uppercase;letter-spacing:.14em;font-size:9px}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Spacing scale</span>
+    <span class="h-meta">4-base · 9 steps</span>
+  </div>
+
+  <div class="row">
+    <div class="stack"><div class="swatch" style="width:4px;height:4px"></div><div class="meta"><span class="px">4</span><span class="tok">s-1</span></div></div>
+    <div class="stack"><div class="swatch" style="width:8px;height:8px"></div><div class="meta"><span class="px">8</span><span class="tok">s-2</span></div></div>
+    <div class="stack"><div class="swatch" style="width:12px;height:12px"></div><div class="meta"><span class="px">12</span><span class="tok">s-3</span></div></div>
+    <div class="stack"><div class="swatch" style="width:16px;height:16px"></div><div class="meta"><span class="px">16</span><span class="tok">s-4</span></div></div>
+    <div class="stack"><div class="swatch" style="width:20px;height:20px"></div><div class="meta"><span class="px">20</span><span class="tok">s-5</span></div></div>
+    <div class="stack"><div class="swatch" style="width:24px;height:24px"></div><div class="meta"><span class="px">24</span><span class="tok">s-6</span></div></div>
+    <div class="stack"><div class="swatch" style="width:32px;height:32px"></div><div class="meta"><span class="px">32</span><span class="tok">s-8</span></div></div>
+    <div class="stack"><div class="swatch" style="width:48px;height:48px"></div><div class="meta"><span class="px">48</span><span class="tok">s-10</span></div></div>
+    <div class="stack"><div class="swatch" style="width:64px;height:64px"></div><div class="meta"><span class="px">64</span><span class="tok">s-12</span></div></div>
+  </div>
+</div>
+</body></html>

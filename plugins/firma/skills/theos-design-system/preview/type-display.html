@@ -1,0 +1,75 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Type — display</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{
+    margin:0;padding:0;height:100%;
+    font-family:'Supreme',system-ui,sans-serif;
+    background:#3f3f3f;color:#F4F5F7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    padding:36px 44px;height:100%;box-sizing:border-box;
+    display:flex;flex-direction:column;gap:18px;justify-content:center;
+    max-width:980px;
+  }
+
+  .row{
+    display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:baseline;
+    padding-bottom:14px;
+    border-bottom:1px solid rgba(244,245,247,0.08);
+  }
+  .row:last-child{border-bottom:0;padding-bottom:0}
+
+  .meta{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:10px;font-weight:600;letter-spacing:.10em;text-transform:uppercase;
+    color:rgba(244,245,247,0.50);line-height:1.4;
+    padding-top:8px;
+  }
+  .meta b{display:block;color:rgba(244,245,247,0.85);font-weight:700;font-size:11px}
+
+  /* All display sizes — explicitly Supreme Bold */
+  .t{ font-family:'Supreme',system-ui,sans-serif; line-height:1.0; letter-spacing:-0.025em; color:#F4F5F7; }
+  .t-hero  { font-size:64px; font-weight:700; }
+  .t-large { font-size:38px; font-weight:700; }
+  .t-title1{ font-size:28px; font-weight:700; }
+  .t-title2{ font-size:22px; font-weight:600; letter-spacing:-0.015em; line-height:1.2; }
+
+  .head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(244,245,247,0.10);
+    margin-bottom:14px;
+  }
+  .head .name{font-family:'Supreme',system-ui,sans-serif;font-weight:700;font-size:14px;letter-spacing:-0.01em}
+  .head .recipe{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;color:rgba(244,245,247,0.55);text-transform:uppercase;letter-spacing:.10em}
+</style></head><body>
+<div class="wrap">
+  <div class="head">
+    <span class="name">Type · display</span>
+    <span class="recipe">Supreme · 22 → 64 px · weight 600/700</span>
+  </div>
+
+  <div class="row">
+    <div class="meta"><b>t-hero</b>64 / 700<br>track −0.025em</div>
+    <div class="t t-hero">Send THEO</div>
+  </div>
+
+  <div class="row">
+    <div class="meta"><b>t-large</b>38 / 700<br>track −0.025em</div>
+    <div class="t t-large">Pulling. One moment.</div>
+  </div>
+
+  <div class="row">
+    <div class="meta"><b>t-title1</b>28 / 700<br>track −0.025em</div>
+    <div class="t t-title1">Ask. THEO listens.</div>
+  </div>
+
+  <div class="row">
+    <div class="meta"><b>t-title2</b>22 / 600<br>track −0.015em</div>
+    <div class="t t-title2">Last week's edge nodes — 3 drifted from consensus</div>
+  </div>
+</div>
+</body></html>

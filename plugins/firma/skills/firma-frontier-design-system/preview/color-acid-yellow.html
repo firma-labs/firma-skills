@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;min-height:200px;box-sizing:border-box;
+       padding:28px 32px;display:flex;gap:16px;align-items:center;}
+  .big{width:150px;height:144px;border-radius:var(--r-card);
+       display:flex;flex-direction:column;justify-content:flex-end;padding:14px;}
+  .big .n{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;}
+  .big .h{font-family:var(--font-mono);font-size:11px;}
+  .col{flex:1;display:flex;flex-direction:column;gap:12px;min-width:0;}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);}
+  .small{display:flex;gap:12px;}
+  .s{flex:1;height:46px;border-radius:var(--r-sm);border:1px solid var(--ink-line);display:flex;align-items:center;padding:0 12px;
+     font-family:var(--font-mono);font-size:11px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .demo{display:flex;align-items:center;gap:14px;}
+  .btn{font-family:var(--font-body);font-weight:500;font-size:15px;letter-spacing:-.02em;
+       border:none;border-radius:var(--r-pill);padding:11px 22px;cursor:pointer;}
+  a.ff-link{font-family:var(--font-body);font-size:17px;font-weight:500;letter-spacing:-.02em;
+       color:var(--ink);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;}
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <script type="text/babel">
+    const { useMemo } = React;
+
+    // Curated accent options. Each carries its own ink + press tone so the
+    // "fill-only, ink on top" rule always reads.
+    const ACCENTS = {
+      "Acid yellow":  { fill:"#f7ff05", press:"#e6ee00", tint:"#fbffc2", ink:"#2b2930" },
+      "Solar":        { fill:"#ffd400", press:"#ecc200", tint:"#fff6cc", ink:"#2b2930" },
+      "Lime":         { fill:"#c6ff3d", press:"#b4ee29", tint:"#eeffcf", ink:"#2b2930" },
+      "Electric blue":{ fill:"#1f4dff", press:"#1539cc", tint:"#eef1ff", ink:"#ffffff" },
+    };
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "accent": "Acid yellow"
+    }/*EDITMODE-END*/;
+
+    function hexToName(name){ return name; }
+
+    function Card() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+      const a = ACCENTS[t.accent] || ACCENTS["Acid yellow"];
+      const onDark = a.ink === "#ffffff";
+
+      return (
+        <React.Fragment>
+          <div className="big" style={{ background:a.fill }}>
+            <span className="n" style={{ color:a.ink }}>{t.accent}</span>
+            <span className="h" style={{ color: onDark ? "rgba(255,255,255,.7)" : "rgba(43,41,48,.65)" }}>{a.fill}</span>
+          </div>
+          <div className="col">
+            <span className="tag">Signature accent — fill only, ink text on top</span>
+            <div className="small">
+              <div className="s" style={{ background:a.press, color:a.ink, borderColor:a.press }}>Press {a.press}</div>
+              <div className="s" style={{ background:a.tint, color:"var(--ink-2)" }}>Tint {a.tint}</div>
+            </div>
+            <div className="demo">
+              <button className="btn" style={{ background:a.fill, color:a.ink }}>Get in touch</button>
+              <a href="#" className="ff-link" style={{ textDecorationColor:a.fill }}>A link →</a>
+            </div>
+          </div>
+
+          <TweaksPanel title="Tweaks">
+            <TweakSection label="Accent" />
+            <TweakSelect label="Color" value={t.accent}
+              options={Object.keys(ACCENTS)}
+              onChange={(v) => setTweak('accent', v)} />
+          </TweaksPanel>
+        </React.Fragment>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Card />);
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Semantic</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;height:100%;font-family:'Supreme',system-ui,sans-serif}
+  .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;padding:18px;height:100%;box-sizing:border-box;background:#1A1A1A}
+  .sw{position:relative;border-radius:14px;padding:16px;display:flex;flex-direction:column;justify-content:space-between;
+      box-shadow:inset 0 0.5px 0 rgba(255,255,255,.30), 0 8px 20px -8px rgba(0,0,0,.5);overflow:hidden}
+  .top{display:flex;align-items:center;gap:8px;font-size:10px;font-family:ui-monospace,monospace;text-transform:uppercase;letter-spacing:.10em;font-weight:700;opacity:.85}
+  .name{font-size:15px;font-weight:700;letter-spacing:-0.01em}
+  .hex{font-size:11px;font-family:ui-monospace,monospace;opacity:.85;margin-top:2px}
+  .meta{font-size:11px;font-weight:500;opacity:.85;margin-top:6px;line-height:1.4;max-width:300px}
+  .glyph{position:absolute;right:14px;top:14px;font-size:18px;font-weight:700;opacity:.9}
+
+  /* Signal — featured, the crimson accent */
+  .signal{background:#FF073A;color:#FFFFFF;grid-row:span 2}
+  .signal .top, .signal .glyph, .signal .hex, .signal .meta{color:rgba(255,255,255,.95)}
+
+  .confirm{background:#30D158;color:#0E2E16}
+  .confirm .top, .confirm .hex, .confirm .meta{color:rgba(14,46,22,.78)}
+
+  .warn{background:#FFD60A;color:#1A1A1A}
+  .warn .top, .warn .hex, .warn .meta{color:rgba(26,26,26,.78)}
+</style></head><body>
+<div class="wrap">
+  <div class="sw signal">
+    <div class="top"><span>SIGNAL</span><span style="opacity:.6">·</span><span>single accent</span></div>
+    <div>
+      <div class="name">Signal crimson</div>
+      <div class="hex">#FF073A</div>
+      <div class="meta">The only color in the system. Use sparingly to break the monochrome — alerts, drift indicators, dot badges, the rare "you should look at this."</div>
+    </div>
+    <div class="glyph">!</div>
+  </div>
+  <div class="sw confirm">
+    <div class="top">CONFIRM</div>
+    <div><div class="name">Confirm</div><div class="hex">#30D158</div></div>
+    <div class="glyph">✓</div>
+  </div>
+  <div class="sw warn">
+    <div class="top">WARN</div>
+    <div><div class="name">Warn</div><div class="hex">#FFD60A</div></div>
+    <div class="glyph">!</div>
+  </div>
+</div>
+</body></html>

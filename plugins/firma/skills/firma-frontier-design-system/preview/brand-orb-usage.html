@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;box-sizing:border-box;padding:24px 26px;
+       display:flex;flex-direction:column;gap:14px;font-family:var(--font-body);}
+  .row{display:grid;grid-template-columns:96px 1fr 1fr;gap:14px;align-items:stretch;}
+  .brand{display:flex;align-items:center;font-family:var(--font-mark);font-weight:700;font-size:17px;
+         letter-spacing:-.03em;color:var(--ink);text-transform:lowercase;font-feature-settings:"liga" 0;}
+  .surf{border-radius:12px;padding:14px 16px;display:flex;align-items:center;gap:14px;}
+  .light{background:#fff;border:1px solid var(--paper-line);}
+  .cream{background:#FAF9F5;border:1px solid var(--chip-cream-line);}
+  .dark{background:var(--ink);}
+  .surf img{height:38px;width:38px;display:block;}
+  .meta{display:flex;flex-direction:column;gap:2px;}
+  .t{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;}
+  .light .t,.cream .t{color:var(--ink-2);}
+  .dark .t{color:rgba(255,255,255,.55);}
+  .use{font-size:12px;}
+  .light .use,.cream .use{color:var(--ink-3);}
+  .dark .use{color:rgba(255,255,255,.4);}
+  .hd{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);}
+  .hdrow{display:grid;grid-template-columns:96px 1fr 1fr;gap:14px;}
+</style>
+</head>
+<body>
+  <div class="hdrow"><span></span><span class="hd">On light surfaces</span><span class="hd">On dark / ink surfaces</span></div>
+
+  <div class="row">
+    <div class="brand">frontier</div>
+    <div class="surf light">
+      <img src="../assets/orb-ink-official.png" alt="ink orb">
+      <div class="meta"><span class="t">Ink · default</span><span class="use">reads on white · nav, body, UI</span></div>
+    </div>
+    <div class="surf dark">
+      <img src="../assets/orb-yellow-official.png" alt="yellow orb">
+      <div class="meta"><span class="t">Yellow · default</span><span class="use">the pop on dark / ink</span></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="brand" style="color:var(--ink-3)">frontier·alt</div>
+    <div class="surf cream">
+      <img src="../assets/orb-acid-smooth.png" alt="acid orb">
+      <div class="meta"><span class="t">Acid · expressive</span><span class="use">pink/peach — hero & brand moments</span></div>
+    </div>
+    <div class="surf dark">
+      <img src="../assets/orb-mask-official.png" alt="white orb">
+      <div class="meta"><span class="t">White · quiet</span><span class="use">footer · when yellow is too loud</span></div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="brand">onym</div>
+    <div class="surf light">
+      <img src="../assets/orb-ink-official.png" alt="black orb">
+      <div class="meta"><span class="t">Black · default</span><span class="use">never colour in Onym</span></div>
+    </div>
+    <div class="surf dark">
+      <img src="../assets/orb-mask-official.png" alt="white orb">
+      <div class="meta"><span class="t">White · default</span><span class="use">on the dark elevation</span></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Agent palette</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;height:100%;font-family:'Inter Tight',system-ui,sans-serif}
+  .wrap{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:18px;height:100%;box-sizing:border-box;background:#FFFFFF;position:relative;overflow:hidden}
+  .sw{position:relative;border-radius:14px;display:flex;flex-direction:column;justify-content:space-between;padding:12px;overflow:hidden}
+  .sw .top{display:flex;align-items:center;justify-content:space-between;font-size:10px;font-family:ui-monospace,SF Mono,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em;opacity:.7}
+  .sw .name{font-size:13px;font-weight:700;letter-spacing:-0.01em}
+  .sw .hex{font-size:10px;font-family:ui-monospace,SF Mono,Menlo,monospace;opacity:.75;margin-top:2px}
+  /* Monochrome agent palette — ink → silver → mark-white. Neutral greys, no blues. */
+  .ink   {background:#1A1A1A;color:#F4F5F7}
+  .ink   .top{color:rgba(244,245,247,.6)}
+  .graphite{background:#3F3F3F;color:#F4F5F7}
+  .graphite .top{color:rgba(244,245,247,.55)}
+  .silver{background:#8A8A8A;color:#F4F5F7}
+  .silver .top{color:rgba(244,245,247,.7)}
+  .pearl {background:#E0E0E0;color:#1A1A1A;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+  .pearl .top{color:rgba(0,0,0,.5)}
+  .mark  {background:#FFFFFF;color:#1A1A1A;box-shadow:inset 0 0 0 1px rgba(0,0,0,.10)}
+  .mark  .top{color:rgba(0,0,0,.45)}
+  /* Subtle disc echo on each chip — quotes the THEOS mark gradient */
+  .disc{position:absolute;right:-30px;bottom:-30px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle at 32% 28%,rgba(255,255,255,.45) 0%,rgba(255,255,255,0) 60%);pointer-events:none}
+  .pearl .disc,.mark .disc{background:radial-gradient(circle at 32% 28%,rgba(0,0,0,.10) 0%,rgba(0,0,0,0) 60%)}
+</style></head><body>
+<div class="wrap">
+  <div class="sw ink">      <div class="top"><span>01 · core</span><span>ink</span></div>      <div><div class="name">Ink</div><div class="hex">#1A1A1A</div></div><div class="disc"></div></div>
+  <div class="sw graphite"> <div class="top"><span>02 · pressed</span><span>graphite</span></div><div><div class="name">Graphite</div><div class="hex">#3F3F3F</div></div><div class="disc"></div></div>
+  <div class="sw silver">   <div class="top"><span>03 · base</span><span>silver</span></div>   <div><div class="name">Silver</div><div class="hex">#8A8A8A</div></div><div class="disc"></div></div>
+  <div class="sw pearl">    <div class="top"><span>04 · hover</span><span>pearl</span></div>  <div><div class="name">Pearl</div><div class="hex">#E0E0E0</div></div><div class="disc"></div></div>
+  <div class="sw mark">     <div class="top"><span>05 · spec</span><span>mark</span></div>    <div><div class="name">Mark white</div><div class="hex">#FFFFFF</div></div><div class="disc"></div></div>
+</div>
+</body></html>

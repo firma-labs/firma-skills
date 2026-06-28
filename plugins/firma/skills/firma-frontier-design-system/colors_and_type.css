@@ -1,0 +1,284 @@
+/* ============================================================================
+   FIRMA FRONTIER — Foundations
+   Type + color tokens, semantic variables, and base element styles.
+   Brand: sovereign-scale frontier-tech investment fund.
+   Visual DNA: pure-white canvas, warm charcoal ink, a warm/acid iridescent
+   gradient "soul" (peach→pink→acid-yellow) used sparingly as atmosphere, and
+   acid yellow #f7ff05 for precision (button fills, data highlights).
+   ============================================================================ */
+
+/* ── Webfonts ──────────────────────────────────────────────────────────────
+   Satoshi (display + body)  → self-hosted (fonts/Satoshi-*.otf)
+   Space Grotesk (wordmark)  → self-hosted variable (fonts/SpaceGrotesk-VariableFont_wght.ttf)
+   JetBrains Mono (labels/data/code) → self-hosted static instances (fonts/JetBrainsMono-*.ttf, 100–800 + italics)
+   See README "Fonts". All families self-hosted — no CDN dependency. */
+
+/* Satoshi — display + body. Licensed files self-hosted. */
+@font-face {
+  font-family: "Satoshi"; font-style: normal; font-weight: 300; font-display: swap;
+  src: url("fonts/Satoshi-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: italic; font-weight: 300; font-display: swap;
+  src: url("fonts/Satoshi-LightItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: normal; font-weight: 400; font-display: swap;
+  src: url("fonts/Satoshi-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: italic; font-weight: 400; font-display: swap;
+  src: url("fonts/Satoshi-Italic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: normal; font-weight: 500; font-display: swap;
+  src: url("fonts/Satoshi-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: italic; font-weight: 500; font-display: swap;
+  src: url("fonts/Satoshi-MediumItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: normal; font-weight: 700; font-display: swap;
+  src: url("fonts/Satoshi-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: italic; font-weight: 700; font-display: swap;
+  src: url("fonts/Satoshi-BoldItalic.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: normal; font-weight: 900; font-display: swap;
+  src: url("fonts/Satoshi-Black.otf") format("opentype");
+}
+@font-face {
+  font-family: "Satoshi"; font-style: italic; font-weight: 900; font-display: swap;
+  src: url("fonts/Satoshi-BlackItalic.otf") format("opentype");
+}
+
+/* Space Grotesk — wordmark. Variable file, weight axis 300–700. */
+@font-face {
+  font-family: "Space Grotesk"; font-style: normal; font-weight: 300 700; font-display: swap;
+  src: url("fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+
+/* JetBrains Mono — self-hosted static instances (labels/data/code).
+   Weights 100–800, each with an italic. */
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:100;font-display:swap;src:url("fonts/JetBrainsMono-Thin.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:100;font-display:swap;src:url("fonts/JetBrainsMono-ThinItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:200;font-display:swap;src:url("fonts/JetBrainsMono-ExtraLight.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:200;font-display:swap;src:url("fonts/JetBrainsMono-ExtraLightItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:300;font-display:swap;src:url("fonts/JetBrainsMono-Light.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:300;font-display:swap;src:url("fonts/JetBrainsMono-LightItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/JetBrainsMono-Regular.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:400;font-display:swap;src:url("fonts/JetBrainsMono-Italic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:500;font-display:swap;src:url("fonts/JetBrainsMono-Medium.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:500;font-display:swap;src:url("fonts/JetBrainsMono-MediumItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:600;font-display:swap;src:url("fonts/JetBrainsMono-SemiBold.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:600;font-display:swap;src:url("fonts/JetBrainsMono-SemiBoldItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/JetBrainsMono-Bold.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:700;font-display:swap;src:url("fonts/JetBrainsMono-BoldItalic.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:800;font-display:swap;src:url("fonts/JetBrainsMono-ExtraBold.ttf") format("truetype");}
+@font-face{font-family:"JetBrains Mono";font-style:italic;font-weight:800;font-display:swap;src:url("fonts/JetBrainsMono-ExtraBoldItalic.ttf") format("truetype");}
+
+:root {
+  /* ── Core palette ──────────────────────────────────────────────────────── */
+  --canvas:        #ffffff;   /* pure white — the page breathes on this */
+  --paper:         #faf9f6;   /* warm off-white — cards, recessed wells */
+  --paper-line:    #f4efec;   /* hairline border on paper surfaces */
+
+  --ink:           #38353b;   /* warm charcoal — primary text. NEVER pure black */
+  --ink-2:         #706d73;   /* muted charcoal — secondary text */
+  --ink-3:         #a7a3a9;   /* faint — captions, disabled, tertiary */
+  --ink-line:      #e7e3e6;   /* default hairline / divider */
+
+  /* ── Signature accent — ACID YELLOW (precision + pop) ──────────────────────
+     Yellow #f7ff05 is a FILL accent: always pair with ink text/icons on top.
+     Never use as text or a thin line on white (it disappears). The --blue*
+     names are kept as aliases so existing fills pick up the new accent. */
+  --accent:        #f7ff05;   /* the signature fill — buttons, data pop, orb */
+  --accent-press:  #e6ee00;   /* hover / pressed fill */
+  --accent-ink:    #2b2930;   /* text/icons that sit ON the yellow */
+  --accent-line:   #d8df00;   /* a readable yellow for hairlines/underlines on white */
+  --blue:          #f7ff05;   /* alias → accent fill */
+  --blue-press:    #e6ee00;   /* alias → accent press */
+  --blue-tint:     #fbffc2;   /* faint yellow wash */
+
+  /* ── Iridescent gradient — the "soul" (atmospheric, soft, sparing) ────────
+     Warm/acid family — NO blue, NO purple. Peach → pink → acid yellow. This
+     harmonizes with the yellow fill accent instead of fighting it. Matches the
+     Figma "Acid-Gradient" (FFA6C2 → FFB9A3 → F7FF05). */
+  --irid-peach:    #ffb9a3;
+  --irid-pink:     #ffa6c2;
+  --irid-rose:     #ffc28f;   /* warm bridge into yellow (replaces violet) */
+  --irid-yellow:   #f7ff05;
+  --iridescent:    linear-gradient(110deg, var(--irid-pink) 0%, var(--irid-peach) 40%, var(--irid-rose) 70%, var(--irid-yellow) 100%);
+  --iridescent-soft: linear-gradient(110deg, #ffa6c2 0%, #ffb9a3 42%, #ffce6e 74%, #f7ff05 100%);
+
+  /* Category-pill fills — just TWO: warm cream (default) and acid-yellow (active).
+     Peach/pink were tried and dropped — they read poorly as chips. */
+  --chip-cream:    #FAF9F5;   --chip-cream-ink:  var(--ink);   --chip-cream-line: #ece9e1;
+  --chip-yellow:   #f7ff05;   --chip-yellow-ink: #2b2930;      --chip-yellow-line:#e6ee00;
+  /* legacy aliases → all resolve to the cream chip */
+  --pill-peach:    var(--chip-cream);  --pill-peach-ink: var(--chip-cream-ink);  --pill-peach-line: var(--chip-cream-line);
+  --pill-rose:     var(--chip-cream);  --pill-rose-ink:  var(--chip-cream-ink);  --pill-rose-line:  var(--chip-cream-line);
+  --pill-blue:     var(--chip-cream);  --pill-blue-ink:  var(--chip-cream-ink);  --pill-blue-line:  var(--chip-cream-line);
+
+  /* ── Surfaces — warm cream cards on the white canvas ────────────────────── */
+  --surface:        #ffffff;   /* page canvas */
+  --surface-card:   #FAF9F5;   /* card / panel fill — warm cream, not stark white */
+  --surface-line:   #ece9e1;   /* hairline border for cream cards */
+
+  /* Light elevation scale (macOS-style, light) — used by frontier-surfaces.
+     Backdrop is a warm grey so white windows pop; selection uses the yellow accent. */
+  --l-backdrop:   #e9e6e0;   /* desktop behind the window */
+  --l-surface-1:  #ffffff;   /* window */
+  --l-surface-2:  #faf9f5;   /* panel / sidebar (cream) */
+  --l-surface-3:  #ffffff;   /* card (white, floats with shadow) */
+  --l-hover:      #f3f1ec;   /* row / card hover */
+  --l-selected:   #f7ff05;   /* selected row / card → acid yellow */
+  --l-hairline:   #ece9e1;   /* divider / card border */
+  --l-hairline-2: #e0dcd4;   /* stronger divider */
+  --l-shadow:     0 1px 2px rgba(56,53,59,.05), 0 6px 18px rgba(173,166,160,.16);
+  --l-shadow-pop: 0 24px 60px rgba(120,110,100,.20);
+
+  /* ── Elevation / shadow ────────────────────────────────────────────────── */
+  --shadow-card:   0 4px 8px rgba(244,239,236,.5);                 /* quiet card lift on white */
+  --shadow-soft:   0 8px 28px rgba(173,166,160,.18);               /* floating card */
+  --shadow-pill:   0 1px 2px rgba(56,53,59,.05), 0 4px 12px rgba(173,166,160,.12);
+  --glow-irid:     0 14px 60px rgba(255,150,120,.26);               /* warm peach/yellow halo under hero card (flat-shadow fallback; prefer a blurred --iridescent element for the true multi-hue glow) */
+
+  /* ── Radii ─────────────────────────────────────────────────────────────── */
+  --r-sm:    10px;
+  --r-md:    16px;
+  --r-card:  20px;   /* data card / standard cards */
+  --r-lg:    24px;   /* large feature cards */
+  --r-frame: 40px;   /* slide / hero frame */
+  --r-pill:  999px;
+
+  /* ── Spacing scale (8pt base) ──────────────────────────────────────────── */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 128px;
+
+  /* ── Type families ─────────────────────────────────────────────────────── */
+  --font-display: "Satoshi", "Helvetica Neue", system-ui, sans-serif;
+  --font-body:    "Satoshi", "Helvetica Neue", system-ui, sans-serif;
+  --font-mark:    "Space Grotesk", "Satoshi", sans-serif;   /* wordmark / logo use only */
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", monospace;   /* brand labels/kickers/data */
+  --font-code:    "JetBrains Mono", ui-monospace, monospace; /* code / terminal moments */
+
+  /* ── Motion ────────────────────────────────────────────────────────────── */
+  --ease:        cubic-bezier(.22,.61,.36,1);   /* calm, premium ease-out */
+  --ease-soft:   cubic-bezier(.4,0,.2,1);
+  --dur-fast:    180ms;
+  --dur:         420ms;
+  --dur-slow:    900ms;
+}
+
+/* ============================================================================
+   SEMANTIC TYPE — apply directly to elements or via the utility classes.
+   Display = Satoshi Bold, tight tracking. Body = Satoshi Regular.
+   ============================================================================ */
+
+.ff-display,
+h1.ff {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(52px, 7vw, 100px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.ff-h2, h2.ff {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(34px, 4.4vw, 64px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+.ff-h3, h3.ff {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(24px, 2.4vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--ink);
+}
+
+.ff-lead {            /* manifesto / subline lead */
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(22px, 2.2vw, 32px);
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.ff-body, p.ff {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.45;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.ff-small {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: var(--ink-2);
+}
+
+/* Mono kicker / label / data — uppercase + wide tracking */
+.ff-kicker, .ff-mono {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.3;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* The wordmark — logo use only. lowercase, tight, ligatures OFF so "fi" never ligates */
+.ff-wordmark {
+  font-family: var(--font-mark);
+  font-weight: 700;
+  letter-spacing: -0.047em;
+  text-transform: lowercase;
+  color: var(--ink);
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+}
+
+/* Gradient text — sparing; for a single hero lead word or accent */
+.ff-irid-text {
+  background: var(--iridescent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── Links — ink text with a yellow accent underline (yellow text is unreadable
+   on white, so the accent lives in the underline, not the glyphs) ────────── */
+a.ff-link {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color var(--dur-fast) var(--ease);
+}
+a.ff-link:hover { text-decoration-color: var(--accent-line); }
+a.ff-link:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}

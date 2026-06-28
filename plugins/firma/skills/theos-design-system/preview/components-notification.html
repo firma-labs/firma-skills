@@ -1,0 +1,191 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Notification platter</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:var(--font-text);-webkit-font-smoothing:antialiased;color:#F4F5F7}
+
+  /* Saturated stage so the luminosity glass reads as desaturating, not just white */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(45% 55% at 18% 22%, #F4B25A 0%, transparent 65%),
+      radial-gradient(40% 50% at 82% 30%, #E66565 0%, transparent 65%),
+      radial-gradient(55% 60% at 25% 85%, #2E5BD2 0%, transparent 70%),
+      radial-gradient(45% 55% at 80% 88%, #6E3FB5 0%, transparent 65%),
+      linear-gradient(180deg, #1A1330 0%, #0A0B16 100%);
+  }
+  .stage::before{
+    content:'';position:absolute;inset:-6%;
+    background:
+      radial-gradient(8% 6% at 32% 28%, rgba(255,220,160,0.55), transparent 70%),
+      radial-gradient(7% 5% at 72% 18%, rgba(255,140,140,0.45), transparent 70%),
+      radial-gradient(10% 8% at 22% 72%, rgba(120,160,255,0.55), transparent 70%),
+      radial-gradient(7% 6% at 78% 78%, rgba(170,120,230,0.50), transparent 70%);
+    filter:blur(20px);
+    pointer-events:none;
+  }
+
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:3;
+    padding:18px 28px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
+  }
+  .h-title{font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,.7)}
+
+  .center{
+    position:relative;z-index:1;
+    height:100%;display:flex;align-items:center;justify-content:center;
+    padding:60px 22px 28px;box-sizing:border-box;
+  }
+
+  .row{display:flex;gap:22px;align-items:flex-start;flex-wrap:wrap;justify-content:center}
+
+  /* ─── visionOS alert platter ─── luminosity grey + diagonal hairline ─── */
+  .alert{
+    position:relative;
+    width:320px;max-width:96%;
+    border-radius:36px;
+    background:rgba(128,128,128,0.30);
+    mix-blend-mode:luminosity;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10), 0 32px 64px -20px rgba(0,0,0,0.45);
+    isolation:isolate;
+    color:#F4F5F7;
+    overflow:hidden;
+  }
+  .alert::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    z-index:-1;
+  }
+  .alert::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.4px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.40) 0%,
+      rgba(255,255,255,0.01) 40%,
+      rgba(255,255,255,0.01) 57%,
+      rgba(255,255,255,0.10) 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+  }
+
+  /* Inner content — escapes the luminosity blend so text renders crisp */
+  .inner{
+    position:relative;mix-blend-mode:normal;
+    padding:28px 28px 0;
+    display:flex;flex-direction:column;align-items:center;gap:16px;
+  }
+
+  .icon{
+    width:54px;height:54px;border-radius:16px;
+    display:flex;align-items:center;justify-content:center;
+    background:rgba(255,255,255,0.16);
+    border:1px solid rgba(255,255,255,0.20);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.30);
+    font-family:var(--font-display);font-weight:700;font-size:20px;color:#F4F5F7;
+  }
+  .icon.urgent{
+    background:rgba(255,7,58,0.55);
+    border-color:rgba(255,255,255,0.45);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,0.30), 0 0 18px rgba(255,7,58,0.45);
+  }
+
+  .head{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;width:100%}
+  .title{
+    font-family:var(--font-display);font-size:19px;font-weight:700;letter-spacing:-0.01em;line-height:1.2;
+    color:#F4F5F7;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .body{font-size:14px;font-weight:400;line-height:1.42;color:rgba(244,245,247,.78);text-align:center}
+
+  /* Action row — flush to alert edges, separated by hairlines */
+  .actions{
+    position:relative;mix-blend-mode:normal;
+    margin-top:18px;
+    display:grid;grid-template-columns:1fr 1px 1fr;
+    border-top:0.5px solid rgba(255,255,255,0.22);
+  }
+  .actions.single{grid-template-columns:1fr}
+  .act{
+    height:52px;
+    display:flex;align-items:center;justify-content:center;
+    background:transparent;border:0;cursor:pointer;
+    color:#F4F5F7;
+    font-family:var(--font-text);font-size:15px;font-weight:500;letter-spacing:-0.005em;
+    transition:background 160ms cubic-bezier(.32,.72,0,1);
+  }
+  .act:hover{background:rgba(255,255,255,0.08)}
+  .act.prominent{font-weight:700;color:#FFFFFF}
+  .act.destructive{font-weight:700;color:#FF6B82}
+  .actions .divider{background:rgba(255,255,255,0.22)}
+
+  /* Signal dot — used in title for urgent alerts */
+  .dot{
+    width:8px;height:8px;border-radius:9999px;background:#FF073A;display:inline-block;
+    box-shadow:0 0 10px rgba(255,7,58,.65);
+    animation:pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes pulse{0%,100%{opacity:.85}50%{opacity:1;box-shadow:0 0 14px rgba(255,7,58,.85)}}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Glass · notification platter</span>
+    <span class="h-meta">single · two-action · urgent</span>
+  </div>
+
+  <div class="center">
+    <div class="row">
+
+      <!-- 1 · Single action -->
+      <div class="alert">
+        <div class="inner">
+          <div class="icon">M</div>
+          <div class="head">
+            <div class="title">Share Q2 brief?</div>
+            <div class="body">Mira will receive the brief with comment access. You can revoke at any time.</div>
+          </div>
+        </div>
+        <div class="actions single">
+          <button class="act prominent">Share</button>
+        </div>
+      </div>
+
+      <!-- 2 · Two-action -->
+      <div class="alert">
+        <div class="inner">
+          <div class="icon">F</div>
+          <div class="head">
+            <div class="title">Sign out of THEO?</div>
+            <div class="body">You'll need to authenticate again on this device. Open sessions remain on other devices.</div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="act">Cancel</button>
+          <span class="divider" aria-hidden="true"></span>
+          <button class="act prominent">Sign out</button>
+        </div>
+      </div>
+
+      <!-- 3 · Urgent — signal dot + destructive accent on primary -->
+      <div class="alert">
+        <div class="inner">
+          <div class="icon urgent">!</div>
+          <div class="head">
+            <div class="title">3 nodes drifted<span class="dot" aria-hidden="true"></span></div>
+            <div class="body">Edge nodes us-east-2, us-west-1, and eu-north-1 left consensus 4 minutes ago.</div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="act">Dismiss</button>
+          <span class="divider" aria-hidden="true"></span>
+          <button class="act prominent">Inspect</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</body></html>

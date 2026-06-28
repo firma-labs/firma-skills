@@ -1,0 +1,122 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Corner radii</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:'Supreme',system-ui,sans-serif;color:#F4F5F7;-webkit-font-smoothing:antialiased}
+
+  /* Saturated stage */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(45% 55% at 18% 22%, #F4B25A 0%, transparent 65%),
+      radial-gradient(40% 50% at 82% 30%, #E66565 0%, transparent 65%),
+      radial-gradient(55% 60% at 25% 85%, #2E5BD2 0%, transparent 70%),
+      radial-gradient(45% 55% at 80% 88%, #6E3FB5 0%, transparent 65%),
+      linear-gradient(180deg, #1A1330 0%, #0A0B16 100%);
+  }
+  .stage::before{
+    content:'';position:absolute;inset:-6%;
+    background:
+      radial-gradient(8% 6% at 32% 28%, rgba(255,220,160,0.55), transparent 70%),
+      radial-gradient(7% 5% at 72% 18%, rgba(255,140,140,0.45), transparent 70%),
+      radial-gradient(10% 8% at 22% 72%, rgba(120,160,255,0.55), transparent 70%),
+      radial-gradient(7% 6% at 78% 78%, rgba(170,120,230,0.50), transparent 70%);
+    filter:blur(20px);pointer-events:none;
+  }
+
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:3;
+    padding:18px 28px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+    text-shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+  .h-title{font-family:'Supreme',system-ui,sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,.7)}
+
+  .row{
+    position:relative;z-index:1;
+    height:100%;box-sizing:border-box;
+    padding:60px 28px 28px;
+    display:grid;grid-template-columns:repeat(5,1fr);gap:18px;
+    align-items:end;
+  }
+
+  .cell{display:flex;flex-direction:column;align-items:center;gap:14px;min-width:0}
+
+  /* The tile IS the radius — visionOS luminosity glass at the spec'd corner */
+  .tile{
+    position:relative;
+    width:100%;aspect-ratio:1/1;
+    border-radius:var(--r);
+    background:rgba(128,128,128,0.30);
+    mix-blend-mode:luminosity;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10);
+    isolation:isolate;
+  }
+  .tile::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:blur(50px);-webkit-backdrop-filter:blur(50px);
+    z-index:-1;
+  }
+  .tile::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.4px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.40) 0%,
+      rgba(255,255,255,0.01) 40%,
+      rgba(255,255,255,0.01) 57%,
+      rgba(255,255,255,0.10) 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+  }
+
+  /* Numeral lives inside, lower-right, mono — escapes luminosity via mix-blend-mode:normal */
+  .num{
+    position:absolute;right:12px;bottom:10px;z-index:3;
+    mix-blend-mode:normal;
+    font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:11px;font-weight:600;
+    color:rgba(244,245,247,0.85);letter-spacing:.04em;
+  }
+
+  .cell.pill .tile{aspect-ratio:2/1}
+
+  .cap{display:flex;flex-direction:column;align-items:center;gap:2px;text-shadow:0 1px 2px rgba(0,0,0,.4)}
+  .name{font-family:'Supreme',system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .desc{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;color:rgba(244,245,247,.65);text-transform:lowercase;letter-spacing:.04em}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Corner radii</span>
+    <span class="h-meta">5 steps · pt</span>
+  </div>
+
+  <div class="row">
+
+    <div class="cell">
+      <div class="tile" style="--r:6px"><span class="num">6</span></div>
+      <div class="cap"><span class="name">Chip</span><span class="desc">tags · keys</span></div>
+    </div>
+
+    <div class="cell">
+      <div class="tile" style="--r:14px"><span class="num">14</span></div>
+      <div class="cap"><span class="name">Field</span><span class="desc">inputs · buttons</span></div>
+    </div>
+
+    <div class="cell">
+      <div class="tile" style="--r:24px"><span class="num">24</span></div>
+      <div class="cap"><span class="name">Card</span><span class="desc">panels · sheets</span></div>
+    </div>
+
+    <div class="cell">
+      <div class="tile" style="--r:34px"><span class="num">34</span></div>
+      <div class="cap"><span class="name">Rail</span><span class="desc">app icon · rail</span></div>
+    </div>
+
+    <div class="cell pill">
+      <div class="tile" style="--r:9999px"><span class="num">∞</span></div>
+      <div class="cap"><span class="name">Pill</span><span class="desc">discs · pills</span></div>
+    </div>
+
+  </div>
+</div>
+</body></html>

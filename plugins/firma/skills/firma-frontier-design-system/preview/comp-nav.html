@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:96px;box-sizing:border-box;display:flex;align-items:center;}
+  nav{width:100%;height:66px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;
+      padding:0 30px;background:rgba(255,255,255,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--ink-line);}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand img{width:30px;height:30px;}
+  .brand .wm{font-family:var(--font-mark);font-weight:700;font-size:21px;letter-spacing:-.047em;color:var(--ink);
+             font-feature-settings:"liga" 0;text-transform:lowercase;}
+  .links{display:flex;gap:26px;}
+  .links a{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;}
+  .cta{font-family:var(--font-body);font-weight:500;font-size:15px;background:var(--accent);color:var(--accent-ink);border:none;
+       border-radius:var(--r-pill);padding:11px 22px;letter-spacing:-.02em;}
+</style>
+</head>
+<body>
+  <nav>
+    <div class="brand"><img src="../assets/orb-acid-smooth.png" alt=""><span class="wm">firma frontier</span></div>
+    <div class="links"><a href="#">What we back</a><a href="#">Worldview</a><a href="#">Approach</a><a href="#">Connect</a></div>
+    <button class="cta">Get in touch</button>
+  </nav>
+</body>
+</html>

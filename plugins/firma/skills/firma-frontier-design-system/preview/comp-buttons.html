@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:220px;box-sizing:border-box;
+       padding:30px 32px;display:flex;flex-direction:column;gap:18px;justify-content:center;}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);}
+  .row{display:flex;gap:16px;align-items:center;}
+  .btn{font-family:var(--font-body);font-weight:500;font-size:18px;letter-spacing:-.02em;
+       border:none;cursor:pointer;border-radius:var(--r-pill);padding:14px 30px;transition:all var(--dur-fast) var(--ease);}
+  .btn-primary{background:var(--accent);color:var(--accent-ink);}
+  .btn-primary:hover{background:var(--accent-press);transform:translateY(-1px);}
+  .btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--ink-line);}
+  .btn-ghost:hover{border-color:var(--ink-2);}
+  .btn-quiet{background:transparent;color:var(--ink);padding:14px 8px;}
+  .btn-quiet:hover{color:var(--ink);}
+</style>
+</head>
+<body>
+  <span class="tag">Buttons</span>
+  <div class="row">
+    <button class="btn btn-primary">Get in touch</button>
+    <button class="btn btn-ghost">Subscribe</button>
+    <button class="btn btn-quiet">What we back →</button>
+  </div>
+  <span class="tag" style="color:var(--ink-3)">primary = electric blue pill · honest CTAs only · hover lifts 1px</span>
+</body>
+</html>

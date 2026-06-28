@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:#221f25;width:700px;box-sizing:border-box;
+       padding:26px 28px;display:flex;flex-direction:column;gap:22px;position:relative;}
+  .glow{position:absolute;top:-30px;right:-60px;width:420px;height:300px;border-radius:50%;
+        filter:blur(64px);opacity:.34;background:var(--iridescent);z-index:0;}
+  .row{position:relative;z-index:1;}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:20px;position:relative;z-index:1;}
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="row" id="wide"></div>
+  <div class="pair">
+    <div id="c1"></div>
+    <div id="c2"></div>
+  </div>
+  <script src="../assets/dotmatrix.js"></script>
+  <script>
+    // Wide hero — ink theme, iridescent accent (pairs with the white orb).
+    buildDotMatrixCard(document.getElementById('wide'), {
+      label: "Conviction", periods:["Seed","Series","Frontier"], period:"Frontier",
+      theme:"ink", accent:"iridescent",
+      footL:"Day one", footR:"Sovereign scale", caption:"illustrative"
+    });
+
+    // Compact: rising plateau, electric-blue accent on ink.
+    buildDotMatrixCard(document.getElementById('c1'), {
+      label: "Deployment", periods:["Q","H","Y"], period:"Y",
+      theme:"ink", accent:"blue",
+      columns: DOTMATRIX_PROFILES.plateau,
+      footL:"Reserve", footR:"Committed", caption:"illustrative"
+    });
+
+    // Compact: twin swells, iridescent accent on ink.
+    buildDotMatrixCard(document.getElementById('c2'), {
+      label: "Momentum", periods:["30d","90d","1y"], period:"90d",
+      theme:"ink", accent:"iridescent",
+      columns: DOTMATRIX_PROFILES.twin,
+      footL:"Early", footR:"Compounding", caption:"illustrative"
+    });
+  </script>
+</body>
+</html>

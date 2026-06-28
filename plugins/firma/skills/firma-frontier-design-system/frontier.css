@@ -1,0 +1,4 @@
+/* frontier.css — brand-named entry point for Firma Frontier.
+   Identical to colors_and_type.css (the historical default). Link either one.
+   For Onym, link onym.css instead. See brands/frontier.md. */
+@import url("colors_and_type.css");

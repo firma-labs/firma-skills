@@ -1,0 +1,196 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Tab rail & dock</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:'Supreme',system-ui,sans-serif;color:#F4F5F7;-webkit-font-smoothing:antialiased}
+
+  /* Saturated stage so luminosity glass desaturates the scene instead of vanishing */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(45% 55% at 18% 22%, #F4B25A 0%, transparent 65%),
+      radial-gradient(40% 50% at 82% 30%, #E66565 0%, transparent 65%),
+      radial-gradient(55% 60% at 25% 85%, #2E5BD2 0%, transparent 70%),
+      radial-gradient(45% 55% at 80% 88%, #6E3FB5 0%, transparent 65%),
+      linear-gradient(180deg, #1A1330 0%, #0A0B16 100%);
+  }
+  .stage::before{
+    content:'';position:absolute;inset:-6%;
+    background:
+      radial-gradient(8% 6% at 32% 28%, rgba(255,220,160,0.55), transparent 70%),
+      radial-gradient(7% 5% at 72% 18%, rgba(255,140,140,0.45), transparent 70%),
+      radial-gradient(10% 8% at 22% 72%, rgba(120,160,255,0.55), transparent 70%),
+      radial-gradient(7% 6% at 78% 78%, rgba(170,120,230,0.50), transparent 70%);
+    filter:blur(20px);pointer-events:none;
+  }
+
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:3;
+    padding:18px 28px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+    text-shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+  .h-title{font-family:'Supreme',system-ui,sans-serif;font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,.7)}
+
+  .row{
+    position:relative;z-index:1;
+    display:flex;gap:32px;align-items:center;justify-content:center;
+    height:100%;padding:60px 28px 28px;box-sizing:border-box;
+  }
+
+  /* ─── visionOS recipe ─── */
+  .glass{
+    position:relative;
+    background:rgba(128,128,128,0.30);
+    mix-blend-mode:luminosity;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10);
+    isolation:isolate;
+  }
+  .glass::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    z-index:-1;
+  }
+  .glass::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.4px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.40) 0%,
+      rgba(255,255,255,0.01) 40%,
+      rgba(255,255,255,0.01) 57%,
+      rgba(255,255,255,0.10) 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+  }
+  /* Inner contents escape the luminosity blend */
+  .inner{position:relative;mix-blend-mode:normal;color:#F4F5F7}
+
+  /* Tab rail — vertical column of icon dots */
+  .rail{border-radius:36px}
+  .rail .inner{
+    display:flex;flex-direction:column;gap:6px;
+    padding:10px;
+  }
+  .dot{
+    width:48px;height:48px;border-radius:9999px;
+    display:flex;align-items:center;justify-content:center;
+    color:rgba(244,245,247,0.78);
+    cursor:pointer;
+    transition:background 160ms ease, color 160ms ease;
+  }
+  .dot:hover{background:rgba(255,255,255,0.08);color:#F4F5F7}
+
+  /* Active dot — its own little glass capsule using the same recipe at smaller scale */
+  .dot.active{
+    position:relative;color:#F4F5F7;
+    background:rgba(255,255,255,0.18);
+    box-shadow:inset 0 0 0 0.5px rgba(255,255,255,0.30);
+  }
+  .dot.active::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.55) 0%,
+      rgba(255,255,255,0.05) 50%,
+      rgba(255,255,255,0.18) 100%);
+    -webkit-mask:linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor; mask-composite:exclude;
+  }
+
+  /* Selection bar — left pill that marks active tab in the rail */
+  .rail .inner{position:relative}
+  .sel{
+    position:absolute;left:-4px;top:14px;
+    width:3px;height:24px;border-radius:9999px;
+    background:#F4F5F7;
+    box-shadow:0 0 8px rgba(255,255,255,0.6);
+  }
+
+  /* Dock — horizontal pill with workspace pips and an action chip */
+  .dock{border-radius:9999px}
+  .dock .inner{
+    display:flex;align-items:center;gap:14px;
+    height:54px;padding:0 18px;
+  }
+  .pip{
+    width:8px;height:8px;border-radius:9999px;
+    background:rgba(244,245,247,0.4);
+  }
+  .pip.on{background:#F4F5F7;box-shadow:0 0 6px rgba(255,255,255,0.7)}
+
+  .divider{width:1px;height:22px;background:rgba(244,245,247,0.18)}
+
+  .label{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:11px;font-weight:600;letter-spacing:.04em;
+    color:rgba(244,245,247,0.85);
+  }
+  .kbd{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:10px;color:rgba(244,245,247,0.55);letter-spacing:.04em;
+    padding:0 6px;height:20px;border-radius:6px;
+    background:rgba(255,255,255,0.08);
+    display:inline-flex;align-items:center;
+  }
+
+  svg{display:block}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Tab rail · dock</span>
+    <span class="h-meta">visionOS recipe · luminosity</span>
+  </div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-home" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M3.5 10.5 11 4l7.5 6.5"/><path d="M5.5 9.5V18h11V9.5"/>
+      </symbol>
+      <symbol id="i-search" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <circle cx="10" cy="10" r="5.6"/><path d="M14 14l4 4"/>
+      </symbol>
+      <symbol id="i-stack" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 8l7-3 7 3-7 3-7-3Z"/><path d="M4 12l7 3 7-3"/><path d="M4 16l7 3 7-3"/>
+      </symbol>
+      <symbol id="i-grid" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="4" y="4" width="6" height="6" rx="1"/><rect x="12" y="4" width="6" height="6" rx="1"/>
+        <rect x="4" y="12" width="6" height="6" rx="1"/><rect x="12" y="12" width="6" height="6" rx="1"/>
+      </symbol>
+      <symbol id="i-mic" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="8" y="3" width="6" height="11" rx="3"/><path d="M4.5 11a6.5 6.5 0 0 0 13 0"/><path d="M11 17.5v2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="row">
+
+    <!-- Vertical tab rail -->
+    <div class="glass rail">
+      <div class="inner">
+        <span class="sel"></span>
+        <div class="dot active"><svg width="22" height="22"><use href="#i-home"/></svg></div>
+        <div class="dot"><svg width="22" height="22"><use href="#i-search"/></svg></div>
+        <div class="dot"><svg width="22" height="22"><use href="#i-stack"/></svg></div>
+        <div class="dot"><svg width="22" height="22"><use href="#i-grid"/></svg></div>
+      </div>
+    </div>
+
+    <!-- Horizontal dock -->
+    <div class="glass dock">
+      <div class="inner">
+        <span class="pip on"></span>
+        <span class="pip"></span>
+        <span class="pip"></span>
+        <span class="divider"></span>
+        <span class="label">edge-nodes · live</span>
+        <span class="divider"></span>
+        <div class="dot active" style="width:34px;height:34px"><svg width="16" height="16"><use href="#i-mic"/></svg></div>
+        <span class="kbd">⌘ K</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Firma Frontier — Capital for a new earth</title>
+<link rel="stylesheet" href="../../colors_and_type.css">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--canvas);color:var(--ink);font-family:var(--font-body);
+       -webkit-font-smoothing:antialiased;overflow-x:hidden;}
+  @keyframes ffDrift{
+    0%{transform:translate(0,0) scale(1)}
+    100%{transform:translate(28px,-22px) scale(1.08)}
+  }
+  @keyframes ffOrbFloat{
+    0%{transform:translateY(0) rotate(-1.2deg)}
+    100%{transform:translateY(-18px) rotate(1.2deg)}
+  }
+  /* tab-view crossfade — opacity only (no transform: a transformed ancestor
+     would become the containing block and break sticky section headers) */
+  @keyframes ffViewIn{
+    from{opacity:0}
+    to{opacity:1}
+  }
+  .ff-view{animation:ffViewIn .42s var(--ease) both}
+  @media (prefers-reduced-motion: reduce){
+    .ff-view{animation:none}
+    html{scroll-behavior:auto}
+  }
+  /* responsive collapses */
+  @media (max-width: 980px){
+    .ff-hero-grid{grid-template-columns:1fr !important}
+    .ff-cred-grid{grid-template-columns:1fr !important}
+    .ff-navlinks{display:none !important}
+    .ff-back-grid{grid-template-columns:repeat(2,1fr) !important}
+    .ff-worldview-grid{grid-template-columns:1fr !important}
+    .ff-pillars{grid-template-columns:1fr !important; gap:40px !important}
+    .ff-pillar{border-left:none !important; padding-left:0 !important;
+      border-top:1px solid var(--ink-line); padding-top:32px !important}
+    .ff-people{grid-template-columns:repeat(2,1fr) !important}
+  }
+  @media (max-width: 620px){
+    .ff-back-grid{grid-template-columns:1fr !important}
+    .ff-people{grid-template-columns:1fr !important}
+    .ff-logos{grid-template-columns:repeat(2,1fr) !important}
+  }
+  a:focus-visible,button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script src="../../assets/dotmatrix.js"></script>
+<script type="text/babel" src="atoms.jsx"></script>
+<script type="text/babel" src="nav-hero.jsx"></script>
+<script type="text/babel" src="sections.jsx"></script>
+<script type="text/babel" src="page-manifesto.jsx"></script>
+<script type="text/babel" src="page-industries.jsx"></script>
+<script type="text/babel" src="page-impact.jsx"></script>
+<script type="text/babel" src="page-contact.jsx"></script>
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel">
+  // ── Home view (manifesto lives on its own tab now) ───────────────────────
+  function Home() {
+    return (
+      <React.Fragment>
+        <Hero />
+        <Manifesto />
+        <WhatWeBack />
+        <Approach />
+        <Credibility />
+        <People />
+        <CTA />
+      </React.Fragment>
+    );
+  }
+
+  // ── Tab views ────────────────────────────────────────────────────────────
+  const FF_VIEWS = {
+    home: Home,
+    manifesto: ManifestoBody,
+    industries: IndustriesBody,
+    impact: ImpactBody,
+    contact: ContactBody,
+  };
+  function parseRoute() {
+    const h = (location.hash || "").replace(/^#\/?/, "").trim();
+    return FF_VIEWS[h] ? h : "home";
+  }
+
+  // ── Expressive tweaks: three controls that reshape the whole feel ─────────
+  const ATMOSPHERE = { Minimal: 0.26, Balanced: 0.8, Luminous: 1.5 };
+  function warmthGradient(w) {
+    const y = Math.round(100 - w * 0.45);
+    const r = Math.round(y * 0.7), p = Math.round(y * 0.4);
+    return `linear-gradient(110deg, #ffa6c2 0%, #ffb9a3 ${p}%, #ffc28f ${r}%, #f7ff05 ${y}%)`;
+  }
+  const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+    "atmosphere": "Minimal",
+    "warmth": 100,
+    "headers": "Editorial"
+  }/*EDITMODE-END*/;
+
+  function Root() {
+    const [route, setRoute] = React.useState(parseRoute());
+    const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+
+    React.useEffect(() => {
+      const onHash = () => setRoute(parseRoute());
+      window.addEventListener("hashchange", onHash);
+      return () => window.removeEventListener("hashchange", onHash);
+    }, []);
+    // smooth scroll to top whenever the tab changes
+    React.useEffect(() => { window.scrollTo({ top: 0, behavior: "instant" in window ? "instant" : "auto" }); }, [route]);
+
+    // Darken the fixed nav as soon as ANY page scrolls. A top-of-page sentinel
+    // feeds the FFStuck IntersectionObserver channel the nav subscribes to
+    // (reliable across scroll containers, unlike window.scrollY).
+    const topRef = React.useRef(null);
+    React.useEffect(() => {
+      const el = topRef.current;
+      if (!el || !window.FFStuck) return;
+      const io = new IntersectionObserver(
+        ([e]) => { window.FFStuck.set("page-top", e.boundingClientRect.top < 0); },
+        { threshold: [0, 1] }
+      );
+      io.observe(el);
+      return () => { io.disconnect(); if (window.FFStuck) window.FFStuck.set("page-top", false); };
+    }, []);
+
+    const go = (view) => { location.hash = view === "home" ? "#/" : "#/" + view; };
+
+    React.useEffect(() => {
+      const r = document.documentElement.style;
+      r.setProperty("--ff-glow", ATMOSPHERE[t.atmosphere] ?? 0.8);
+      r.setProperty("--iridescent", warmthGradient(t.warmth));
+      const sticky = t.headers === "Editorial";
+      r.setProperty("--ff-head-pos", sticky ? "sticky" : "static");
+      r.setProperty("--ff-head-w", sticky ? "100vw" : "auto");
+      r.setProperty("--ff-head-ml", sticky ? "calc(50% - 50vw)" : "0");
+    }, [t]);
+
+    const View = FF_VIEWS[route];
+    return (
+      <React.Fragment>
+        <div ref={topRef} aria-hidden="true" style={{ height: 0 }} />
+        <Nav route={route} go={go} />
+        <div key={route} className="ff-view">
+          <View />
+        </div>
+        <Footer />
+        <TweaksPanel title="Tweaks">
+          <TweakSection label="Atmosphere" />
+          <TweakRadio label="Glow" value={t.atmosphere}
+            options={["Minimal", "Balanced", "Luminous"]}
+            onChange={(v) => setTweak("atmosphere", v)} />
+          <TweakSection label="Gradient warmth" />
+          <TweakSlider label="Pink → Yellow" min={0} max={100} step={5}
+            value={t.warmth} onChange={(v) => setTweak("warmth", v)} />
+          <TweakSection label="Section headers" />
+          <TweakRadio label="Style" value={t.headers}
+            options={["Editorial", "Classic"]}
+            onChange={(v) => setTweak("headers", v)} />
+        </TweaksPanel>
+      </React.Fragment>
+    );
+  }
+  ReactDOM.createRoot(document.getElementById("root")).render(<Root />);
+</script>
+</body>
+</html>

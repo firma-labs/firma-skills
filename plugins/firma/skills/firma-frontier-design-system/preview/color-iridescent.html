@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:200px;box-sizing:border-box;
+       padding:0;display:flex;flex-direction:column;}
+  .band{flex:1;background:var(--iridescent);}
+  .legend{display:flex;gap:22px;padding:16px 24px;align-items:center;}
+  .legend span{display:flex;align-items:center;gap:8px;font-family:var(--font-mono);font-size:11px;color:var(--ink-2);letter-spacing:.04em;}
+  .chip{width:16px;height:16px;border-radius:5px;display:inline-block;box-shadow:inset 0 0 0 1px rgba(56,53,59,.08);}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);padding:14px 24px 0;}
+</style>
+</head>
+<body>
+  <span class="tag">Iridescent · warm/acid soul · peach → pink → yellow</span>
+  <div class="band"></div>
+  <div class="legend">
+    <span><i class="chip" style="background:var(--irid-pink)"></i>#ffa6c2</span>
+    <span><i class="chip" style="background:var(--irid-peach)"></i>#ffb9a3</span>
+    <span><i class="chip" style="background:var(--irid-rose)"></i>#ffc28f</span>
+    <span><i class="chip" style="background:var(--irid-yellow)"></i>#f7ff05</span>
+  </div>
+</body>
+</html>

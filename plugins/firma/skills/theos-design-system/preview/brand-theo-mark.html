@@ -1,0 +1,304 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>THEO mark · directions</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;padding:0;height:100%;font-family:var(--font-text);color:#1A1A1A;background:#F4F4F2;-webkit-font-smoothing:antialiased}
+  .page{position:relative;min-height:100%;padding:36px 40px 44px;box-sizing:border-box}
+
+  .head{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:26px}
+  .h1{font-family:var(--font-display);font-weight:700;font-size:28px;letter-spacing:-0.02em;line-height:1;margin:0}
+  .h1 .l{font-weight:300;opacity:.7}
+  .sub{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-family:var(--font-mono);color:rgba(26,26,26,.55);margin-top:8px}
+  .meta{font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-family:var(--font-mono);color:rgba(26,26,26,.55)}
+
+  .grid{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .card{position:relative;border-radius:20px;overflow:hidden;background:#FFFFFF;
+    border:1px solid rgba(26,26,26,0.06);
+    box-shadow:0 18px 40px -16px rgba(26,26,26,0.10), 0 4px 10px -4px rgba(26,26,26,0.05);
+    display:flex;flex-direction:column}
+
+  .stage{position:relative;height:200px;display:flex;align-items:center;justify-content:center;background:#FFFFFF;overflow:hidden}
+  .stage.dark{background:#3D3D3D}
+
+  /* THEO mark: a rounded-rectangle θ. Drawn as SVG.
+     viewBox 200×240. Outer rounded rect: x10..190, y10..230 → 180×220, rx=80.
+     Inner counter: x44..156, y40..200 → 112×160, rx=52.
+     Inner counter center: (100, 120). The bar fills the entire counter width.
+     The bar sits in a <g class="bar-track"> that is clipped to the inner counter so animations stay inside. */
+  .mark{display:inline-flex;align-items:center;justify-content:center;width:130px;height:160px;color:#3D3D3D}
+  .stage.dark .mark{color:#FFFFFF}
+  .mark svg{display:block;width:100%;height:100%}
+
+  /* ─── State animations on the bar (or whole mark) ─── */
+  /* 1 · REST · pulse — the bar gently fades up/down opacity, like breathing */
+  .mark.rest .bar-track{animation:pulseBar 1.8s ease-in-out infinite}
+  @keyframes pulseBar{
+    0%,100%{opacity:1; transform:scaleY(1)}
+    50%   {opacity:.55; transform:scaleY(0.7)}
+  }
+  .mark.rest .bar-track{transform-origin:center;transform-box:fill-box}
+
+  /* 2 · THINKING · the bar scans up and down inside the counter */
+  .mark.thinking .bar-track{animation:scanBar 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes scanBar{
+    0%,100%{transform:translateY(-50px)}
+    50%   {transform:translateY(50px)}
+  }
+
+  /* 3 · YES · a nod — bar travels down, back up, down again, up. Like a head saying "yes". */
+  .mark.yes .bar-track{animation:nodBar 1.4s cubic-bezier(.5,0,.5,1) infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes nodBar{
+    0%,100%{transform:translateY(0)}
+    20%   {transform:translateY(30px)}
+    40%   {transform:translateY(-8px)}
+    60%   {transform:translateY(30px)}
+    80%   {transform:translateY(-8px)}
+  }
+
+  /* 4 · NO · bar shakes left ↔ right like a head shake. Wider amplitude. */
+  .mark.no .bar-track{animation:shakeBar 0.55s cubic-bezier(.5,0,.5,1) infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes shakeBar{
+    0%,100%{transform:translateX(0)}
+    20%   {transform:translateX(-34px)}
+    40%   {transform:translateX(28px)}
+    60%   {transform:translateX(-28px)}
+    80%   {transform:translateX(34px)}
+  }
+
+  /* 5 · EXCITED · bar spins inside the counter (clipped, so it stays inside).
+     The bar in the excited card is hard-coded WIDER (200 vs 130) directly in markup, so its endpoints reach
+     the counter wall at every rotation angle (counter max-radius from center ≈ 97.6 → need length ≥ 196). */
+  .mark.excited .bar-track{animation:spinBar 1.1s linear infinite;transform-box:fill-box;transform-origin:center}
+  @keyframes spinBar{
+    from{transform:rotate(0deg)}
+    to  {transform:rotate(360deg)}
+  }
+
+  .body{position:relative;padding:14px 16px 16px;border-top:1px solid rgba(26,26,26,0.06)}
+  .name{font-family:var(--font-display);font-weight:700;font-size:14px;letter-spacing:-0.01em;margin:0 0 4px}
+  .desc{font-size:11.5px;line-height:1.45;color:rgba(26,26,26,.7);margin:0}
+  .tag{display:inline-block;margin-top:9px;font-size:9px;font-weight:700;letter-spacing:.10em;text-transform:uppercase;font-family:var(--font-mono);color:rgba(26,26,26,.5);
+    padding:4px 7px;border-radius:9999px;background:rgba(26,26,26,0.04);border:1px solid rgba(26,26,26,0.06)}
+
+  /* ─── Naming + scale strip ─── */
+  .construction{position:relative;z-index:1;margin-top:22px;padding:22px;border-radius:18px;
+    background:#FFFFFF;border:1px solid rgba(26,26,26,0.06);
+    box-shadow:0 12px 28px -16px rgba(26,26,26,0.08);
+    display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:center}
+  .const-head{margin-bottom:10px;display:flex;justify-content:space-between;align-items:baseline}
+
+  .scale-row{display:flex;align-items:flex-end;gap:18px}
+  .scale-cell{display:flex;flex-direction:column;align-items:center;gap:6px}
+  .scale-num{font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(26,26,26,.5);font-family:var(--font-mono)}
+  .scale-mark{display:inline-flex;align-items:center;justify-content:center;color:#3D3D3D}
+  .scale-mark svg{display:block;width:100%;height:100%}
+
+  .notes{position:relative;z-index:1;margin-top:14px;font-size:10.5px;color:rgba(26,26,26,.55);font-family:var(--font-mono);line-height:1.6;display:flex;gap:18px;flex-wrap:wrap}
+  .notes b{color:#1A1A1A;font-weight:700}
+</style></head><body>
+<div class="page">
+
+  <!-- Each card's SVG defines its own clipPath inline (avoids userSpaceOnUse scoping issues across SVGs) -->
+  <div class="head">
+    <div>
+      <h1 class="h1"><span class="l">a mark for </span>THEO</h1>
+      <div class="sub">the θ · with a bar through the counter · five states of presence</div>
+    </div>
+    <div class="meta">5 states · animated</div>
+  </div>
+
+  <div class="grid">
+
+    <!-- 1 · REST -->
+    <div class="card">
+      <div class="stage">
+        <div class="mark rest" aria-label="rest · pulse">
+          <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-1"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+            <!-- Outer rounded-rect minus inner counter (even-odd fill) -->
+            <path fill-rule="evenodd" d="
+              M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z
+              M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+            <!-- Bar — fills the entire inner counter width, clipped to the counter shape -->
+            <g clip-path="url(#theo-counter-1)">
+              <g class="bar-track">
+                <rect x="35" y="114" width="130" height="12"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="body">
+        <h3 class="name">01 · Rest</h3>
+        <p class="desc">A slow breath — the bar softens and returns. THEO is here, breathing.</p>
+        <span class="tag">pulse · 1.8s</span>
+      </div>
+    </div>
+
+    <!-- 2 · THINKING -->
+    <div class="card">
+      <div class="stage">
+        <div class="mark thinking" aria-label="thinking · scan">
+          <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-2"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+            <path fill-rule="evenodd" d="
+              M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z
+              M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+            <g clip-path="url(#theo-counter-2)">
+              <g class="bar-track">
+                <rect x="35" y="114" width="130" height="12"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="body">
+        <h3 class="name">02 · Thinking</h3>
+        <p class="desc">The bar scans up and down inside the counter — a soft copier sweep. Parsing.</p>
+        <span class="tag">scan · 2.4s</span>
+      </div>
+    </div>
+
+    <!-- 3 · YES -->
+    <div class="card">
+      <div class="stage">
+        <div class="mark yes" aria-label="yes · nod">
+          <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-3"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+            <path fill-rule="evenodd" d="
+              M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z
+              M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+            <g clip-path="url(#theo-counter-3)">
+              <g class="bar-track">
+                <rect x="35" y="114" width="130" height="12"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="body">
+        <h3 class="name">03 · Yes</h3>
+        <p class="desc">The bar nods down and up, down and up — affirmation, agreement, lock-in.</p>
+        <span class="tag">nod · 1.4s</span>
+      </div>
+    </div>
+
+    <!-- 4 · NO -->
+    <div class="card">
+      <div class="stage">
+        <div class="mark no" aria-label="no · shake">
+          <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-4"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+            <path fill-rule="evenodd" d="
+              M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z
+              M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+            <g clip-path="url(#theo-counter-4)">
+              <g class="bar-track">
+                <rect x="35" y="114" width="130" height="12"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="body">
+        <h3 class="name">04 · No</h3>
+        <p class="desc">The bar shakes left ↔ right — refusal, error caught, "let me try again."</p>
+        <span class="tag">shake · 0.55s</span>
+      </div>
+    </div>
+
+    <!-- 5 · EXCITED -->
+    <div class="card">
+      <div class="stage dark">
+        <div class="mark excited" aria-label="excited · spin">
+          <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-5"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+            <path fill-rule="evenodd" d="
+              M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z
+              M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+            <g clip-path="url(#theo-counter-5)">
+              <g class="bar-track">
+                <rect x="0" y="114" width="200" height="12"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="body">
+        <h3 class="name">05 · Excited</h3>
+        <p class="desc">The bar spins through the counter — a delighted whirl when something lands.</p>
+        <span class="tag">spin · 1.1s</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Naming + scale strip -->
+  <div class="construction">
+    <div>
+      <div class="const-head">
+        <div class="meta">Naming</div>
+        <div class="meta" style="opacity:.5">case rules</div>
+      </div>
+      <div style="display:flex;gap:36px;align-items:baseline;padding:8px 0 14px">
+        <div>
+          <div style="font-family:'Supreme',system-ui,sans-serif;font-weight:700;font-size:56px;letter-spacing:-0.02em;color:#1A1A1A;line-height:1">theo</div>
+          <div class="meta" style="margin-top:8px;opacity:.7">the agent · always lowercase</div>
+        </div>
+        <div style="width:1px;align-self:stretch;background:rgba(26,26,26,0.10)"></div>
+        <div>
+          <div style="font-family:'Supreme',system-ui,sans-serif;font-weight:700;font-size:56px;letter-spacing:-0.02em;color:#1A1A1A;line-height:1">THEOS</div>
+          <div class="meta" style="margin-top:8px;opacity:.7">the platform · always uppercase</div>
+        </div>
+      </div>
+      <div class="notes" style="margin-top:0">
+        <span><b>Mark</b> · stands alone · the bar lives strictly inside the inner counter</span>
+      </div>
+    </div>
+    <div>
+      <div class="const-head">
+        <div class="meta">Scale</div>
+        <div class="meta" style="opacity:.5">16 · 24 · 40 · 64 px</div>
+      </div>
+      <div class="scale-row">
+        <div class="scale-cell">
+          <div class="scale-mark" style="width:14px;height:17px">
+            <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-6"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+              <path fill-rule="evenodd" d="M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+              <g clip-path="url(#theo-counter-6)"><rect x="35" y="114" width="130" height="12"/></g>
+            </svg>
+          </div>
+          <div class="scale-num">16</div>
+        </div>
+        <div class="scale-cell">
+          <div class="scale-mark" style="width:20px;height:24px">
+            <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-7"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+              <path fill-rule="evenodd" d="M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+              <g clip-path="url(#theo-counter-7)"><rect x="35" y="114" width="130" height="12"/></g>
+            </svg>
+          </div>
+          <div class="scale-num">24</div>
+        </div>
+        <div class="scale-cell">
+          <div class="scale-mark" style="width:33px;height:40px">
+            <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-8"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+              <path fill-rule="evenodd" d="M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+              <g clip-path="url(#theo-counter-8)"><rect x="35" y="114" width="130" height="12"/></g>
+            </svg>
+          </div>
+          <div class="scale-num">40</div>
+        </div>
+        <div class="scale-cell">
+          <div class="scale-mark" style="width:53px;height:64px">
+            <svg viewBox="0 0 200 240" fill="currentColor"><defs><clipPath id="theo-counter-9"><rect x="44" y="40" width="112" height="160" rx="52" ry="52"/></clipPath></defs>
+              <path fill-rule="evenodd" d="M 90 10 H 110 A 80 80 0 0 1 190 90 V 150 A 80 80 0 0 1 110 230 H 90 A 80 80 0 0 1 10 150 V 90 A 80 80 0 0 1 90 10 Z M 96 40 H 104 A 52 52 0 0 1 156 92 V 148 A 52 52 0 0 1 104 200 H 96 A 52 52 0 0 1 44 148 V 92 A 52 52 0 0 1 96 40 Z"/>
+              <g clip-path="url(#theo-counter-9)"><rect x="35" y="114" width="130" height="12"/></g>
+            </svg>
+          </div>
+          <div class="scale-num">64</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notes">
+    <span><b>Etymology</b> · the θ of THEO · the θ of θεός · the O of Origin</span>
+    <span><b>Bar</b> · a horizon line · the agent's gaze · the operator's I/O</span>
+  </div>
+</div>
+</body></html>

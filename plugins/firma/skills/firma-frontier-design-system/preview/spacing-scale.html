@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;height:170px;box-sizing:border-box;
+       padding:28px 32px;display:flex;flex-direction:column;gap:16px;justify-content:center;}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);}
+  .row{display:flex;gap:8px;align-items:flex-end;}
+  .u{background:var(--ink);border-radius:3px;}
+  .u span{display:block;font-family:var(--font-mono);font-size:10px;color:var(--ink-2);text-align:center;margin-top:6px;}
+</style>
+</head>
+<body>
+  <span class="tag">Spacing scale · 8pt base</span>
+  <div class="row">
+    <div><div class="u" style="width:4px;height:4px"></div><span>4</span></div>
+    <div><div class="u" style="width:8px;height:8px"></div><span>8</span></div>
+    <div><div class="u" style="width:12px;height:12px"></div><span>12</span></div>
+    <div><div class="u" style="width:16px;height:16px"></div><span>16</span></div>
+    <div><div class="u" style="width:24px;height:24px"></div><span>24</span></div>
+    <div><div class="u" style="width:32px;height:32px"></div><span>32</span></div>
+    <div><div class="u" style="width:48px;height:48px"></div><span>48</span></div>
+    <div><div class="u" style="width:64px;height:64px"></div><span>64</span></div>
+    <div><div class="u" style="width:96px;height:64px;opacity:.5"></div><span>96</span></div>
+  </div>
+</body>
+</html>

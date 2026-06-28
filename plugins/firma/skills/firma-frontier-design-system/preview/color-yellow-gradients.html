@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;box-sizing:border-box;padding:26px 28px;
+       display:flex;flex-direction:column;gap:18px;}
+  .row{display:flex;align-items:center;gap:18px;}
+  .bar{height:64px;border-radius:14px;flex:1;box-shadow:0 1px 3px rgba(56,53,59,.08);}
+  .meta{width:210px;flex:none;}
+  .name{font-family:var(--font-body);font-weight:700;font-size:15px;letter-spacing:-.02em;color:var(--ink);margin-bottom:3px;}
+  .stops{font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;color:var(--ink-3);text-transform:uppercase;line-height:1.5;}
+  .use{font-family:var(--font-body);font-size:12px;color:var(--ink-2);margin-top:4px;line-height:1.35;}
+</style>
+</head>
+<body>
+  <!-- 1. Analogous warm melt — yellow into the iridescent warm end -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Solar flare</div>
+      <div class="stops">F7FF05 · FFB9A3 · FFA6C2</div>
+      <div class="use">Yellow into the brand's warm iridescent. Energetic but on-family.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#f7ff05 0%,#ffce6e 38%,#ffb9a3 68%,#ffa6c2 100%)"></div>
+  </div>
+
+  <!-- 2. Full spectrum — yellow added to the existing 3-stop iridescent -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Spectrum</div>
+      <div class="stops">F7FF05 · FF855C · F6718D · 84A7F7</div>
+      <div class="use">Your current iridescent with yellow leading. Maximal, hero-scale.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#f7ff05 0%,#ff855c 34%,#f6718d 64%,#84a7f7 100%)"></div>
+  </div>
+
+  <!-- 3. Acid lime — analogous cool, very "tech/frontier" -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Voltage</div>
+      <div class="stops">F7FF05 · 7CF59B · 4ED8C4</div>
+      <div class="use">Analogous yellow→green→teal. Electric, precise, futuristic.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#f7ff05 0%,#9bf57c 46%,#4ed8c4 100%)"></div>
+  </div>
+
+  <!-- 4. High contrast — yellow to charcoal ink -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Eclipse</div>
+      <div class="stops">F7FF05 · 38353B</div>
+      <div class="use">Yellow into brand ink. Bold, graphic, high-impact. No middle muddiness.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#f7ff05 0%,#9a9a2e 50%,#38353b 100%)"></div>
+  </div>
+
+  <!-- 5. Airy wash — subtle tint, mostly white -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Daybreak</div>
+      <div class="stops">FBFFC2 · FFFFFF · EEF1FF</div>
+      <div class="use">Faint tint wash for backgrounds. The quiet, premium use.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#fbffc2 0%,#ffffff 52%,#eef1ff 100%)"></div>
+  </div>
+
+  <!-- 6. Complementary punch — yellow to electric blue -->
+  <div class="row">
+    <div class="meta">
+      <div class="name">Charge</div>
+      <div class="stops">F7FF05 · 84A7F7 · 1F4DFF</div>
+      <div class="use">Yellow to brand blue. Punchy complementary tension — use sparingly.</div>
+    </div>
+    <div class="bar" style="background:linear-gradient(100deg,#f7ff05 0%,#cfe0a0 30%,#84a7f7 70%,#1f4dff 100%)"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* THEOS — colors_and_type.css · DARK LIQUID GLASS (indigo-night ambient field) */
+
+/* ─── Supreme (THEOS type — single family, all weights) ─────────── */
+@font-face { font-family:'Supreme'; font-weight:100; font-style:normal;  src:url('fonts/Supreme-Thin.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:200; font-style:normal;  src:url('fonts/Supreme-Extralight.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:300; font-style:normal;  src:url('fonts/Supreme-Light.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:400; font-style:normal;  src:url('fonts/Supreme-Regular.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:400; font-style:italic;  src:url('fonts/Supreme-Italic.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:500; font-style:normal;  src:url('fonts/Supreme-Medium.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:500; font-style:italic;  src:url('fonts/Supreme-MediumItalic.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:700; font-style:normal;  src:url('fonts/Supreme-Bold.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:700; font-style:italic;  src:url('fonts/Supreme-BoldItalic.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:800; font-style:normal;  src:url('fonts/Supreme-Extrabold.otf') format('opentype'); font-display:swap }
+@font-face { font-family:'Supreme'; font-weight:800; font-style:italic;  src:url('fonts/Supreme-ExtraboldItalic.otf') format('opentype'); font-display:swap }
+
+:root {
+  /* Ambient field — neutral off-black (matches the THEOS mark) */
+  --ambient-top:    #1A1A1A;
+  --ambient-bottom: #1A1A1A;
+  --ambient-warm-top:    #1A1A1A;
+  --ambient-warm-bottom: #2A2A2A;
+
+  /* Foreground (on dark) */
+  --fg-1: rgba(255,255,255,0.96);
+  --fg-2: rgba(255,255,255,0.62);
+  --fg-3: rgba(255,255,255,0.32);
+  --fg-4: rgba(255,255,255,0.18);
+
+  /* Ink (only inside light prompts) */
+  --ink-1: #1A1A1A;
+  --ink-2: rgba(26,26,26,0.66);
+  --ink-3: rgba(26,26,26,0.40);
+
+  /* Agent palette — neutral monochrome */
+  --agent-ink:      #1A1A1A;
+  --agent-graphite: #3F3F3F;
+  --agent-silver:   #8A8A8A;
+  --agent-pearl:    #E0E0E0;
+  --agent-mark:     #FFFFFF;
+
+  /* Single accent — use sparingly for alerts / breaking the monochrome */
+  --signal: #FF073A;
+  --semantic-destruct:#FF073A;
+  --semantic-confirm: #30D158;
+  --semantic-warn:    #FFD60A;
+
+  /* Glass — translucent whites over dark field */
+  --glass-recessed-tint: rgba(255,255,255,0.06);
+  --glass-thin-tint:     rgba(255,255,255,0.10);
+  --glass-regular-tint:  rgba(255,255,255,0.14);
+  --glass-thick-tint:    rgba(255,255,255,0.22);
+  --glass-recessed-blur: 24px;
+  --glass-thin-blur:     36px;
+  --glass-regular-blur:  50px;
+  --glass-thick-blur:    80px;
+
+  --glass-rim:    inset 0 1px 0 rgba(255,255,255,0.30), inset 0 -1px 0 rgba(0,0,0,0.28);
+  --glass-border: 1px solid rgba(255,255,255,0.10);
+  --glass-shadow: 0 24px 64px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.18);
+  --glass-shadow-lift: 0 32px 80px rgba(0,0,0,0.50), 0 4px 12px rgba(0,0,0,0.30);
+
+  /* Type families — Supreme is the sole THEOS family (text + display) */
+  --font-display: 'Supreme', system-ui, sans-serif;  /* logo, hero, big numerals */
+  --font-text:    'Supreme', system-ui, sans-serif;  /* UI, prose, labels */
+  --font-mono:    ui-monospace,'SF Mono',Menlo,monospace;          /* gesture chips, time, telemetry */
+
+  --t-caption: 11px; --t-footnote: 13px; --t-body: 15px; --t-callout: 17px;
+  --t-title3: 19px; --t-title2: 22px; --t-title1: 28px; --t-large: 38px; --t-hero: 64px;
+
+  --w-thin: 100; --w-light: 300; --w-regular: 400; --w-medium: 500; --w-semibold: 600; --w-bold: 700; --w-extrabold: 800; --w-heavy: 950;
+  --track-tight: -0.02em; --track-upper: 0.08em;
+  --lh-display: 1.0; --lh-ui: 1.25; --lh-prose: 1.45;
+
+  --r-chip: 12px; --r-card: 20px; --r-rail: 34px; --r-platter: 46px; --r-pill: 9999px;
+
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 20px; --s-6: 24px; --s-8: 32px; --s-10: 48px; --s-12: 64px;
+
+  --ease-vision: cubic-bezier(0.32,0.72,0,1);
+  --d-fast: 180ms; --d-base: 320ms; --d-morph: 480ms;
+}
+
+html,body { font-family: var(--font-text); font-size: var(--t-body); color: var(--fg-1); -webkit-font-smoothing: antialiased; }
+
+.t-hero    { font-family: var(--font-display); font-size: var(--t-hero);    font-weight: 700; letter-spacing: var(--track-tight); line-height: var(--lh-display); }
+.t-large   { font-family: var(--font-display); font-size: var(--t-large);   font-weight: 700; letter-spacing: var(--track-tight); line-height: var(--lh-display); }
+.t-title1  { font-family: var(--font-display); font-size: var(--t-title1);  font-weight: 700; letter-spacing: var(--track-tight); line-height: var(--lh-display); }
+.t-title2  { font-size: var(--t-title2);  font-weight: 600; line-height: var(--lh-ui); }
+.t-title3  { font-size: var(--t-title3);  font-weight: 600; line-height: var(--lh-ui); }
+.t-callout { font-size: var(--t-callout); font-weight: 500; line-height: var(--lh-ui); }
+.t-body    { font-size: var(--t-body);    font-weight: 400; line-height: var(--lh-ui); }
+.t-footnote{ font-size: var(--t-footnote);font-weight: 500; color: var(--fg-2); }
+.t-caption { font-family: var(--font-mono); font-size: var(--t-caption); font-weight: 600; color: var(--fg-2); text-transform: uppercase; letter-spacing: var(--track-upper); }
+
+/* Ambient field — neutral off-black (matches the THEOS mark) */
+.ambient-field {
+  position: relative;
+  background: #1A1A1A;
+  overflow: hidden;
+  color: var(--fg-1);
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0}
+  body{background:var(--canvas);width:700px;min-height:180px;box-sizing:border-box;
+       padding:28px 32px;display:flex;flex-direction:column;gap:16px;justify-content:center;}
+  .tag{font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);}
+  .pills{display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+  .pill{padding:14px 28px;font-family:var(--font-body);font-weight:500;
+        font-size:20px;letter-spacing:-.02em;box-shadow:var(--shadow-pill);border:1px solid;
+        cursor:pointer;transition:background .14s ease,color .14s ease,border-color .14s ease;}
+</style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+
+  <script type="text/babel">
+    const { useState } = React;
+    const LABELS = ["network states", "deeptech", "natural reserves", "stewardship"];
+
+    const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "active": "deeptech",
+      "radius": 999,
+      "size": 22
+    }/*EDITMODE-END*/;
+
+    function Chips() {
+      const [t, setTweak] = useTweaks(TWEAK_DEFAULTS);
+      const [active, setActive] = useState(t.active);
+      // keep local click-state in sync when the tweak changes
+      React.useEffect(() => setActive(t.active), [t.active]);
+
+      const chip = (label) => {
+        const on = label === active;
+        const style = {
+          borderRadius: t.radius, fontSize: t.size, padding: `${Math.round(t.size*0.7)}px ${Math.round(t.size*1.4)}px`,
+          background: on ? "var(--chip-yellow)" : "var(--chip-cream)",
+          color: on ? "var(--chip-yellow-ink)" : "var(--chip-cream-ink)",
+          borderColor: on ? "var(--chip-yellow-line)" : "var(--chip-cream-line)",
+        };
+        return (
+          <span key={label} className="pill" style={style}
+            onClick={() => { setActive(label); setTweak('active', label); }}>{label}</span>
+        );
+      };
+
+      return (
+        <React.Fragment>
+          <span className="tag">Category chip fills · cream #FAF9F5 + acid-yellow (active)</span>
+          <div className="pills">{LABELS.map(chip)}</div>
+
+          <TweaksPanel title="Tweaks">
+            <TweakSection label="Chips" />
+            <TweakSelect label="Active chip" value={t.active}
+              options={LABELS} onChange={(v) => setTweak('active', v)} />
+            <TweakSlider label="Corner radius" min={6} max={999} step={1}
+              value={t.radius} onChange={(v) => setTweak('radius', v)} />
+            <TweakSlider label="Text size" min={14} max={24} step={1}
+              value={t.size} onChange={(v) => setTweak('size', v)} />
+          </TweaksPanel>
+        </React.Fragment>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<Chips />);
+  </script>
+</body>
+</html>

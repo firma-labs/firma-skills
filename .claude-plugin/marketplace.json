@@ -1,0 +1,32 @@
+{
+  "name": "firma-skills",
+  "owner": {
+    "name": "Firma Labs",
+    "url": "https://github.com/firma-labs"
+  },
+  "metadata": {
+    "description": "Firma Labs design systems and agents for Claude Code and compatible agents",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "firma",
+      "description": "Firma Labs toolkit — design-system skills (Firmamint, THEOS, Frontier/Onym, Motion) plus brand and vault agents. Install once to get the full Firma design + branding toolkit in any project.",
+      "author": {
+        "name": "Firma Labs",
+        "url": "https://github.com/firma-labs"
+      },
+      "homepage": "https://github.com/firma-labs/firma-skills",
+      "tags": [
+        "firma",
+        "design-system",
+        "branding",
+        "firmamint",
+        "theos",
+        "frontier",
+        "onym"
+      ],
+      "source": "./plugins/firma"
+    }
+  ]
+}

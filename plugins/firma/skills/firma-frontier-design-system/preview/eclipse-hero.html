@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eclipse — black → yellow hero</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:#0c0b0d;color:#fff;font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+
+  /* ── Fixed header — white, sits above the eclipse ─────────────────────── */
+  nav{position:fixed;top:0;left:0;right:0;height:66px;z-index:50;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 clamp(20px,5vw,56px);
+      background:rgba(255,255,255,.9);
+      backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+      border-bottom:1px solid transparent;
+      transition:border-color .3s var(--ease);}
+  nav.scrolled{border-bottom-color:var(--ink-line);}
+  .lock{display:flex;align-items:center;gap:.2em;font-size:30px;}
+  .lock img{width:.92em;height:.92em;display:block;}
+  .lock b{font-family:var(--font-mark);font-weight:700;font-size:20px;letter-spacing:-.047em;
+          text-transform:lowercase;font-feature-settings:"liga" 0;color:var(--ink);}
+  .links{display:flex;gap:30px;}
+  .links a{font-family:var(--font-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+           color:var(--ink-2);text-decoration:none;transition:color .15s;}
+  .links a:hover{color:var(--ink);}
+  .cta{font-family:var(--font-body);font-weight:500;font-size:14px;background:var(--accent);color:var(--accent-ink);
+       border:none;border-radius:var(--r-pill);padding:10px 20px;cursor:pointer;}
+
+  /* ── Eclipse hero — black (top) → acid yellow (bottom) ─────────────────── */
+  .eclipse{min-height:100svh;
+    background:linear-gradient(180deg,
+      #0c0b0d 0%,
+      #0c0b0d 14%,
+      #1a1813 36%,
+      #4a4410 58%,
+      #b4bc06 79%,
+      #f7ff05 100%);
+    display:flex;flex-direction:column;justify-content:center;
+    padding:150px clamp(20px,5vw,56px) 90px;}
+  .eclipse .inner{max-width:1180px;margin:0 auto;width:100%;}
+  .kick{font-family:var(--font-mono);font-size:13px;letter-spacing:.2em;text-transform:uppercase;
+        color:rgba(255,255,255,.55);margin-bottom:28px;}
+  h1{font-family:var(--font-display);font-weight:700;letter-spacing:-.03em;line-height:1.02;
+     font-size:clamp(48px,9vw,128px);margin:0;max-width:14ch;
+     /* text starts white up top, but the headline sits mid-gradient — keep it readable */
+     color:#fff;text-shadow:0 2px 40px rgba(0,0,0,.35);}
+  .sub{font-size:clamp(18px,2.2vw,23px);line-height:1.45;max-width:46ch;margin:30px 0 0;
+       color:rgba(255,255,255,.72);font-weight:400;}
+
+  .scrollhint{font-family:var(--font-mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+              color:rgba(20,18,10,.6);margin-top:54px;display:flex;align-items:center;gap:10px;}
+
+  /* ── Section after the eclipse (back to light) to show the header state ── */
+  .after{background:var(--canvas);color:var(--ink);min-height:90vh;
+         padding:clamp(70px,10vw,140px) clamp(20px,5vw,56px);}
+  .after .inner{max-width:1180px;margin:0 auto;}
+  .after h2{font-family:var(--font-display);font-weight:700;font-size:clamp(32px,4.5vw,60px);
+            letter-spacing:-.03em;margin:0 0 20px;max-width:18ch;}
+  .after p{font-size:20px;line-height:1.5;color:var(--ink-2);max-width:56ch;}
+</style>
+</head>
+<body>
+  <nav id="nav">
+    <a class="lock" href="#"><img src="../assets/orb-acid-smooth.png" alt=""><b>firma frontier</b></a>
+    <div class="links">
+      <a href="#">What we back</a>
+      <a href="#">Worldview</a>
+      <a href="#">Approach</a>
+    </div>
+    <button class="cta">Get in touch</button>
+  </nav>
+
+  <header class="eclipse">
+    <div class="inner">
+      <div class="kick">Firma Frontier · Conviction capital for the frontier</div>
+      <h1>Capital for a new earth.</h1>
+      <p class="sub">We back the founders building what the world will depend on — energy, intelligence, sovereignty — at the scale the moment demands.</p>
+      <div class="scrollhint">↓ &nbsp; Scroll</div>
+    </div>
+  </header>
+
+  <section class="after">
+    <div class="inner">
+      <h2>A white header sits cleanly above the eclipse.</h2>
+      <p>The white blurred header reads against the black crown of the eclipse at the top of the page, and keeps working as you scroll onto light content below — gaining only a quiet hairline once you leave the hero.</p>
+    </div>
+  </section>
+
+  <script>
+    const nav = document.getElementById('nav');
+    const onScroll = () => {
+      // switch to "scrolled" state once the eclipse hero is mostly behind us
+      nav.classList.toggle('scrolled', window.scrollY > window.innerHeight * 0.72);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, {passive:true});
+  </script>
+</body>
+</html>

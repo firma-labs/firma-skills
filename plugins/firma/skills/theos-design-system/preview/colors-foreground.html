@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Foreground</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%}
+  .stage{position:relative;height:100%;background:#F6F6F4}
+  .stage::before{content:"";position:absolute;inset:0;background:radial-gradient(50% 60% at 30% 30%,#EFEDE7,transparent 70%),radial-gradient(50% 60% at 80% 70%,#DCE2EA,transparent 70%);filter:blur(40px)}
+  .col{position:relative;display:flex;flex-direction:column;gap:8px;padding:18px;height:100%;box-sizing:border-box;justify-content:center}
+  .row{display:flex;align-items:center;gap:14px}
+  .sw{width:36px;height:36px;border-radius:10px;border:1px solid rgba(11,15,20,.06);box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+  .name{font-size:13px;font-weight:700;color:#0B0F14;width:80px}
+  .meta{font-size:11px;color:rgba(11,15,20,.5);font-family:ui-monospace,monospace}
+  .demo{font-size:14px;flex:1;text-align:right}
+</style></head><body>
+<div class="stage"><div class="col">
+  <div class="row"><div class="sw" style="background:#0B0F14"></div><div class="name">ink-1</div><div class="meta">#0B0F14</div><div class="demo" style="color:#0B0F14">Primary</div></div>
+  <div class="row"><div class="sw" style="background:rgba(11,15,20,.66)"></div><div class="name">ink-2</div><div class="meta">66%</div><div class="demo" style="color:rgba(11,15,20,.66)">Secondary</div></div>
+  <div class="row"><div class="sw" style="background:rgba(11,15,20,.40)"></div><div class="name">ink-3</div><div class="meta">40%</div><div class="demo" style="color:rgba(11,15,20,.40)">Tertiary</div></div>
+  <div class="row"><div class="sw" style="background:rgba(11,15,20,.18)"></div><div class="name">ink-4</div><div class="meta">18%</div><div class="demo" style="color:rgba(11,15,20,.18)">Disabled</div></div>
+</div></div>
+</body></html>

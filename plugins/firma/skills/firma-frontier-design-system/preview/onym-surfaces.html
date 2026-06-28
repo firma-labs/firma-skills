@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../onym.css">
+<style>
+  html,body{margin:0}
+  body{background:#0e0d10;width:700px;min-height:440px;box-sizing:border-box;
+       padding:26px;display:flex;align-items:center;justify-content:center;
+       font-family:var(--font-body);}
+
+  /* ── Window (surface-1) ─────────────────────────────────────────────── */
+  .win{width:100%;max-width:648px;height:388px;border-radius:16px;overflow:hidden;
+       background:var(--d-surface-1);border:1px solid var(--d-hairline-2);
+       box-shadow:var(--d-shadow-pop);display:grid;grid-template-columns:188px 1fr;}
+
+  /* sidebar sits on the window surface, very subtly darker */
+  .side{background:var(--d-surface-0);border-right:1px solid var(--d-hairline);
+        padding:16px 12px;display:flex;flex-direction:column;gap:3px;}
+  .traffic{display:flex;gap:8px;padding:2px 4px 14px;}
+  .traffic i{width:11px;height:11px;border-radius:50%;background:#46434b;display:block;}
+  .sgrp{font-family:var(--font-mono);font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+        color:var(--d-ink-3);padding:14px 8px 6px;}
+  .row{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;
+       font-size:13.5px;letter-spacing:-.01em;color:var(--d-ink-2);cursor:pointer;
+       transition:background .14s ease,color .14s ease;}
+  .row .dot{width:15px;height:15px;border-radius:4px;background:var(--d-surface-3);flex:none;}
+  .row:hover{background:var(--d-hover);color:var(--d-ink);}
+  .row.sel{background:var(--d-selected);color:var(--d-ink);}
+  .row.sel .dot{background:#6f6a78;}
+
+  /* ── Content area ───────────────────────────────────────────────────── */
+  .main{padding:18px 20px;display:flex;flex-direction:column;min-width:0;}
+  .bar{display:flex;align-items:center;gap:12px;margin-bottom:18px;}
+  .nav{display:flex;gap:6px;}
+  .nav b{width:28px;height:28px;border-radius:8px;background:var(--d-surface-3);
+         display:flex;align-items:center;justify-content:center;color:var(--d-ink-2);font-size:14px;border:1px solid var(--d-hairline);}
+  .title{font-family:var(--font-mark);font-weight:700;font-size:18px;letter-spacing:-.03em;color:var(--d-ink);
+          font-feature-settings:"liga" 0;}
+
+  /* a card ON the window (surface-2) that holds cards-in-cards (surface-3) */
+  .panel{background:var(--d-surface-2);border:1px solid var(--d-hairline);border-radius:12px;
+         padding:14px;flex:1;display:flex;flex-direction:column;gap:10px;box-shadow:var(--d-shadow);}
+  .panel-h{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;
+           color:var(--d-ink-3);display:flex;justify-content:space-between;}
+  .cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+  .c{background:var(--d-surface-3);border:1px solid var(--d-hairline);border-radius:10px;padding:12px 13px;
+     transition:background .14s ease,border-color .14s ease,transform .14s ease;cursor:pointer;}
+  .c:hover{background:var(--d-surface-4);transform:translateY(-1px);}
+  .c.sel{background:var(--d-selected);border-color:var(--d-hairline-2);}
+  .c .k{font-family:var(--font-mono);font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--d-ink-3);}
+  .c .v{font-family:var(--font-mark);font-weight:700;font-size:20px;letter-spacing:-.03em;color:var(--d-ink);margin-top:7px;
+        font-feature-settings:"liga" 0;}
+  .c .s{font-size:11.5px;color:var(--d-ink-2);margin-top:2px;}
+  .legend{display:flex;gap:14px;flex-wrap:wrap;margin-top:2px;}
+  .legend span{font-family:var(--font-mono);font-size:9px;letter-spacing:.06em;color:var(--d-ink-3);display:flex;align-items:center;gap:6px;}
+  .legend i{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid var(--d-hairline);}
+</style>
+</head>
+<body>
+  <div class="win">
+    <!-- sidebar (surface-0) -->
+    <aside class="side">
+      <div class="traffic"><i></i><i></i><i></i></div>
+      <div class="row"><span class="dot"></span>Recents</div>
+      <div class="row"><span class="dot"></span>Shared</div>
+      <div class="sgrp">Funds</div>
+      <div class="row sel"><span class="dot"></span>Onym Capital</div>
+      <div class="row"><span class="dot"></span>Firma Frontier</div>
+      <div class="row"><span class="dot"></span>Firma Terra</div>
+    </aside>
+
+    <!-- content -->
+    <section class="main">
+      <div class="bar">
+        <div class="nav"><b>‹</b><b>›</b></div>
+        <span class="title">portfolio</span>
+      </div>
+      <div class="panel">
+        <div class="panel-h"><span>Surface 2 · panel</span><span>4 items</span></div>
+        <div class="cards">
+          <div class="c sel"><div class="k">Energy</div><div class="v">Selected</div><div class="s">surface-3 · highlighted</div></div>
+          <div class="c"><div class="k">Infrastructure</div><div class="v">Resting</div><div class="s">surface-3 · default</div></div>
+          <div class="c"><div class="k">Compute</div><div class="v">Hover me</div><div class="s">→ surface-4 on hover</div></div>
+          <div class="c"><div class="k">Land</div><div class="v">Resting</div><div class="s">surface-3 · default</div></div>
+        </div>
+        <div class="legend">
+          <span><i style="background:var(--d-surface-1)"></i>window</span>
+          <span><i style="background:var(--d-surface-2)"></i>panel</span>
+          <span><i style="background:var(--d-surface-3)"></i>card</span>
+          <span><i style="background:var(--d-surface-4)"></i>hover</span>
+          <span><i style="background:var(--d-selected)"></i>selected</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

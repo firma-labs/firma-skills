@@ -1,0 +1,218 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Glass cards</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  html,body{margin:0;height:100%;font-family:var(--font-text);-webkit-font-smoothing:antialiased;color:#F4F5F7}
+
+  /* Saturated/painterly stage so the luminosity glass reads as desaturating */
+  .stage{
+    position:relative;height:100%;overflow:hidden;
+    background:
+      radial-gradient(45% 55% at 18% 22%, #F4B25A 0%, transparent 65%),
+      radial-gradient(40% 50% at 82% 30%, #E66565 0%, transparent 65%),
+      radial-gradient(55% 60% at 25% 85%, #2E5BD2 0%, transparent 70%),
+      radial-gradient(45% 55% at 80% 88%, #6E3FB5 0%, transparent 65%),
+      linear-gradient(180deg, #1A1330 0%, #0A0B16 100%);
+  }
+  .stage::before{
+    content:'';position:absolute;inset:-6%;
+    background:
+      radial-gradient(8% 6% at 32% 28%, rgba(255,220,160,0.55), transparent 70%),
+      radial-gradient(7% 5% at 72% 18%, rgba(255,140,140,0.45), transparent 70%),
+      radial-gradient(10% 8% at 22% 72%, rgba(120,160,255,0.55), transparent 70%),
+      radial-gradient(7% 6% at 78% 78%, rgba(170,120,230,0.50), transparent 70%);
+    filter:blur(20px);
+    pointer-events:none;
+  }
+
+  .header{
+    position:absolute;top:0;left:0;right:0;z-index:3;
+    padding:18px 28px 0;
+    display:flex;justify-content:space-between;align-items:baseline;
+    text-shadow:0 1px 2px rgba(0,0,0,0.5);
+  }
+  .h-title{font-family:var(--font-display);font-size:14px;font-weight:700;letter-spacing:-0.01em;color:#F4F5F7}
+  .h-meta{font-family:ui-monospace,SF Mono,Menlo,monospace;font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(244,245,247,.7)}
+
+  .row{
+    position:relative;z-index:1;
+    display:flex;gap:22px;align-items:stretch;justify-content:center;
+    height:100%;padding:60px 28px 36px;box-sizing:border-box;
+  }
+
+  /* ─── visionOS GLASS ─── luminosity grey + diagonal hairline + drop shadow ─── */
+  .card{
+    position:relative;
+    width:260px;
+    border-radius:28px;
+    padding:22px 22px 20px;
+    display:flex;flex-direction:column;gap:12px;
+    color:#F4F5F7;
+    background:rgba(128,128,128,0.30);
+    mix-blend-mode:luminosity;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10);
+    isolation:isolate;
+  }
+  /* backdrop blur */
+  .card::before{
+    content:'';position:absolute;inset:0;border-radius:inherit;
+    backdrop-filter:blur(50px);
+    -webkit-backdrop-filter:blur(50px);
+    z-index:-1;
+  }
+  /* diagonal hairline border */
+  .card::after{
+    content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+    padding:1.4px;
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.40) 0%,
+      rgba(255,255,255,0.01) 40%,
+      rgba(255,255,255,0.01) 57%,
+      rgba(255,255,255,0.10) 100%);
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite:xor;
+            mask-composite:exclude;
+  }
+
+  /* Inner content needs its own layer so text isn't luminosity-blended into oblivion */
+  .card-inner{
+    position:relative;display:flex;flex-direction:column;gap:12px;height:100%;
+    mix-blend-mode:normal;
+  }
+
+  /* ─── PROMINENT ─── opaque white glass, ink text. Same hairline, no luminosity. */
+  .card.prominent{
+    background:rgba(255,255,255,0.92);
+    mix-blend-mode:normal;
+    color:#1A1A1A;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10), 0 24px 48px -16px rgba(0,0,0,0.30);
+  }
+  .card.prominent::before{ backdrop-filter:none;-webkit-backdrop-filter:none; }
+  .card.prominent::after{
+    background:linear-gradient(135deg,
+      rgba(255,255,255,1.0) 0%,
+      rgba(255,255,255,0.30) 40%,
+      rgba(0,0,0,0.04) 60%,
+      rgba(0,0,0,0.06) 100%);
+  }
+
+  /* ─── TINTED ─── signal red. Luminosity OFF (we want the tint to read), keep hairline. */
+  .card.tinted{
+    background:rgba(255,7,58,0.55);
+    mix-blend-mode:normal;
+    color:#FFFFFF;
+    box-shadow:0 2px 4px rgba(0,0,0,0.10), 0 24px 48px -16px rgba(120,0,18,0.45);
+  }
+  .card.tinted::after{
+    background:linear-gradient(135deg,
+      rgba(255,255,255,0.55) 0%,
+      rgba(255,255,255,0.04) 40%,
+      rgba(255,255,255,0.04) 57%,
+      rgba(255,255,255,0.18) 100%);
+  }
+
+  /* ─── Type ─── keyed to current color */
+  .label{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;
+    color:currentColor;opacity:.65;
+  }
+  .value{
+    font-family:var(--font-display);font-size:46px;font-weight:700;
+    letter-spacing:-.025em;line-height:1;color:currentColor;
+  }
+  .value small{font-size:15px;font-weight:500;margin-left:6px;opacity:.55;letter-spacing:0}
+  .meta{font-size:13px;color:currentColor;opacity:.78;font-weight:500;line-height:1.35}
+
+  .bar{
+    height:3px;border-radius:9999px;overflow:hidden;margin-top:2px;
+    background:rgba(255,255,255,0.16);
+  }
+  .card.prominent .bar{background:rgba(26,26,26,0.10)}
+  .card.tinted   .bar{background:rgba(255,255,255,0.22)}
+  .bar i{display:block;height:100%;border-radius:9999px;background:rgba(255,255,255,0.92)}
+  .card.prominent .bar i{background:#1A1A1A}
+
+  .footer{
+    display:flex;justify-content:space-between;align-items:baseline;
+    margin-top:auto;padding-top:6px;
+  }
+  .delta{
+    font-family:ui-monospace,SF Mono,Menlo,monospace;
+    font-size:11px;font-weight:600;letter-spacing:.02em;color:currentColor;opacity:.7;
+  }
+
+  /* Tag row at top of each card */
+  .tag-row{
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .pill{
+    display:inline-flex;align-items:center;gap:6px;
+    height:22px;padding:0 9px;border-radius:9999px;
+    background:rgba(255,255,255,0.14);
+    border:1px solid rgba(255,255,255,0.18);
+    font-size:10px;font-family:ui-monospace,SF Mono,Menlo,monospace;
+    color:currentColor;text-transform:lowercase;
+  }
+  .card.prominent .pill{
+    background:rgba(26,26,26,0.06);border-color:rgba(26,26,26,0.10);
+  }
+  .pill .dot{width:5px;height:5px;border-radius:9999px;background:currentColor}
+  .pill.warn .dot{background:#FF073A;box-shadow:0 0 6px rgba(255,7,58,0.7)}
+  .pill.ok   .dot{background:#7DD3A0;box-shadow:0 0 6px rgba(125,211,160,0.6)}
+</style></head><body>
+<div class="stage">
+  <div class="header">
+    <span class="h-title">Glass · cards</span>
+    <span class="h-meta">glass · prominent · tinted</span>
+  </div>
+
+  <div class="row">
+
+    <!-- GLASS (default visionOS recipe) -->
+    <div class="card">
+      <div class="card-inner">
+        <div class="tag-row">
+          <span class="label">Edge nodes · 7d</span>
+          <span class="pill ok"><span class="dot"></span>healthy</span>
+        </div>
+        <div class="value">42<small>/ 45</small></div>
+        <div class="meta">3 drifted, 0 offline</div>
+        <div class="bar"><i style="width:93%"></i></div>
+        <div class="footer"><span class="delta">+2 since Mon</span><span class="delta">↗</span></div>
+      </div>
+    </div>
+
+    <!-- PROMINENT -->
+    <div class="card prominent">
+      <div class="card-inner">
+        <div class="tag-row">
+          <span class="label">Treasury</span>
+          <span class="pill"><span class="dot"></span>FRMA</span>
+        </div>
+        <div class="value">128.4<small>K</small></div>
+        <div class="meta">+4.2% this week</div>
+        <div class="bar"><i style="width:64%"></i></div>
+        <div class="footer"><span class="delta">7-day avg</span><span class="delta">↗</span></div>
+      </div>
+    </div>
+
+    <!-- TINTED (signal red — used sparingly) -->
+    <div class="card tinted">
+      <div class="card-inner">
+        <div class="tag-row">
+          <span class="label">Anomalies</span>
+          <span class="pill warn"><span class="dot"></span>action</span>
+        </div>
+        <div class="value">3<small>open</small></div>
+        <div class="meta">2 acknowledged · 1 new</div>
+        <div class="bar"><i style="width:18%"></i></div>
+        <div class="footer"><span class="delta">last 24h</span><span class="delta">!</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body></html>
