@@ -19,6 +19,7 @@
   "agents": [
     "./agents/brand-copy-architect.md",
     "./agents/claude-skills-curator.md",
-    "./agents/firma-vision-scribe.md"
+    "./agents/firma-vision-scribe.md",
+    "./agents/firma-strategist.md"
   ]
 }
