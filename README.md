@@ -1,6 +1,6 @@
 # firma-skills
 
-Firma Labs design systems and agents, packaged as a Claude Code plugin marketplace so they install with one command on any machine and stay in sync via `git`.
+Firma's skill graph, design systems, and agents, packaged as a Claude Code plugin marketplace so they install with one command on any machine and stay in sync via `git`.
 
 ## Install
 
@@ -12,6 +12,9 @@ Firma Labs design systems and agents, packaged as a Claude Code plugin marketpla
 That's it — restart Claude Code and the skills + agents are available in **every** project.
 
 ## What's in the `firma` plugin
+
+**The skill graph**
+- `firma-graph` — the graph every agent reads first. `SKILL.md` is the entry point; the nodes sit in seven folders: `truths/` (the machine: firmamint, Atonemint, FIG, Elemint, Fragmint, Embodimint, THEOS, DNA, Edge and Photon, Realm, SeedBase, Settlemint), `words/` (casing, killed words, terminology), `design/` (which design system applies where, the Colony law, the masthead, mobile first), `images/` (asset rules and where the real renders live), `protocols/` (how agents engage), `people/` (roles, formation), `blueprint/` (the Firma Blueprint: systems, never rules, rulings, and a full snapshot). Every node has a YAML description and links to its neighbors with `[[wikilinks]]`. Open the folder in Obsidian to see the graph.
 
 **Design-system skills**
 - `firmamint-design-system` — the canonical Firma Labs brand layer (tokens, gradients, type, Token Studio JSON, Figma brand guide). Everything else inherits from this.
@@ -26,7 +29,7 @@ That's it — restart Claude Code and the skills + agents are available in **eve
 
 ## Updating
 
-Skills are authored in `firma-vault`; this repo is the published, installable snapshot. To ship an update: copy the changed skill/agent in here, bump the version in `plugin.json`, commit, and push. Installs pick it up on the next `/plugin marketplace update`.
+The design-system skills are authored in `firma-vault`; this repo is the published snapshot. `firma-graph` is authored here: edit the node, keep the YAML description true, link the neighbors, and update `SKILL.md` if a node is added or removed. To ship an update: make the change, bump the version in `plugin.json`, commit, and push. Installs pick it up on the next `/plugin marketplace update`.
 
 ---
 Firma Labs · for internal/team use.
