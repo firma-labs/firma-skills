@@ -1,0 +1,27 @@
+name: Refresh Blueprint snapshot
+on:
+  schedule:
+    - cron: "0 9 * * *"   # daily 09:00 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch the live export
+        run: |
+          curl -fsSL https://firma-blueprint.netlify.app/blueprint.md -o /tmp/blueprint.md
+          test -s /tmp/blueprint.md
+          grep -q "^# Firma Blueprint" /tmp/blueprint.md
+          cp /tmp/blueprint.md plugins/firma/skills/firma-graph/blueprint/blueprint-full.md
+      - name: Commit if changed
+        run: |
+          git config user.name "firma-graph bot"
+          git config user.email "bot@firmalabs.org"
+          if ! git diff --quiet; then
+            git add plugins/firma/skills/firma-graph/blueprint/blueprint-full.md
+            git commit -m "blueprint: refresh snapshot from firma-blueprint.netlify.app"
+            git push
+          fi

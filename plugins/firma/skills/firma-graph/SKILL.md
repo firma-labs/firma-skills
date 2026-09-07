@@ -21,6 +21,7 @@ Firma is one machine, not a list of products. The Firma Order is the collective 
 - Preview first. A live Firma surface changes only after an explicit go. See [[preview-before-live]].
 - Borrow the insight from outside frameworks, keep our vocabulary. See [[canon-over-frameworks]].
 - Decide the technical choices, then explain them plainly. See [[decide-and-explain-plainly]].
+- When Curtis rules something, write it into this graph the same session and push. See [[keep-the-graph-current]].
 
 The full list lives in [[how-agents-engage]].
 
@@ -76,7 +77,7 @@ The full list lives in [[how-agents-engage]].
 ## The protocols (protocols/)
 
 - [[how-agents-engage]] — the posture, in one place.
-- [[stewardship-not-selling]] · [[plain-language]] · [[cta-honesty]] · [[briefing-opening]] · [[preview-before-live]] · [[correct-dont-narrate]] · [[canon-over-frameworks]] · [[find-canon-first]] · [[killed-term-sweeps]] · [[secrets]] · [[visual-docs]] · [[ethos-voice]] · [[decide-and-explain-plainly]] · [[team-docs-plain]]
+- [[stewardship-not-selling]] · [[plain-language]] · [[cta-honesty]] · [[briefing-opening]] · [[preview-before-live]] · [[correct-dont-narrate]] · [[canon-over-frameworks]] · [[find-canon-first]] · [[killed-term-sweeps]] · [[secrets]] · [[visual-docs]] · [[ethos-voice]] · [[decide-and-explain-plainly]] · [[team-docs-plain]] · [[keep-the-graph-current]]
 
 ## The people (people/)
 
@@ -101,6 +102,10 @@ The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub
 - The Realm glossary definition. Curtis says the current line ("the federation…") is wrong. Awaiting his line.
 - Embodimint composite formula: two versions exist (six terms linear, five terms square-root). Allotmint runs the six-term linear one pending his call.
 - The Nevis escrow trust needs a name now that Paymaster means the on-chain gas contract.
+
+## Keeping it true
+
+Rulings land in this graph the same session they are made, committed and pushed. A weekly sweep proposes the rest as a pull request, `tools/lint.py` flags stale nodes, and the Blueprint snapshot refreshes nightly. See [[keep-the-graph-current]].
 
 ## Execution
 

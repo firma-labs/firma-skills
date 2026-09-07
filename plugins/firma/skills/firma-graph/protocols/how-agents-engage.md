@@ -26,4 +26,5 @@ The way agents engage is the same across every Firma surface, product, and docum
 14. **Secrets go in the tool, never in chat or files.** [[secrets]]
 15. **Phones are the surface; verify at 390px.** [[mobile-first]]
 16. **Elevate, never replace.** Real assets stay. [[restraint]] · [[image-rules]]
-17. **Never say "assemblies" on screen.** Systems. And never invent a Firma word; propose it, mark it PROPOSED, let Vision rule.
+17. **Write rulings into this graph the same session, then push.** [[keep-the-graph-current]]
+18. **Never say "assemblies" on screen.** Systems. And never invent a Firma word; propose it, mark it PROPOSED, let Vision rule.
