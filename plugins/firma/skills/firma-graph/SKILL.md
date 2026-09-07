@@ -105,7 +105,7 @@ The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub
 
 ## Keeping it true
 
-Rulings land in this graph the same session they are made, committed and pushed. A weekly sweep proposes the rest as a pull request, `tools/lint.py` flags stale nodes, and the Blueprint snapshot refreshes nightly. See [[keep-the-graph-current]].
+Rulings land in this graph the same session they are made, committed and pushed. A weekly sweep catches the rest: it fixes what is plainly wrong, asks Curtis one plain question about anything that needs his ruling, and leaves everything unsettled alone. `tools/lint.py` flags stale nodes and the Blueprint snapshot refreshes nightly. See [[keep-the-graph-current]].
 
 ## Execution
 
