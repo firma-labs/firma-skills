@@ -27,14 +27,14 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Restraint. Motion only where it means something: lines run, a touched system lights, a panel slides. Nothing bounces.
 - Phones are the main surface. Verify at 390px wide before you consider it done. Bottom sheet for details, pinch to zoom, labels readable without zooming at the top level.
 
-_Generated from the live data on 2026-09-08 04:41 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
+_Generated from the live data on 2026-09-08 14:45 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
 
 
 ---
 
 # The entire blueprint (data, use it as given)
 
-Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
+Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
 
 
 ## At a glance
@@ -42,7 +42,7 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 ```
 +---------------- [ THE MACHINE ] -----------------+
 |                                                  |
-|   289     15       125      63                   |
+|   290     15       125      63                   |
 | parts    systems  flows    lines                 |
 |                                                  |
 +--------------------------------------------------+
@@ -51,8 +51,8 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 ```
 +-------------- [ PARTS BY STATUS ] ---------------+
 |                                                  |
-| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   289     |
-| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   112     |
+| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   290     |
+| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   113     |
 | II          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░·    89     |
 | III         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░    88     |
 |                                                  |
@@ -65,7 +65,7 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 +-------------- [ BIGGEST SYSTEMS ] ---------------+
 |                                                  |
 | Place           [======================]     41  |
-| Atonemint       [===================---]     36  |
+| Atonemint       [====================--]     37  |
 | Settlemint      [===================---]     36  |
 | Foundation      [===============-------]     28  |
 | Realm           [==============--------]     26  |
@@ -79,14 +79,14 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 ```
 +--------------- [ MOST CONNECTED ] ---------------+
 |                                                  |
-| Atonemint       [======================]     93  |
-| Settlemint      [===================---]     79  |
-| Place           [=================-----]     73  |
-| Embodimint      [================------]     67  |
-| Elemint         [=============---------]     55  |
-| firmamint       [============----------]     50  |
-| Realm           [===========-----------]     45  |
-| Treasury        [==========------------]     42  |
+| Atonemint       [======================]    100  |
+| Settlemint      [==================----]     80  |
+| Place           [================------]     73  |
+| Embodimint      [===============-------]     67  |
+| Elemint         [=============---------]     61  |
+| firmamint       [===========-----------]     50  |
+| Realm           [==========------------]     45  |
+| Treasury        [=========-------------]     42  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -95,7 +95,7 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 +--------------- [ BUSIEST LINES ] ----------------+
 |                                                  |
 | Settlemint ↔ Place          [==========]     52  |
-| Atonemint ↔ Elemint         [=====-----]     28  |
+| Atonemint ↔ Elemint         [=======---]     34  |
 | Atonemint ↔ Treasury        [===-------]     16  |
 | firmamint ↔ Atonemint       [===-------]     15  |
 | Embodimint ↔ Atonemint      [===-------]     14  |
@@ -123,8 +123,8 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 | I · Protocol                                     |
 | firmamint             designed    13     50      |
 | Firmagentics and DNA  designed    13     35      |
-| Atonemint economy     designed    36     93      |
-| Elemint               designed    24     55      |
+| Atonemint economy     designed    37    100      |
+| Elemint               designed    24     61      |
 | Treasury and rails    live         9     42      |
 | --------------------------------------------     |
 | II · Order and hardware                          |
@@ -137,7 +137,7 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 | The Commons           designed    11     31      |
 | --------------------------------------------     |
 | III · The world                                  |
-| Settlemint            signed      36     79      |
+| Settlemint            signed      36     80      |
 | Place and people      signed      41     73      |
 | --------------------------------------------     |
 | Center                                           |
@@ -153,7 +153,7 @@ Everything below is the current blueprint: 15 systems, 289 parts, 125 flows, the
 | A00 | Embodimint | Center (spindle) | Every layer | LIVE | FOUNDATION, LABS, THEOSIS, FRONTIER, CAPITAL | One person, one wallet, one record. The spindle every layer turns on. | 20 |
 | A01 | firmamint | I · Protocol | Substrate | DESIGNED | LABS, FOUNDATION | Firma's own chain, the membrane to Base, and the rail money rides today. | 13 |
 | A02 | Firmagentics and DNA | I · Protocol | Substrate | DESIGNED | FOUNDATION, LABS | The covenant every agent carries, and the protocol that catches drift. | 13 |
-| A03 | Atonemint economy | I · Protocol | Economy | DESIGNED | CAPITAL, LABS | The protocol that makes the system whole after every trade. FIG lives here. | 36 |
+| A03 | Atonemint economy | I · Protocol | Economy | DESIGNED | CAPITAL, LABS | The protocol that makes the system whole after every trade. FIG lives here. | 37 |
 | A04 | Elemint | I · Protocol | Economy | DESIGNED | LABS, CAPITAL | Digital fingerprints of real production, the vault, and the claims that trade. | 24 |
 | A05 | Treasury and rails | I · Protocol | Economy | LIVE | CAPITAL, FRONTIER | Where money sits and moves today: the community book, the rails, the earning vault. | 9 |
 | A06 | Firma Foundation | II · Order and hardware | Governance | SIGNED | FOUNDATION | Governs and protects the Order. Public hat, quiet hand, sealed core. | 28 |
@@ -313,14 +313,14 @@ The covenant every agent carries, and the protocol that catches drift.
 | L2-10 | Pulse and Heartbeat | L2-07 | DESIGNED | FOUNDATION, LABS | Every entity emits a pulse about its state. The Heartbeat is the sum of all pulses: the living state of the Nation made legible. | Pulse: the signal every entity emits [DESIGNED] · Heartbeat: aggregate of all pulses [DESIGNED] · Not telemetry: governance made operational [DESIGNED] | L2-08 (signals); L2-21 (rendering); L3-43 (durability) |
 | L2-23 | Traces and drift-proofing | L2-20 | DESIGNED | LABS, FOUNDATION | Every agent action is scored before it runs, its reasoning written to a trace, the trace hash posted on-chain. Drift is caught before it compounds. | Gate: pre-execution moral score under 200 ms, fail = does not run [PROPOSED] · Trace: reasoning to IPFS, hash on-chain via EAS [DESIGNED] · Today: DNA audit rows, no signed trace [LIVE] | L2-08 (drift); L3-43 (archive) |
 
-### A03 · Atonemint economy (36 parts)
+### A03 · Atonemint economy (37 parts)
 
 The protocol that makes the system whole after every trade. FIG lives here.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Atonemint     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░    36   |
+| Atonemint     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░    37   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -330,14 +330,14 @@ The protocol that makes the system whole after every trade. FIG lives here.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Elemint         [======================]     28  |
-| Treasury        [=============---------]     16  |
-| firmamint       [============----------]     15  |
-| Embodimint      [===========-----------]     14  |
+| Elemint         [======================]     34  |
+| Treasury        [==========------------]     16  |
+| firmamint       [==========------------]     15  |
+| Embodimint      [=========-------------]     14  |
+| Settlemint      [===-------------------]      4  |
 | Commons         [==--------------------]      3  |
 | Firmagentics    [==--------------------]      3  |
 | Realm           [==--------------------]      3  |
-| Settlemint      [==--------------------]      3  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -370,6 +370,7 @@ The protocol that makes the system whole after every trade. FIG lives here.
 | L1-23 | Paymint (issuance federation) | L1-01 | DESIGNED | CAPITAL, FRONTIER | Not one mint, a protocol. Edge Sentinels co-sign issuance and redemption. The Foundation runs genesis; a T2 Settlemint takes its own. | Signing: threshold M-of-N across Sentinels [DESIGNED] · Genesis federation: Foundation nodes across PR, Cayman, Anguilla [PROPOSED] · Handoff: Settlemint Paymint at T2 = monetary sovereignty [DESIGNED] | L1-20; L1-21; L1-19 (authorises) |
 | L1-24 | Liquid Incremint (ι rail) | L1-01 | DESIGNED | CAPITAL, LABS | Machine-speed micropayments. One job: move ι between agents fast and cheap. Every ι is earned from a real fee, never printed. | Unit: ι = 0.0001 USDC [DESIGNED] · Emissions: none; total ι = real output [DESIGNED] · Settlement substrate accepted: Circle Nanopayments [PROPOSED] | L0-06d; L1-24a; L1-24b; L0-08a (ladder) |
 | L1-24a | Agenticoin wrappers (aUSDC, aFIG, aETH, aBTC) | L1-24 | DESIGNED | CAPITAL | Any asset wrapped so it earns ι while it sits and pays over x402. The wrapper holds the claim; ι lives on the rail. | Pattern: a[ASSET] = ASSET + ι [DESIGNED] · : ι leaves only on unwrap, sell, or swap [DESIGNED] · Protocol-owned ι floor: 2–5% of fees, never withdrawn [PROPOSED] | L1-24; L1-38 (pools); L0-08b (holds) |
+| L1-25h | Remote in-situ resource mapping (Digital Signature survey) | L1-25b | DESIGNED | LABS, CAPITAL, FRONTIER | Reads the earth's electro-magnetic signature to find water and other resources in place, without drilling. The asset never moves; the survey is the proof. | Proven: royal land, Saudi Arabia, 2023 — every called spot confirmed (verified); target packages delivered and on file: DRC Kinshasa W1–5 2022, Nepal W1–18 2019 [VERIFIED] · Method: Earth Data electro-magnetic binary codes, AI-matched against 300,000 profiled water bodies, then permittivity and 3D grid at 1-3 m [DESIGNED] · Reach: 3.2 km deepest achieved; 40 sq km data packages; returns drill coordinates, depth, quality and flow rate [DESIGNED] | L1-25b (the field work); L1-25a (in-ground state); L1-25g (gate evidence); L1-26 (the fingerprint it feeds); L1-13e (water pool); L1-26c (e(H2O)); L1-26e (e(terra)); L4-42 (Liquid Terra, the parcel it reads before title goes on chain) |
 | L1-35 | Stability Buffer | L1-17 | DESIGNED | CAPITAL | The fifth object. A protocol-owned pool of reserve-eligible assets that absorbs shocks. Slashed FIRMA lands here. | Owner: protocol [DESIGNED] · Contents: reserve-eligible assets only [PROPOSED] · Inflow: slashed FIRMA [DESIGNED] | L1-37b (slash); L1-18 (beside); L1-11 (gate) |
 | L1-36 | Back-pay retrofit (agentic) | L1-30 | PROPOSED | CAPITAL, THEOSIS | A one-time job: an agent reads the traces since 2023, each person attests, two sign, Curtis and Greg rule, slices mint at the historical band. | Steps: gather → attest → 2 endorsers → rule → mint at 1.0× [PROPOSED] · Rule: underestimate, one snapshot, then live [PROPOSED] · The list of names: R1, Vision rules [PROPOSED] | L1-30; L0-11a (traces); L1-42 (Allotmint payments) |
 | L1-37 | FIRMA (bond and risk asset) | L1-01 | DESIGNED | CAPITAL, LABS | The asset that takes the volatility so FIG can be boring. Bond, risk, upside, and gas. Two forms; only the sown form carries authority. | Job: bond & risk [DESIGNED] · Mechanisms: security stake · steward/agent bond · paymaster sink · upside accrual [DESIGNED] · Parameters (stake sizes, slashing, bond curves, burn split): unset [PROPOSED] | L1-37a; L1-37b; L0-04 (gas); L1-38 (pools); L1-35 |
@@ -398,14 +399,14 @@ Digital fingerprints of real production, the vault, and the claims that trade.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Atonemint       [======================]     28  |
-| firmamint       [====------------------]      5  |
-| Embodimint      [====------------------]      5  |
+| Atonemint       [======================]     34  |
+| firmamint       [===-------------------]      5  |
+| Embodimint      [===-------------------]      5  |
 | Realm           [===-------------------]      4  |
 | Treasury        [===-------------------]      4  |
 | THEOS           [==--------------------]      3  |
 | Firmagentics    [==--------------------]      3  |
-| Foundation      [==--------------------]      2  |
+| Foundation      [=---------------------]      2  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -811,9 +812,9 @@ The stack a community earns, tier by tier, until it runs its own chain.
 | Place           [======================]     52  |
 | Embodimint      [===-------------------]      8  |
 | Firmagentics    [==--------------------]      4  |
+| Atonemint       [==--------------------]      4  |
 | Foundation      [==--------------------]      4  |
 | Treasury        [=---------------------]      3  |
-| Atonemint       [=---------------------]      3  |
 | Realm           [=---------------------]      2  |
 | Elemint         [----------------------]      1  |
 |                                                  |
@@ -850,7 +851,7 @@ The stack a community earns, tier by tier, until it runs its own chain.
 | L4-38 | NS Simulator | — | DESIGNED | LABS, CAPITAL, FRONTIER | Land tokenization and Settlemint builder: Sandbox to Sim to Mint to Settle. Not a planner — it becomes the settlement's operating system. | Modes: Sandbox (simulated) · Sim (SRI real data) · Mint (on-chain) · Settle (live) [DESIGNED] · Build state: Sandbox near-complete, not shipped [PROPOSED] · Home: Labs product, cross-Domain; not part of THEOS [DESIGNED] | L4-39 (· ladder); L4-40 (· pipeline); L4-41 (· capital); L4-42 (· title); L4-04 (· shard); L4-12 (· public GDP view) |
 | L4-40 | Six-phase builder pipeline | L4-38 | DESIGNED | LABS, CAPITAL, FRONTIER | Discover → Simulate → Acquire → Build → Launch → Sovereign. Each phase produces real outputs (data, contracts, deeds, orders, hardware) that feed the next. | Acquire: click-buy the deed; SPV structured; on-chain title [PROPOSED] · Build: SeedBase configuration ordered from the Firma catalog, ~90 days [PROPOSED] · Launch: shard activates; tiers take over [DESIGNED] | L4-42 (· acquire); L4-04 (· launch); L4-06 (· after launch) |
 | L4-41 | Firma Terra (real asset fund) | — | PROPOSED | CAPITAL | The land fund under Capital: acquires, stewards, finances, develops land and productive assets. The Fund is the vehicle; the Nation holds the land. | Deployment types: settlements · Districts · data centers · energy farms · food · natural reserves · strategic corridors [PROPOSED] · Role in settlement deals: GP with first right of refusal past the Sim-to-Mint threshold [PROPOSED] | L4-38 (· deal origin); L4-42 (· title); L4-43 (· SPV); L4-24 (· District land) |
-| L4-42 | Liquid Terra (land tokenization) | L4-41 | PROPOSED | CAPITAL, LABS | Tokenizes legally enforceable ownership of land: on-chain title, SPV structuring, e(terra) attestation for every parcel. Strategic partnership with LiquidAcre. | Function: legally enforceable ownership on chain [DESIGNED] · Partner: LiquidAcre [PROPOSED] · First parcels at ATX: ATX_02 collaboration [PROPOSED] | L4-41 (· fund); L4-43 (· SPV); L4-38 (· Mint mode); L4-31 (· first parcels) |
+| L4-42 | Liquid Terra (land tokenization) | L4-41 | PROPOSED | CAPITAL, LABS | Tokenizes legally enforceable ownership of land: on-chain title, SPV structuring, e(terra) attestation for every parcel. Strategic partnership with LiquidAcre. | Function: legally enforceable ownership on chain [DESIGNED] · Partner: LiquidAcre [PROPOSED] · First parcels at ATX: ATX_02 collaboration [PROPOSED] | L4-41 (· fund); L4-43 (· SPV); L4-38 (· Mint mode); L4-31 (· first parcels); L1-25h (· the survey that reads the parcel) |
 | L4-43 | Land SPV and community buy-back | L4-42 | PROPOSED | CAPITAL, FRONTIER | Each parcel is isolated in its SPV. Founding, strategic, and host-country partners take positions; the community earns the right to buy in as tiers rise. | Buy-back windows: T2 option, T3 community majority, later up to a supermajority [PROPOSED] · Firma retains: infrastructure rights (data center, mesh, energy) [PROPOSED] · Isolation: no cross-deal liability [PROPOSED] | L4-09; L4-10 (· windows); L4-41 (· structures); L4-17 (· community) |
 | L4-45 | 1Accord (covenant marketplace) | L4-01 | DESIGNED | LABS, CAPITAL | The place work is posted, claimed, verified, and settled, feeding a commons that cannot be privatized. Constitutional — the unit of proof for contribution. | Engagement loop: post → claim → verify → settle (USDC) [DESIGNED] · Commons IP: held in a STAR trust, cannot be privatized [PROPOSED] · Agent App Store, Sense Market: all PROPOSED [PROPOSED] | L4-31 (· first jobs) |
 | L4-71 | Relationship kinds at a place | L4-14 | DESIGNED | FRONTIER, FOUNDATION | Ten distinct relationships a person may hold at once, none inferred from another: resident, Settlemint participant, member, Role-holder, Steward, builder, Pod/Swarm participant, guest, external collaborator. | Count: 10 [DESIGNED] · Default words: Role-holder, Steward, builder, contributor, participant; never corporate terms [DESIGNED] · : Outside participation implies no employment, membership, endorsement, ownership [DESIGNED] | L4-14 (· person); L4-17 (· membership source); L4-67 (· Role); L4-68 (· Swarm) |

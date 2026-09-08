@@ -14,4 +14,6 @@ source: firma-blueprint rulings D2, D11; firma-vault wiki/elemint-master-knowled
 
 **Elemint (capital)** is the family: treasury and custody, the RWA chain with the custody state machine (in-ground → raw → transit → refined → vaulted), RWA banking, trading, exploration and mining, the RWA fund. This is its 2023 shape and the Blueprint draws it that way.
 
+**Exploration** is not a metaphor. It is a real capability already in hand: a Digital Signature survey that reads the earth's electro-magnetic signature and returns where a resource sits in place — drill coordinates, depth, quality, flow rate — without drilling. It found water on royal land in Saudi Arabia in 2023 and every called spot was there. The archive is the Drive folder "Elemint Exploration": the Global Water Solutions / Inteletec brief ATB-220809, the corporate profile, and delivered target packages for DRC Kinshasa (2022) and Nepal (2019). The survey is what reads a parcel before [[liquid-terra]] puts its title on chain, and it feeds the e(terra) and e(H2O) fingerprints. Blueprint part L1-25h.
+
 Elemints back [[fig]]. Hosts do not sell production; they give excess, and the fingerprint is minted in their name. See [[earning-by-giving]] and [[atonemint]].

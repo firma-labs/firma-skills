@@ -2,7 +2,7 @@
 name: blueprint
 description: The Firma Blueprint is the whole machine drawn as three concentric rings with Embodimint at the center. Where it lives, what it must make clear, how to read it, and how to extend it without inventing anything.
 type: blueprint
-status: v0.2 preview (2026-09-06), reviewed by the team Monday 2026-09-08
+status: v0.2 preview (2026-09-08), reviewed by the team Monday 2026-09-08
 source: firma-websites sites/blueprint; https://firma-blueprint.netlify.app
 ---
 
