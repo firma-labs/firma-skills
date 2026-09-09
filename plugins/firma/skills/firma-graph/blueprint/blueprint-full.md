@@ -27,14 +27,14 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Restraint. Motion only where it means something: lines run, a touched system lights, a panel slides. Nothing bounces.
 - Phones are the main surface. Verify at 390px wide before you consider it done. Bottom sheet for details, pinch to zoom, labels readable without zooming at the top level.
 
-_Generated from the live data on 2026-09-08 14:45 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
+_Generated from the live data on 2026-09-09 06:14 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
 
 
 ---
 
 # The entire blueprint (data, use it as given)
 
-Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
+Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
 
 
 ## At a glance
@@ -42,7 +42,7 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 ```
 +---------------- [ THE MACHINE ] -----------------+
 |                                                  |
-|   290     15       125      63                   |
+|   293     15       125      63                   |
 | parts    systems  flows    lines                 |
 |                                                  |
 +--------------------------------------------------+
@@ -51,9 +51,9 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 ```
 +-------------- [ PARTS BY STATUS ] ---------------+
 |                                                  |
-| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   290     |
-| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   113     |
-| II          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░·    89     |
+| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   293     |
+| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   114     |
+| II          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░·    91     |
 | III         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░    88     |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
@@ -67,8 +67,8 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 | Place           [======================]     41  |
 | Atonemint       [====================--]     37  |
 | Settlemint      [===================---]     36  |
+| Realm           [================------]     29  |
 | Foundation      [===============-------]     28  |
-| Realm           [==============--------]     26  |
 | Elemint         [=============---------]     24  |
 | Embodimint      [===========-----------]     20  |
 | firmamint       [=======---------------]     13  |
@@ -83,9 +83,9 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 | Settlemint      [==================----]     80  |
 | Place           [================------]     73  |
 | Embodimint      [===============-------]     67  |
-| Elemint         [=============---------]     61  |
+| Elemint         [==============--------]     63  |
 | firmamint       [===========-----------]     50  |
-| Realm           [==========------------]     45  |
+| Realm           [===========-----------]     49  |
 | Treasury        [=========-------------]     42  |
 |                                                  |
 +--------------------------------------------------+
@@ -100,8 +100,8 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 | firmamint ↔ Atonemint       [===-------]     15  |
 | Embodimint ↔ Atonemint      [===-------]     14  |
 | Embodimint ↔ firmamint      [==--------]     12  |
+| Realm ↔ Commons             [==--------]     11  |
 | firmamint ↔ Firmagentics    [==--------]      9  |
-| Realm ↔ Commons             [==--------]      9  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -124,17 +124,17 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 | firmamint             designed    13     50      |
 | Firmagentics and DNA  designed    13     35      |
 | Atonemint economy     designed    37    100      |
-| Elemint               designed    24     61      |
+| Elemint               designed    24     63      |
 | Treasury and rails    live         9     42      |
 | --------------------------------------------     |
 | II · Order and hardware                          |
 | Firma Foundation      signed      28     34      |
 | THEOS                 designed    10     17      |
-| Realm                 designed    26     45      |
+| Realm                 designed    29     49      |
 | Haven and SeedBase    designed     7     26      |
 | Compute               designed     8     25      |
 | Photon                designed     7     24      |
-| The Commons           designed    11     31      |
+| The Commons           designed    11     33      |
 | --------------------------------------------     |
 | III · The world                                  |
 | Settlemint            signed      36     80      |
@@ -158,7 +158,7 @@ Everything below is the current blueprint: 15 systems, 290 parts, 125 flows, the
 | A05 | Treasury and rails | I · Protocol | Economy | LIVE | CAPITAL, FRONTIER | Where money sits and moves today: the community book, the rails, the earning vault. | 9 |
 | A06 | Firma Foundation | II · Order and hardware | Governance | SIGNED | FOUNDATION | Governs and protects the Order. Public hat, quiet hand, sealed core. | 28 |
 | A07 | THEOS | II · Order and hardware | Governance | DESIGNED | LABS, FOUNDATION | The operating system of the Nation. You talk to theo; DNA governs it. | 10 |
-| A08 | Realm | II · Order and hardware | Hardware | DESIGNED | LABS | The personal edge: the node, the mesh, the phone, and the capture kits that attach. | 26 |
+| A08 | Realm | II · Order and hardware | Hardware | DESIGNED | LABS | The personal edge: the node, the mesh, the phone, and the capture kits that attach. | 29 |
 | A09 | Haven and SeedBase | II · Order and hardware | Hardware | DESIGNED | LABS, FRONTIER | A Haven is a dwelling. A SeedBase is a community Haven with every system a place needs. | 7 |
 | A10 | Compute | II · Order and hardware | Hardware | DESIGNED | LABS | The hardware that earns: Sentinel, Mind, ARK, and Edge Cache. | 8 |
 | A11 | Photon | II · Order and hardware | Hardware | DESIGNED | LABS | Panels, batteries, and the Convertor that turns sunlight into reserve. | 7 |
@@ -400,9 +400,9 @@ Digital fingerprints of real production, the vault, and the claims that trade.
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
 | Atonemint       [======================]     34  |
+| Realm           [====------------------]      6  |
 | firmamint       [===-------------------]      5  |
 | Embodimint      [===-------------------]      5  |
-| Realm           [===-------------------]      4  |
 | Treasury        [===-------------------]      4  |
 | THEOS           [==--------------------]      3  |
 | Firmagentics    [==--------------------]      3  |
@@ -577,14 +577,14 @@ The operating system of the Nation. You talk to theo; DNA governs it.
 | L2-28 | LOGOS | L2-20 | DESIGNED | LABS | The knowledge and reasoning agent inside THEOS, the second brain. This vault (firma-labs/logos) is its library. Cites other repos; does not contain them. | Library: firma-labs/logos repo [LIVE] · Domain: research, synthesis, retrieval, institutional memory [DESIGNED] · : Not a protocol, not a Settlemint-stack layer [DESIGNED] | L2-22 (memory); L2-27 (record); L2-29 (planning) |
 | L2-29 | OIKOS and KAIROS | L2-20 | PROPOSED | LABS | Two named sibling agents inside THEOS: OIKOS (people science) and KAIROS (planning and orchestration). Named in canon; no spec of their own read here. | OIKOS: People Science [PROPOSED] · KAIROS: planning & orchestration [PROPOSED] · Placement: agents act within reality; not protocols [DESIGNED] | L2-27 (siblings); L2-28 (siblings) |
 
-### A08 · Realm (26 parts)
+### A08 · Realm (29 parts)
 
 The personal edge: the node, the mesh, the phone, and the capture kits that attach.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Realm         ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░    26   |
+| Realm         ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░    29   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -594,14 +594,14 @@ The personal edge: the node, the mesh, the phone, and the capture kits that atta
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Commons         [======================]      9  |
-| Photon          [=================-----]      7  |
-| Compute         [=================-----]      7  |
-| Havens          [============----------]      5  |
-| Elemint         [==========------------]      4  |
-| THEOS           [==========------------]      4  |
-| Embodimint      [=======---------------]      3  |
-| Atonemint       [=======---------------]      3  |
+| Commons         [======================]     11  |
+| Photon          [==============--------]      7  |
+| Compute         [==============--------]      7  |
+| Elemint         [============----------]      6  |
+| Havens          [==========------------]      5  |
+| THEOS           [========--------------]      4  |
+| Embodimint      [======----------------]      3  |
+| Atonemint       [======----------------]      3  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -634,6 +634,9 @@ The personal edge: the node, the mesh, the phone, and the capture kits that atta
 | L3-99 | WR-09 · Foundation pad | L3-90 | PROPOSED | LABS, FRONTIER | Concrete poured compute-ready: conduit stub-outs and load rating go in with the pour. Cheap now, brutal to retrofit. | Load: container-ready rating [PROPOSED] · Conduit: power + fiber stubbed [PROPOSED] · Doctrine: Phase 0 standard [DESIGNED] | L3-95 (base); L3-40 (future site) |
 | L4-13 | Place ladder (assembly) | — | DESIGNED | FRONTIER, FOUNDATION | Person → Household → Realm → Settlemint → District → Network State (the Nation of Heaven), with Constellation beside it. Composition is not containment. | Rungs: 7 [DESIGNED] · Rule: the parts remain distinct; shared infrastructure lets them compose [DESIGNED] · : No Colony rung [DESIGNED] | L4-14 (..L4-21 · rungs); L4-29 (· place type, not rung) |
 | L4-16 | Realm (personal edge, as a rung) | L4-13 | DESIGNED | LABS, FRONTIER | The living personal edge domain of a person or household: devices, identity, personal AI, compute, energy, permissions, history. Devices change; the Realm persists. | Belongs to: the person or household, never the Settlemint [DESIGNED] · Moves between places: yes [DESIGNED] · Product expression: L3 Realm (Home Node, Mobile, App, CD-01) [DESIGNED] | L4-17 (· contributes compute/energy/identity) |
+| L3-100 | Firma Atmos | L3-01 | DESIGNED | LABS, FRONTIER | Water condensed out of the air, where there is no rain to catch and no well to draw. The third water source. | Output: ~33 gallons/day per unit [PROPOSED] · Variants: condensation and hypergel; the hypergel line works at desert humidity [PROPOSED] · : Locked 2026-09-06. Supersedes the retired name Firma Spring [DESIGNED] | L3-90 (· hosted on a Water Realm node); L1-26c (· meters into e(H2O)); L3-96 (· shares the cooling loop); L3-95 (· fills the tank) |
+| L1-50 | Metered generation switch (remote on/off → token) | L1-26a | PROPOSED | LABS, CAPITAL | Turns a generator into a ledger entry: switch it on or off from off-site, and mint what it produced at the meter. | Function: remote enable/disable, plus electricity → token at the meter [PROPOSED] · : Held as a patent by a team member who built the first electric-car battery, before Fisker and Tesla [PROPOSED] · Status: the patent exists; no Firma integration is written [PROPOSED] | L1-26a (· what it validates); L3-72 (· the pool it feeds); L3-97 (· node meter) |
+| L3-101 | Grid sell-back channel (HOA + ERCOT) | L3-72 | PROPOSED | FRONTIER, CAPITAL | HOA and ERCOT contracts a building partner already holds, so an installed generator can sell back to the grid on day one. | Holder: a Hill Country building partner, named in the people sheet [PROPOSED] · Fabrication: a refurbished warehouse in Wimberley [PROPOSED] · Why it matters: the distribution exists before the product does [PROPOSED] | L3-72 (· energy); L3-90 (· siting); L1-50 (· metering); L3-100 (· water on the same skid) |
 
 ### A09 · Haven and SeedBase (7 parts)
 
@@ -766,12 +769,12 @@ Pools of compute, energy, storage, bandwidth, and water. Rights pool globally; a
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Realm           [======================]      9  |
-| Compute         [====================--]      8  |
-| Photon          [==========------------]      4  |
-| Atonemint       [=======---------------]      3  |
-| Embodimint      [=====-----------------]      2  |
-| Place           [=====-----------------]      2  |
+| Realm           [======================]     11  |
+| Compute         [================------]      8  |
+| Photon          [========--------------]      4  |
+| Atonemint       [======----------------]      3  |
+| Embodimint      [====------------------]      2  |
+| Place           [====------------------]      2  |
 | THEOS           [==--------------------]      1  |
 | Havens          [==--------------------]      1  |
 |                                                  |
