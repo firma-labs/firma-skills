@@ -27,7 +27,7 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Restraint. Motion only where it means something: lines run, a touched system lights, a panel slides. Nothing bounces.
 - Phones are the main surface. Verify at 390px wide before you consider it done. Bottom sheet for details, pinch to zoom, labels readable without zooming at the top level.
 
-_Generated from the live data on 2026-09-09 06:14 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
+_Generated from the live data on 2026-09-09 21:29 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
 
 
 ---
