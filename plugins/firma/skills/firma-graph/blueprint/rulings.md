@@ -1,6 +1,6 @@
 ---
 name: rulings
-description: Curtis's rulings from 2026-09-05 and 06 that shape the Blueprint drawing. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder, FIG floats, elemint and vault claim, Fragmints, Convertors, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles.
+description: Curtis's rulings from 2026-09-05, 06 and 12 that shape the Blueprint drawing and the document library. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder, FIG floats, elemint and vault claim, Fragmints, Convertors, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles, and the eight headings of the document library.
 type: blueprint
 status: LOCKED
 source: blueprint.md "Rulings from Curtis"
@@ -27,3 +27,13 @@ source: blueprint.md "Rulings from Curtis"
 - Funds: Firma Terra, Onym, Firma Ventures under Capital. Firma Frontier Fund under the Frontier Domain. Treasury is not a sovereign fund: Ecosystem Treasury (Capital) plus community treasuries (Allotmint, Mintware). Allotmint and the Water Realm ledger are Settlemint's financial layer, not Frontier's.
 - Theosis: Formation Academy forms CIK, the Dreaded Ones, Transfiguration Lab, Ancient Future, and Tekton. CIK is ministry deployment only.
 - Curtis is **Vision**. Greg is Legal and CFO. All numbers are PROPOSED until a real deployment validates them.
+
+## 2026-09-12 — the document library
+
+- The Portal's Documents area is filed by **what a document is for**, not by entity or project. Eight headings: Briefings · The Canon · Theosis · Protocol · Order and hardware · Settlemint and place · Capital · Design Systems. Every heading is a ring, a Domain, or a locked name; none is coined.
+- The machine's three shelves carry the drawing's own ring words with the **numerals dropped** — Protocol, Order and hardware, Settlemint and place — because "Ring II" means nothing to someone who has not seen the drawing.
+- **The Canon holds what governs; Theosis holds what forms.** Canon 0101, Vision 0101, the entity map and the Code of Conduct bind you. The prophetic and Orthodox papers form you. A prophetic paper is not a rule.
+- Domains stay a **filter**, with exactly two declared exceptions as shelves: **Theosis** and **Capital**. The funds sit in a Domain and in no system; the formation corpus describes no system. Everywhere else a Domain does filter work only.
+- Ring, layer and Domain are **live filter chips over the whole library**, not folders. Touching Ring I lights the firmamint and Elemint specs at once, wherever they are filed. This is what "Domains are a filter" asks for, and folders alone cannot deliver it.
+- Firma Edge is a Sphere inside Labs, **not one of the fifteen systems**. An Edge-wide document belongs to the ring one level up, not to Realm or Compute.
+- Known gap, not a filing problem: **Treasury and rails is LIVE and has no document written about it.**
