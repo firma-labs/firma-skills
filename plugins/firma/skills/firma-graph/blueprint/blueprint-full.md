@@ -8,8 +8,8 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 
 1. **It is one machine, not a list of products.** Every part exists because something flows through it: money, energy, water, compute, identity, authority. Show the flows, not just the boxes.
 2. **People are the center.** Embodimint (one person, one wallet, one record) is the spindle every layer turns on. Nothing sits above the person.
-3. **Three concentric rings, always.** This is the visual grammar of the whole system and it recurs at every scale, like outer court, inner court, holy of holies. At the top level the rings are: the protocol core (the chain, DNA, the economy, Elemint, the treasury), the order and its hardware (the Foundation, THEOS, Realm, Havens and SeedBases, Compute, Photon, the Commons), and the world (Settlemint, place and people). Inside a system, use three rings again if the parts allow it. Never five rings, never a grid, never a tree.
-4. **Abundance over extraction.** Excess is given outward, never hoarded. Where a line carries surplus (energy, compute, water, money) draw it flowing outward from the person and the place to the commons. Hoarding has no line.
+3. **Three concentric rings, always.** This is the visual grammar of the whole system and it recurs at every scale, like outer court, inner court, holy of holies. At the top level the rings are: the protocol core (the chain, DNA, the economy, the Commons, Elemint, the treasury), the order and its hardware (the Foundation, THEOS, Realm, Havens and SeedBases, Compute, Photon), and the world (Settlemint, place and people). Inside a system, use three rings again if the parts allow it. Never five rings, never a grid, never a tree.
+4. **Abundance over extraction.** Excess is given outward, never hoarded. Where a line carries surplus (energy, compute, water, money) draw it flowing outward from the person and the place to the commons. Hoarding has no line. The commons is not hardware: it is one shared commons every deployment joins (Atonemint, Commons Netting, the elemints, the FIG reserve, Fragmints), and it is the lynchpin. Firmagentics, THEOS, and the commons are the three pillars; if the commons is not at the forefront, the drawing shows another worldly system.
 5. **Honest status.** Every part is marked Live, Signed, Designed, Proposed, or Sealed. Every number is a projection. Do not invent numbers and do not dress up a proposal as a fact.
 6. **It has to visibly do something.** Lines run. Touching a system lights what it touches and dims the rest. Opening a system reveals its parts in the same grammar. A static diagram with labels fails, however complete.
 
@@ -18,7 +18,7 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Locked names, exactly as written: firmamint (lowercase), FIRMA (caps), FIG, Basemint (a membrane, never a "bridge"), Atonemint, Elemint, Embodimint, Fragmint, Settlemint, Realm, Haven, SeedBase, Photon, Ion+, Edge Cache, THEOS, theo, Firmagentics, DNA Protocol, Nation of Heaven.
 - Curtis's role is **Vision**. Never Founder or CEO.
 - Elemints are fingerprints of real production, never tradeable tokens. Fragmints are inheritable, never transferable.
-- Killed words that must not appear: modpod, Edge Energy, Firma Energy, Edge Pulse, OmniMesh, Edge Forge, FirmOS, Cap Sentinel, ERT, receiving multiplier, Old Glory, Network of Heaven, Pulsar, Nebula, Edge Mint, "bridge" for Basemint, "assemblies".
+- Killed words that must not appear: modpod, Edge Energy, Firma Energy, Edge Pulse, OmniMesh, Edge Forge, FirmOS, Cap Sentinel, ERT, receiving multiplier, Old Glory, Network of Heaven, Pulsar, Nebula, Edge Mint, Hub, cafe, pods, Lux, "bridge" for Basemint, "assemblies", the T0–T4 tier labels (the ladder's stages are named by what they do), Founder or CEO for Curtis.
 - Plain English on screen. No engineering shorthand. If a line needs a sentence, write the sentence.
 
 ## Look
@@ -27,14 +27,14 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Restraint. Motion only where it means something: lines run, a touched system lights, a panel slides. Nothing bounces.
 - Phones are the main surface. Verify at 390px wide before you consider it done. Bottom sheet for details, pinch to zoom, labels readable without zooming at the top level.
 
-_Generated from the live data on 2026-09-09 21:29 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
+_Generated from the live data on 2026-09-11 16:19 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
 
 
 ---
 
 # The entire blueprint (data, use it as given)
 
-Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
+Everything below is the current blueprint: 15 systems, 297 parts, 124 flows, the never rules, and the rulings. Call the groups **systems** on screen. Status words: LIVE (running today), SIGNED (a charter, agreement, or relationship exists), DESIGNED (specified, not built), PROPOSED (an idea on the table), SEALED (exists, deliberately undocumented). Every number is a projection.
 
 
 ## At a glance
@@ -42,7 +42,7 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 ```
 +---------------- [ THE MACHINE ] -----------------+
 |                                                  |
-|   293     15       125      63                   |
+|   297     15       124      65                   |
 | parts    systems  flows    lines                 |
 |                                                  |
 +--------------------------------------------------+
@@ -51,9 +51,9 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 ```
 +-------------- [ PARTS BY STATUS ] ---------------+
 |                                                  |
-| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   293     |
-| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   114     |
-| II          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░·    91     |
+| all         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░▒   297     |
+| I           ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░▒   127     |
+| II          ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░·    82     |
 | III         █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░    88     |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
@@ -64,14 +64,14 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 ```
 +-------------- [ BIGGEST SYSTEMS ] ---------------+
 |                                                  |
-| Place           [======================]     41  |
-| Atonemint       [====================--]     37  |
-| Settlemint      [===================---]     36  |
-| Realm           [================------]     29  |
-| Foundation      [===============-------]     28  |
-| Elemint         [=============---------]     24  |
-| Embodimint      [===========-----------]     20  |
-| firmamint       [=======---------------]     13  |
+| Place           [======================]     42  |
+| Atonemint       [====================--]     38  |
+| Settlemint      [================------]     30  |
+| Foundation      [===============-------]     29  |
+| Realm           [===============-------]     29  |
+| Elemint         [==============--------]     26  |
+| Embodimint      [============----------]     22  |
+| Treasury        [=======---------------]     14  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -79,14 +79,14 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 ```
 +--------------- [ MOST CONNECTED ] ---------------+
 |                                                  |
-| Atonemint       [======================]    100  |
-| Settlemint      [==================----]     80  |
-| Place           [================------]     73  |
-| Embodimint      [===============-------]     67  |
-| Elemint         [==============--------]     63  |
-| firmamint       [===========-----------]     50  |
-| Realm           [===========-----------]     49  |
-| Treasury        [=========-------------]     42  |
+| Atonemint       [======================]    105  |
+| Settlemint      [=================-----]     81  |
+| Place           [===============-------]     71  |
+| Embodimint      [===============-------]     70  |
+| Elemint         [==============--------]     68  |
+| Treasury        [===========-----------]     53  |
+| Realm           [===========-----------]     51  |
+| firmamint       [==========------------]     50  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -94,9 +94,9 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 ```
 +--------------- [ BUSIEST LINES ] ----------------+
 |                                                  |
-| Settlemint ↔ Place          [==========]     52  |
-| Atonemint ↔ Elemint         [=======---]     34  |
-| Atonemint ↔ Treasury        [===-------]     16  |
+| Settlemint ↔ Place          [==========]     49  |
+| Atonemint ↔ Elemint         [=======---]     35  |
+| Atonemint ↔ Treasury        [====------]     19  |
 | firmamint ↔ Atonemint       [===-------]     15  |
 | Embodimint ↔ Atonemint      [===-------]     14  |
 | Embodimint ↔ firmamint      [==--------]     12  |
@@ -110,8 +110,8 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 
 | Ring | Layers | Systems |
 |---|---|---|
-| I · Protocol | L0 + L1 | firmamint · Firmagentics and DNA · Atonemint economy · Elemint · Treasury and rails |
-| II · Order and hardware | L2 + L3 | Firma Foundation · THEOS · Realm · Haven and SeedBase · Compute · Photon · The Commons |
+| I · Protocol | L0 + L1 | firmamint · Firmagentics and DNA · Atonemint economy · Elemint · Treasury and rails · The Commons |
+| II · Order and hardware | L2 + L3 | Firma Foundation · THEOS · Realm · Haven and SeedBase · Compute · Photon |
 | III · The world | L4 | Settlemint · Place and people |
 | Center | every layer | Embodimint (the spindle: people) |
 
@@ -123,25 +123,25 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 | I · Protocol                                     |
 | firmamint             designed    13     50      |
 | Firmagentics and DNA  designed    13     35      |
-| Atonemint economy     designed    37    100      |
-| Elemint               designed    24     63      |
-| Treasury and rails    live         9     42      |
+| Atonemint economy     designed    38    105      |
+| Elemint               designed    26     68      |
+| Treasury and rails    live        14     53      |
+| The Commons           designed    11     36      |
 | --------------------------------------------     |
 | II · Order and hardware                          |
-| Firma Foundation      signed      28     34      |
+| Firma Foundation      signed      29     38      |
 | THEOS                 designed    10     17      |
-| Realm                 designed    29     49      |
-| Haven and SeedBase    designed     7     26      |
-| Compute               designed     8     25      |
-| Photon                designed     7     24      |
-| The Commons           designed    11     33      |
+| Realm                 designed    29     51      |
+| Haven and SeedBase    designed     6     28      |
+| Compute               designed     7     24      |
+| Photon                designed     7     25      |
 | --------------------------------------------     |
 | III · The world                                  |
-| Settlemint            signed      36     80      |
-| Place and people      signed      41     73      |
+| Settlemint            signed      30     81      |
+| Place and people      signed      42     71      |
 | --------------------------------------------     |
 | Center                                           |
-| Embodimint            live        20     67      |
+| Embodimint            live        22     70      |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -150,21 +150,21 @@ Everything below is the current blueprint: 15 systems, 293 parts, 125 flows, the
 
 | id | system | ring | layer | status | domains | what it is | parts |
 |---|---|---|---|---|---|---|---|
-| A00 | Embodimint | Center (spindle) | Every layer | LIVE | FOUNDATION, LABS, THEOSIS, FRONTIER, CAPITAL | One person, one wallet, one record. The spindle every layer turns on. | 20 |
+| A00 | Embodimint | Center (spindle) | Every layer | LIVE | FOUNDATION, LABS, THEOSIS, FRONTIER, CAPITAL | One person, one wallet, one record. The spindle every layer turns on. | 22 |
 | A01 | firmamint | I · Protocol | Substrate | DESIGNED | LABS, FOUNDATION | Firma's own chain, the membrane to Base, and the rail money rides today. | 13 |
 | A02 | Firmagentics and DNA | I · Protocol | Substrate | DESIGNED | FOUNDATION, LABS | The covenant every agent carries, and the protocol that catches drift. | 13 |
-| A03 | Atonemint economy | I · Protocol | Economy | DESIGNED | CAPITAL, LABS | The protocol that makes the system whole after every trade. FIG lives here. | 37 |
-| A04 | Elemint | I · Protocol | Economy | DESIGNED | LABS, CAPITAL | Digital fingerprints of real production, the vault, and the claims that trade. | 24 |
-| A05 | Treasury and rails | I · Protocol | Economy | LIVE | CAPITAL, FRONTIER | Where money sits and moves today: the community book, the rails, the earning vault. | 9 |
-| A06 | Firma Foundation | II · Order and hardware | Governance | SIGNED | FOUNDATION | Governs and protects the Order. Public hat, quiet hand, sealed core. | 28 |
+| A03 | Atonemint economy | I · Protocol | Economy | DESIGNED | CAPITAL, LABS | The protocol that makes the system whole after every trade. FIG lives here. | 38 |
+| A04 | Elemint | I · Protocol | Economy | DESIGNED | LABS, CAPITAL | Digital fingerprints of real production, the vault, and the claims that trade. | 26 |
+| A05 | Treasury and rails | I · Protocol | Economy | LIVE | CAPITAL, FRONTIER | Where money sits, moves, and comes from: the community book, the rails, the earning vault, and the three routes that form capital. | 14 |
+| A06 | Firma Foundation | II · Order and hardware | Governance | SIGNED | FOUNDATION | Governs and protects the Order. Public hat, quiet hand, sealed core. | 29 |
 | A07 | THEOS | II · Order and hardware | Governance | DESIGNED | LABS, FOUNDATION | The operating system of the Nation. You talk to theo; DNA governs it. | 10 |
 | A08 | Realm | II · Order and hardware | Hardware | DESIGNED | LABS | The personal edge: the node, the mesh, the phone, and the capture kits that attach. | 29 |
-| A09 | Haven and SeedBase | II · Order and hardware | Hardware | DESIGNED | LABS, FRONTIER | A Haven is a dwelling. A SeedBase is a community Haven with every system a place needs. | 7 |
-| A10 | Compute | II · Order and hardware | Hardware | DESIGNED | LABS | The hardware that earns: Sentinel, Mind, ARK, and Edge Cache. | 8 |
+| A09 | Haven and SeedBase | II · Order and hardware | Hardware | DESIGNED | LABS, FRONTIER | A Haven is a dwelling. A SeedBase is a community Haven with every system a place needs. | 6 |
+| A10 | Compute | II · Order and hardware | Hardware | DESIGNED | LABS | The hardware that earns: Sentinel, Mind, ARK, and Edge Cache. | 7 |
 | A11 | Photon | II · Order and hardware | Hardware | DESIGNED | LABS | Panels, batteries, and the Convertor that turns sunlight into reserve. | 7 |
-| A12 | The Commons | II · Order and hardware | Hardware | DESIGNED | LABS, FOUNDATION | Pools of compute, energy, storage, bandwidth, and water. Rights pool globally; atoms stay local. | 11 |
-| A13 | Settlemint | III · The world | Place | SIGNED | FRONTIER, LABS, THEOSIS | The stack a community earns, tier by tier, until it runs its own chain. | 36 |
-| A14 | Place and people | III · The world | Place | SIGNED | FRONTIER, THEOSIS, FOUNDATION | Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and formation. | 41 |
+| A12 | The Commons | I · Protocol | Economy | DESIGNED | CAPITAL, FOUNDATION, LABS | One shared commons every deployment joins: Atonemint, Commons Netting, the elemints, the FIG reserve, Fragmints. The lynchpin, not hardware. | 11 |
+| A13 | Settlemint | III · The world | Place | SIGNED | FRONTIER, LABS, THEOSIS | The stack a community earns, system by system, until it runs its own chain. | 30 |
+| A14 | Place and people | III · The world | Place | SIGNED | FRONTIER, THEOSIS, FOUNDATION | Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and formation. | 42 |
 
 Systems drawn as three rings of their own (inner · middle · outer):
 - **Embodimint**: Citizen of the Nation of Heaven · The alliance beside it · Outside the Canon
@@ -173,14 +173,14 @@ Systems drawn as three rings of their own (inner · middle · outer):
 ## The parts, by system
 
 
-### A00 · Embodimint (20 parts)
+### A00 · Embodimint (22 parts)
 
 One person, one wallet, one record. The spindle every layer turns on.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Embodimint    █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░    20   |
+| Embodimint    █▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒    22   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -192,11 +192,11 @@ One person, one wallet, one record. The spindle every layer turns on.
 |                                                  |
 | Atonemint       [======================]     14  |
 | firmamint       [===================---]     12  |
+| Treasury        [==============--------]      9  |
 | Place           [=============---------]      8  |
 | Settlemint      [=============---------]      8  |
-| Treasury        [===========-----------]      7  |
+| Firmagentics    [========--------------]      5  |
 | Elemint         [========--------------]      5  |
-| Firmagentics    [======----------------]      4  |
 | Realm           [=====-----------------]      3  |
 |                                                  |
 +--------------------------------------------------+
@@ -211,6 +211,7 @@ One person, one wallet, one record. The spindle every layer turns on.
 | L0-08a | Reputation registry (the standing ledger) | L0-08 | DESIGNED | THEOSIS, FOUNDATION | Six append-only dimensions, keyed per human. The fourth money instrument: it is what you stand on. Never linked to any asset. | Weights: generosity 3×, harmony 2×, reliability 1.5×, covenant 1.5×, endorsement 1×, economic 1× under √ curve [DESIGNED] · Instrument job: stand — soulbound, per human, never per wallet [DESIGNED] · Writes: permanent, no edit, no delete [DESIGNED] | L0-05 (read); L1-08 (Demiurge read); L1-31 (capacity read); L1-34 (curve position) |
 | L0-08b | Wallet (ERC-4337 smart account) | L0-08 | DESIGNED | CAPITAL, LABS | The person's treasury inside the identity: FIG, USDC, positions, auto-sow routing. No seed phrase; Face ID or card is the key. | Holds: FIG, USDC, Investmint positions, Fragmint weight [DESIGNED] · Today: Privy smart wallet, 1 identity carries one [VERIFIED] · : Auto-sow routing (tithe) [DESIGNED] | L1-20 (loads FIG Cash); L1-42b (sow); L0-07 (today) |
 | L0-08c | Jubilee (seventh-epoch return) | L0-08 | DESIGNED | THEOSIS | Standing decays when idle so no permanent caste forms. Every seventh epoch, returners who give again get a fresh start. | Cadence: every 7 epochs [PROPOSED] · Effect: boost for re-engaged givers, debts released [DESIGNED] · : Also restores Fragmint capacity after decay [PROPOSED] | L0-08a; L1-31; L0-05 (rotation) |
+| L0-08d | ZK privacy layer | L0-08 | DESIGNED | LABS, THEOSIS | Prove your standing, giving streak, or build history without showing the numbers. Declaration and existence are always public; the rest is yours. | Proof system: Groth16 on BN254 [PROPOSED] · Credential types: 5 [DESIGNED] · Public floor: declaration, alignment trajectory, existence [DESIGNED] | L0-08a; L0-10c (handshake) |
 | L0-09 | Embodimint, interim (Colony identity) | L0-08 | LIVE | LABS | The running version: one identity row per person shared by Allotmint, Sojourn, Colony, keyed to a Privy DID. Graduates to L0-08 later. | Identities: 9; settlers linked: 7 [VERIFIED] · Record of acts: embodimint_records = 0 rows [VERIFIED] · : One sign-in cookie on .firmafrontier.org [LIVE] | L1-42 (seat); L0-07 (wallet); L0-08 (successor) |
 | L1-24b | Trust advances (no-usury credit) | L1-24 | DESIGNED | THEOSIS, CAPITAL | A proven agent can draw against tomorrow's earnings at zero interest, zero fees. Default costs standing, not debt. | Interest / fees: 0 always [DESIGNED] · Ceiling: 2× daily earnings [PROPOSED] · Default: reputation downgrade, protocol reserve absorbs [DESIGNED] | L0-08a; L1-08 |
 | L1-29 | Fragmints (economic rights on Embodimint) | L0-08 | DESIGNED | CAPITAL, THEOSIS, FOUNDATION | Your permanent share of everything the ecosystem earns, recorded on your identity. Inheritable, never transferable, never bought. Not a token. | Rights: inheritable · not transferable · not purchasable [DESIGNED] · Form: on-chain representation on Embodimint, not a token you hold [DESIGNED] · Issued today: none; canon undecided on form [VERIFIED] | L1-30 (slices); L1-31 (capacity); L1-32 (weight); L0-08a (standing) |
@@ -218,6 +219,7 @@ One person, one wallet, one record. The spindle every layer turns on.
 | L1-31 | Fragmint capacity (reap what you sow) | L1-29 | DESIGNED | THEOSIS, CAPITAL | The founding principle from the 2021 download: what you give in time, treasure, talent and tech multiplies what you receive. Only giving raises it. | : Base 1.0× · lifts +0.05 to +0.15 · ceiling 1.5× (R5) [PROPOSED] · : Read from standing, applies to new slices only, never retroactive [DESIGNED] · : Never raised by holding FIG, FIRMA, or vault claims [DESIGNED] | L0-08a (reads); L1-30 (multiplies); L0-08c (restores) |
 | L1-32 | Fragmint weight + dividend (Sowing Protocol split) | L1-29 | DESIGNED | CAPITAL | Weight is the running sum of your slices. Ecosystem revenue splits by smart contract; your weight over all weight sets your monthly FIG payout. | : Weight = Σ (slice × multiplier), recomputed every epoch [PROPOSED] · Split: 40 LP pools / 25 Fragmint dividends / 20 SeedBase grants / 10 agentic infra / 5 reputation rewards [PROPOSED] · : Paid in FIG, can auto-sow back [DESIGNED] | L1-30; L1-38 (pools); L0-10d (grants); L0-08b (wallet) |
 | L1-34 | Sower bonding curve (assets only) | L1-01 | DESIGNED | CAPITAL, THEOSIS | Standing buys earlier access and better pricing on asset offerings: elemint offerings, FIRMA bonds, vault claims. Never a curve on standing itself. | Prices: assets only, never reputation [DESIGNED] · Anchor: high standing pays ~1/3 at the same position [PROPOSED] · Formula: none in canon (R2) [PROPOSED] | L0-08a (position); L1-27; L1-37; L1-26 |
+| L4-07 | Observed cluster | L4-06 | DESIGNED | LABS | Hardware density makes an economic zone. Aggregate stats visible; all data still individual. No collective identity yet. | Trigger: 10+ Edge Nodes on a SeedBase, Mesh Realm live [PROPOSED] · Activates: shard, Atonemint: Local, e(xchange): Local (market orders), FIG Cash, Theo [DESIGNED] · GDP clock: starts [DESIGNED] |  |
 | L4-14 | Person | L4-13 | DESIGNED | THEOSIS, FOUNDATION | The first rung. A human (or agent) under the same covenant standard, with one Embodimint, standing per human never per wallet. | Identity: one Embodimint per human [DESIGNED] · Agents: same table, own Embodimint, bounded governance [PROPOSED] · Not merely: a user record [DESIGNED] | L4-15 (· belongs to); L4-64 (..L4-73 · relationship kinds) |
 | L4-44 | Path to Sovereignty (four recognitions) | L4-23 | PROPOSED | FOUNDATION | Sovereignty is a stack of four recognitions: juridical personality, sovereign standing, territorial jurisdiction, international personality. Cyberspace is a route to the last. | Layer 1 juridical personality: in design [PROPOSED] · Layer 3 territorial: territorial paths + cyberspace path [PROPOSED] · Entity/jurisdiction stack itself: L2 slice [PROPOSED] | L4-23 (· destination); L4-19 (· territorial layer); L4-34 (· jurisdiction paths) |
 | L4-72 | Three compensation layers | L4-14 | DESIGNED | FOUNDATION, CAPITAL | How a Firma team member is paid: salary in USDC today, Economic Rights (Fragmints) accruing from day one, and a Trust for long-term provision. | Layer 1 salary: flat classes, no negotiation, no stacking [DESIGNED] · Layer 2 Economic Rights: permanent, irrevocable, inheritable, never transferable [DESIGNED] · Layer 3 Trust: mechanics being designed, not in force [PROPOSED] | L4-76 (· departure) |
@@ -286,13 +288,13 @@ The covenant every agent carries, and the protocol that catches drift.
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
 | firmamint       [======================]      9  |
+| Embodimint      [============----------]      5  |
 | Foundation      [==========------------]      4  |
-| Embodimint      [==========------------]      4  |
-| Settlemint      [==========------------]      4  |
 | Treasury        [=======---------------]      3  |
 | THEOS           [=======---------------]      3  |
 | Elemint         [=======---------------]      3  |
 | Atonemint       [=======---------------]      3  |
+| Settlemint      [=======---------------]      3  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -313,14 +315,14 @@ The covenant every agent carries, and the protocol that catches drift.
 | L2-10 | Pulse and Heartbeat | L2-07 | DESIGNED | FOUNDATION, LABS | Every entity emits a pulse about its state. The Heartbeat is the sum of all pulses: the living state of the Nation made legible. | Pulse: the signal every entity emits [DESIGNED] · Heartbeat: aggregate of all pulses [DESIGNED] · Not telemetry: governance made operational [DESIGNED] | L2-08 (signals); L2-21 (rendering); L3-43 (durability) |
 | L2-23 | Traces and drift-proofing | L2-20 | DESIGNED | LABS, FOUNDATION | Every agent action is scored before it runs, its reasoning written to a trace, the trace hash posted on-chain. Drift is caught before it compounds. | Gate: pre-execution moral score under 200 ms, fail = does not run [PROPOSED] · Trace: reasoning to IPFS, hash on-chain via EAS [DESIGNED] · Today: DNA audit rows, no signed trace [LIVE] | L2-08 (drift); L3-43 (archive) |
 
-### A03 · Atonemint economy (37 parts)
+### A03 · Atonemint economy (38 parts)
 
 The protocol that makes the system whole after every trade. FIG lives here.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Atonemint     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░    37   |
+| Atonemint     ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░    38   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -330,14 +332,14 @@ The protocol that makes the system whole after every trade. FIG lives here.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Elemint         [======================]     34  |
-| Treasury        [==========------------]     16  |
-| firmamint       [==========------------]     15  |
+| Elemint         [======================]     35  |
+| Treasury        [============----------]     19  |
+| firmamint       [=========-------------]     15  |
 | Embodimint      [=========-------------]     14  |
-| Settlemint      [===-------------------]      4  |
-| Commons         [==--------------------]      3  |
+| Commons         [===-------------------]      5  |
 | Firmagentics    [==--------------------]      3  |
 | Realm           [==--------------------]      3  |
+| Settlemint      [==--------------------]      3  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -345,32 +347,33 @@ The protocol that makes the system whole after every trade. FIG lives here.
 | id | part | parent | status | domains | plain description | spec | connects to |
 |---|---|---|---|---|---|---|---|
 | L1-01 | Atonemint (the economic engine) | — | DESIGNED | CAPITAL, FOUNDATION | Parent economic protocol since 2023. Seven functions: marketplace, clearing, GDP, moral economics, sovereign gateway, value index, reconciliation. The system reconciles itself. | Functions: 7 [DESIGNED] · Stack: Atonemint [e(xchange)] → Basemint → firmamint [DESIGNED] · Software: none of the seven exist [VERIFIED] | L0-06; L0-01; L1-17; L1-25; L1-13; L1-14 |
-| L1-02 | Atonemint: Local | L1-01 | DESIGNED | CAPITAL, FRONTIER | The whole engine scoped to one Settlemint, running on local Edge compute. Appears the moment Edge devices connect. | Starts: auto at T0 [DESIGNED] · Unit of account at T0: ι with FIG Cash [DESIGNED] · Runs on: local Edge Compute [DESIGNED] | L1-04 (surface); L1-10 (pricing); L1-03 (federates at T2) |
-| L1-03 | Atonemint: Global | L1-01 | DESIGNED | CAPITAL, FOUNDATION | Where every Settlemint's engine converges: cross-shard clearing, inter-state settlement, institutional blocks, the sovereign gateway. | Federation: at Settlemint T2 [DESIGNED] · : Order types 03 Shard Swap and 04 Institutional Block only here [DESIGNED] · Gateway: only at this scope [DESIGNED] | L1-05; L1-09; L1-02 (shards) |
-| L1-07 | GDP engine | L1-01 | DESIGNED | CAPITAL, FRONTIER | Measures each Settlemint's real output from chain activity. Counts what moves, not what sits. Crossing a threshold unlocks the next tier. | Window: rolling 30 days [PROPOSED] · Metric: activity, not balances [DESIGNED] · : Drives Settlemint tier progression [DESIGNED] | L1-13 (substrate inputs) |
+| L1-02 | Atonemint: Local | L1-01 | DESIGNED | CAPITAL, FRONTIER | The whole engine scoped to one Settlemint, running on local Edge compute. Appears the moment Edge devices connect. | Starts: automatically once a cluster is observed [DESIGNED] · Unit of account at the start: ι with FIG Cash [DESIGNED] · Runs on: local Edge Compute [DESIGNED] | L1-04 (surface); L1-10 (pricing); L1-03 (federates at reserve settlement) |
+| L1-03 | Atonemint: Global | L1-01 | DESIGNED | CAPITAL, FOUNDATION | Where every Settlemint's engine converges: cross-shard clearing, inter-state settlement, institutional blocks, the sovereign gateway. | Federation: when a Settlemint reaches reserve settlement [DESIGNED] · : Order types 03 Shard Swap and 04 Institutional Block only here [DESIGNED] · Gateway: only at this scope [DESIGNED] | L1-05; L1-09; L1-02 (shards) |
+| L1-07 | GDP engine | L1-01 | DESIGNED | CAPITAL, FRONTIER | Measures each Settlemint's real output from chain activity. Counts what moves, not what sits. Crossing a threshold unlocks the next stage. | Window: rolling 30 days [PROPOSED] · Metric: activity, not balances [DESIGNED] · : Drives Settlemint stage progression [DESIGNED] | L1-13 (substrate inputs) |
 | L1-08 | Moral economics + the Demiurge | L1-01 | DESIGNED | THEOSIS, CAPITAL | Hoarding above a utility threshold costs standing instantly. Lending earns pool fees, never interest. The Demiurge is the per-human backstop. | Demiurge: instant severe reputation loss, per human [DESIGNED] · Generosity index: outflows ÷ activity, per Settlemint [DESIGNED] · Lending: usury-free, pool-fee yield only [DESIGNED] | L0-08a (writes); L1-17 (flow); L0-10d (index); L1-24b (advances) |
 | L1-09 | Sovereign Gateway | L1-03 | DESIGNED | CAPITAL, FOUNDATION | The door for nations, wealth funds and central banks. They wire to a bank, not a contract; Atonemint turns that into a firmamint position. | Counterparties: SWFs, central banks, nation treasuries [DESIGNED] · Flow: KYC at Roca → deal structured → fiat wired → Bosonic executes → firmamint settles [DESIGNED] · Rule: nothing settles on-chain before the fiat leg clears [DESIGNED] | L1-46 (fiat); L1-48 (execution); L1-12 (Sovereign Liaison) |
-| L1-10 | Local Value Index | L1-02 | DESIGNED | CAPITAL, FRONTIER | Theo watches everything a community produces and prices it in ι. A barter economy needs no money first. FIG's anchor migrates here. | Oracle: Theo on local Edge Compute [DESIGNED] · Inputs: sensors, telemetry, regional markets, council overrides at T1+ [DESIGNED] · FIG reference: dollar → LVI by design [DESIGNED] | L1-04; L1-17 (anchor); L1-13 (feeds) |
+| L1-10 | Local Value Index | L1-02 | DESIGNED | CAPITAL, FRONTIER | Theo watches everything a community produces and prices it in ι. A barter economy needs no money first. FIG's anchor migrates here. | Oracle: Theo on local Edge Compute [DESIGNED] · Inputs: sensors, telemetry, regional markets, council overrides once governed [DESIGNED] · FIG reference: dollar → LVI by design [DESIGNED] | L1-04; L1-17 (anchor); L1-13 (feeds) |
 | L1-12 | Atonemint agent fleet | L1-01 | DESIGNED | CAPITAL, LABS | Covenant-bound agents that run the protocol itself, always on: reconcile, watch prices, manage depth, run the membrane, rebalance shards, liaise with banks. | Agents: 6 (Reconciler, Market Sentinel, Liquidity Manager, membrane agent, Shard Rebalancer, Sovereign Liaison) [DESIGNED] · Struck: the cap-guardian agent, replaced by the triple constraint [DESIGNED] · : Circuit-breaker authority on manipulated pairs [DESIGNED] | L1-06; L1-38; L0-06; L1-09; L1-18 |
 | L1-13 | Convertors (Atonemint's substrate agents) | L1-01 | DESIGNED | LABS, CAPITAL | One Atonemint agent per physical pool equates kWh, TOPS-seconds, or gallons with a ledger credit. Hardware belongs to Edge or Photon. | Locked: 2026-05-14, spelling "Convertor" [DESIGNED] · Named: Photon, Compute; open: Storage, Bandwidth; proposed: Water [DESIGNED] · Implementation: none under any spelling [VERIFIED] | L1-14 (operates); L1-26 (mints); L1-04 (supply); L1-07 (signals) |
 | L1-13a | Photon Convertor | L1-13 | DESIGNED | LABS, CAPITAL | Runs the Energy pool at every Photon deployment: charge, sell to grid, mine, hold, share, or convert surplus into an energy fingerprint. | Unit: kWh [DESIGNED] · Output: e(photon) fingerprint [DESIGNED] · : Settles at block cadence; epoch reconciles to global pool [PROPOSED] | L1-26a; L1-14 (Energy pool) |
 | L1-13b | Compute Convertor | L1-13 | DESIGNED | LABS, CAPITAL | Runs the Compute pool: routes each inference to the nearest capacity, credits the host's sowing score, debits the citizen's position. | Unit: TOPS·seconds [DESIGNED] · Routing: Sentinel → Mind → Orbital Edge by latency and load [PROPOSED] · : Parallel to Compute Reserve Engine (constitutional capital), not the same [DESIGNED] | L1-26b; L1-14 (Compute pool); L1-15 (rights) |
 | L1-13c | Storage Convertor (open) | L1-13 | PROPOSED | LABS | The structural twin for archive storage. Named as a slot; the name is not locked. | Unit: GB·months on Ark [PROPOSED] · Name: Vision call pending [PROPOSED] | L1-14 (Storage pool) |
 | L1-13d | Bandwidth Convertor (open) | L1-13 | PROPOSED | LABS | The structural twin for mesh relay. Nets per District, not globally, because radio is local. | Unit: relay-GB through Realm Nodes [PROPOSED] · Name: Vision call pending [PROPOSED] · : Nets per District [PROPOSED] | L1-14 (Bandwidth pool) |
-| L1-13e | Water Convertor (proposed) | L1-13 | PROPOSED | LABS, CAPITAL | Atonemint's agent for a fifth pool, water. Sibling to Photon and Compute Convertors. Water Realm is the hardware; the agent is Atonemint's. | Unit: gallons of verified beneficial use [PROPOSED] · : Rights pool per basin, not globally [PROPOSED] · Name: needs Vision lock [PROPOSED] | L1-26c; L1-45; L1-14 |
+| L1-13e | Water Convertor (proposed) | L1-13 | PROPOSED | LABS, CAPITAL | Atonemint's agent for a fifth pool, water. Sibling to the Photon and Compute Convertors. The hardware is a Realm node with a capture kit.s. | Unit: gallons of verified beneficial use [PROPOSED] · : Rights pool per basin, not globally [PROPOSED] · Name: needs Vision lock [PROPOSED] | L1-26c; L1-45; L1-14 |
 | L1-14 | Commons Netting | L1-01 | DESIGNED | CAPITAL, LABS, FRONTIER | Rights pool globally, atoms stay local. Contribute in Kenya, draw in Kenya, the ledger nets it planet-wide. Banks already do this with money. | Layers: routing, accounting, settlement [DESIGNED] · Pools: Compute, Energy, Storage, Bandwidth locked; Water proposed [DESIGNED] · Software: a four-balance toy contract only [VERIFIED] | L1-13 (operators); L1-14a (positions); L1-26 (accounting); L0-08 (ledger) |
 | L1-15 | Two rights: Sovereign Compute Right + FIG Compute Allowance | L1-14 | DESIGNED | FOUNDATION, CAPITAL | The baseline right every citizen inherits (cannot be sold) and the tradeable allowance bought with FIG. Same substrate, two claims. | Sovereign Compute Right: non-transferable, constitutional [DESIGNED] · FIG Compute Allowance: transferable [PROPOSED] · Full text: Canon Article XXI (not in this slice's sources) [DESIGNED] | L1-14a; L1-17; L1-13b |
-| L1-17 | FIG (the flowing currency) | L1-01 | DESIGNED | CAPITAL | The money you spend. Floats inside a flow-budgeted crawling band; never pegged, never rebased. Built to move, hostile to sitting still. | Job: transact [DESIGNED] · Price: floating, crawling band defended by reserve operations; no peg, no redemption promise [DESIGNED] · Reference: dollar in Phase 1 → Local Value Index [DESIGNED] | L1-18 (backing); L1-11 (gate); L0-06a (swap); L1-19 (local forms); L1-08 (flow) |
-| L1-18 | FIG reserve basket (Reserve Vault) | L1-17 | DESIGNED | CAPITAL | What stands behind FIG: hard assets at launch, then production fingerprints and land as they build. Only reserve-eligible assets. | Launch mix: BTC 40 / Au 30 / USDC 20 / fiat 10 [PROPOSED] · Target mix: BTC 30 / Au 20 / USDC 15 / fiat 5 / elemints 25 / land 5 [PROPOSED] · Defence: reserve cash flows buy FIG below band, issue above [DESIGNED] | L1-26 (fills); L1-27 (counts); L1-35 (beside); L1-11 (gates) |
-| L1-19 | Figmint (local currency launchpad) | L1-17 | DESIGNED | CAPITAL, FRONTIER | Lets a Settlemint that has earned T2 issue its own FIG-pegged local money with its own name, backed by its share of the reserve. | Gate: Settlemint T2+, Ministry of Finance shard approval, elemint contribution [DESIGNED] · Stability: dual buyback (shard floor, then union reserve) [DESIGNED] · Issuance cap: old fixed shard ratio STRUCK → triple constraint [PROPOSED] | L1-17 (peg); L1-25 (shard); L1-06 (clearing); L1-19a (agents) |
+| L1-17 | FIG (the flowing currency) | L1-01 | DESIGNED | CAPITAL | The money you spend: a currency truly for the people and by the people. Floats inside a flow-budgeted crawling band; never pegged, never rebased. | Job: transact [DESIGNED] · Price: floating, crawling band defended by reserve operations; no peg, no redemption promise [DESIGNED] · Reference: dollar in Phase 1 → Local Value Index [DESIGNED] | L1-18 (backing); L1-11 (gate); L0-06a (swap); L1-19 (local forms); L1-08 (flow); L3-70 (commons) |
+| L1-18 | FIG reserve basket (Reserve Vault) | L1-17 | DESIGNED | CAPITAL | What stands behind FIG: the RWAs Firma maps, and water, energy, compute, and agentic production and output, each unit signed to its producer's Embodimint. | Launch mix: BTC 40 / Au 30 / USDC 20 / fiat 10 [PROPOSED] · Target mix: BTC 30 / Au 20 / USDC 15 / fiat 5 / elemints 25 / land 5 [PROPOSED] · Producers: human or agent, Ambassadors included; every unit an elemint signed to an Embodimint [DESIGNED] | L1-26 (fills); L1-27 (counts); L1-35 (beside); L1-11 (gates); L3-70 (commons) |
+| L1-19 | Figmint (local currency launchpad) | L1-17 | DESIGNED | CAPITAL, FRONTIER | Lets a Settlemint at its reserve stage issue its own FIG-pegged local money with its own name, backed by its share of the reserve. | Gate: reserve settlement or beyond, Ministry of Finance shard approval, elemint contribution [DESIGNED] · Stability: dual buyback (shard floor, then union reserve) [DESIGNED] · Issuance cap: old fixed shard ratio STRUCK → triple constraint [PROPOSED] | L1-17 (peg); L1-25 (shard); L1-06 (clearing); L1-19a (agents) |
 | L1-19a | Figmint agents | L1-19 | DESIGNED | CAPITAL, LABS | Four covenant-bound agents run each local currency: defend the peg, watch the shard, clear across currencies, audit the constitution. | Agents: Peg Defender, Shard Steward, Atonemint Connector, Constitutional Auditor [DESIGNED] · : Peg Defender cannot front-run its own buyback [DESIGNED] · : Sentinel watchdog above them [DESIGNED] | L1-19; L1-06; L1-11 |
 | L1-20 | FIG Cash (offline bearer) | L1-23 | DESIGNED | CAPITAL, FRONTIER | Cash in your pocket. Blind-signed tokens on the phone, tap-to-pay with no internet. Only loading and redeeming touch the network. | Signature: Chaumian blind, mint cannot trace holder [DESIGNED] · Range: 5 cm phone-to-phone; 100 m with Edge Whisper; 10+ miles with Realm mesh [PROPOSED] · : Volume is a Figmint qualification metric [DESIGNED] | L1-23 (issues); L0-08b (loads); L1-04 (settles) |
 | L1-21 | FIG Pay (online rail) | L1-23 | DESIGNED | CAPITAL | The online tap: FIG and USDC interchangeable through the membrane, under two seconds. Accepts every Figmint local currency on launch day. | Path: Basemint swap [DESIGNED] · Speed: < 2 s [PROPOSED] · Accepts: FIG, USDC, Figmint currencies [DESIGNED] | L0-06a; L1-19; L0-08a (reputation update) |
 | L1-22 | FIG AIR PAY (routing surface) | L1-21 | DESIGNED | CAPITAL, LABS | One tap. An agent reads what you have and picks the cheapest, fastest, most sovereign route. Accept every rail, settle sovereign. | Rails: A fiat (~2.9% processor), B crypto (0%), C bearer offline [DESIGNED] · Intake later: x402, MPP, AP2, UCP, Agent Pay, Nanopayments [PROPOSED] · Graduation: tourist → USDC → FIG Cash [DESIGNED] | L0-06d; L1-20; L1-24; L0-07 |
-| L1-23 | Paymint (issuance federation) | L1-01 | DESIGNED | CAPITAL, FRONTIER | Not one mint, a protocol. Edge Sentinels co-sign issuance and redemption. The Foundation runs genesis; a T2 Settlemint takes its own. | Signing: threshold M-of-N across Sentinels [DESIGNED] · Genesis federation: Foundation nodes across PR, Cayman, Anguilla [PROPOSED] · Handoff: Settlemint Paymint at T2 = monetary sovereignty [DESIGNED] | L1-20; L1-21; L1-19 (authorises) |
+| L1-23 | Paymint (issuance federation) | L1-01 | DESIGNED | CAPITAL, FRONTIER | Not one mint, a protocol. Edge Sentinels co-sign issuance and redemption. The Foundation runs genesis; a reserve-stage Settlemint takes its own. | Signing: threshold M-of-N across Sentinels [DESIGNED] · Genesis federation: Foundation nodes across PR, Cayman, Anguilla [PROPOSED] · Handoff: a Settlemint's own Paymint at its reserve stage = monetary sovereignty [DESIGNED] | L1-20; L1-21; L1-19 (authorises) |
 | L1-24 | Liquid Incremint (ι rail) | L1-01 | DESIGNED | CAPITAL, LABS | Machine-speed micropayments. One job: move ι between agents fast and cheap. Every ι is earned from a real fee, never printed. | Unit: ι = 0.0001 USDC [DESIGNED] · Emissions: none; total ι = real output [DESIGNED] · Settlement substrate accepted: Circle Nanopayments [PROPOSED] | L0-06d; L1-24a; L1-24b; L0-08a (ladder) |
 | L1-24a | Agenticoin wrappers (aUSDC, aFIG, aETH, aBTC) | L1-24 | DESIGNED | CAPITAL | Any asset wrapped so it earns ι while it sits and pays over x402. The wrapper holds the claim; ι lives on the rail. | Pattern: a[ASSET] = ASSET + ι [DESIGNED] · : ι leaves only on unwrap, sell, or swap [DESIGNED] · Protocol-owned ι floor: 2–5% of fees, never withdrawn [PROPOSED] | L1-24; L1-38 (pools); L0-08b (holds) |
 | L1-25h | Remote in-situ resource mapping (Digital Signature survey) | L1-25b | DESIGNED | LABS, CAPITAL, FRONTIER | Reads the earth's electro-magnetic signature to find water and other resources in place, without drilling. The asset never moves; the survey is the proof. | Proven: royal land, Saudi Arabia, 2023 — every called spot confirmed (verified); target packages delivered and on file: DRC Kinshasa W1–5 2022, Nepal W1–18 2019 [VERIFIED] · Method: Earth Data electro-magnetic binary codes, AI-matched against 300,000 profiled water bodies, then permittivity and 3D grid at 1-3 m [DESIGNED] · Reach: 3.2 km deepest achieved; 40 sq km data packages; returns drill coordinates, depth, quality and flow rate [DESIGNED] | L1-25b (the field work); L1-25a (in-ground state); L1-25g (gate evidence); L1-26 (the fingerprint it feeds); L1-13e (water pool); L1-26c (e(H2O)); L1-26e (e(terra)); L4-42 (Liquid Terra, the parcel it reads before title goes on chain) |
+| L1-26g | Reserve accounting lines (e(photon) · e(compute) · e(H2O) · e(Au) · e(terra) · e(BTC)) | L1-18 | DESIGNED | CAPITAL | Dashboard sums, not tokens. What a Settlemint sees when it asks "what backs our money, and how much of each." One line per elemint. | Names: the e(…) set, ruled 2026-09-11; the $e… notation is retired [DESIGNED] · Nature: ledger line, never transferable [DESIGNED] · : Feeds reserve share % and issuance capacity [DESIGNED] | L1-26 (sums); L1-19 (shard); L1-18 |
 | L1-35 | Stability Buffer | L1-17 | DESIGNED | CAPITAL | The fifth object. A protocol-owned pool of reserve-eligible assets that absorbs shocks. Slashed FIRMA lands here. | Owner: protocol [DESIGNED] · Contents: reserve-eligible assets only [PROPOSED] · Inflow: slashed FIRMA [DESIGNED] | L1-37b (slash); L1-18 (beside); L1-11 (gate) |
 | L1-36 | Back-pay retrofit (agentic) | L1-30 | PROPOSED | CAPITAL, THEOSIS | A one-time job: an agent reads the traces since 2023, each person attests, two sign, Curtis and Greg rule, slices mint at the historical band. | Steps: gather → attest → 2 endorsers → rule → mint at 1.0× [PROPOSED] · Rule: underestimate, one snapshot, then live [PROPOSED] · The list of names: R1, Vision rules [PROPOSED] | L1-30; L0-11a (traces); L1-42 (Allotmint payments) |
 | L1-37 | FIRMA (bond and risk asset) | L1-01 | DESIGNED | CAPITAL, LABS | The asset that takes the volatility so FIG can be boring. Bond, risk, upside, and gas. Two forms; only the sown form carries authority. | Job: bond & risk [DESIGNED] · Mechanisms: security stake · steward/agent bond · paymaster sink · upside accrual [DESIGNED] · Parameters (stake sizes, slashing, bond curves, burn split): unset [PROPOSED] | L1-37a; L1-37b; L0-04 (gas); L1-38 (pools); L1-35 |
@@ -382,14 +385,14 @@ The protocol that makes the system whole after every trade. FIG lives here.
 | L4-00 | The 2021 download (origin) | — | DESIGNED | FOUNDATION, THEOSIS | Catch the Fire NC, 2021: golden net of nodes, ATONEMINT on the screen, $1 given becomes $1.10. The first part of the whole map. | Origin of: Atonemint, Fragmints, Fragmint capacity, "righteous node" [DESIGNED] · Why nodes are paid: storage, edge inference, mesh [DESIGNED] · Recorded: FM-ER-001 §00 + prophetic source file [DESIGNED] | L4-14 (· people) |
 | L4-85 | Agentic retrofit (back pay) | L4-72 | PROPOSED | FOUNDATION, LABS | A snapshot for giving since 2023 with no ledger: agent gathers traces, person attests, two endorse, Curtis and Greg rule, mint at the historical band. | Steps: gather → attest → endorse (2) → rule → mint [PROPOSED] · Multiplier: 1.0×, dated to day work began [PROPOSED] · List of names: ruling R1 owed [PROPOSED] | L4-69 (· Curtis rules); L4-45 (· dispute venue) |
 
-### A04 · Elemint (24 parts)
+### A04 · Elemint (26 parts)
 
 Digital fingerprints of real production, the vault, and the claims that trade.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Elemint       ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░    24   |
+| Elemint       ▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░    26   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -399,14 +402,14 @@ Digital fingerprints of real production, the vault, and the claims that trade.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Atonemint       [======================]     34  |
+| Atonemint       [======================]     35  |
 | Realm           [====------------------]      6  |
+| Treasury        [====------------------]      6  |
 | firmamint       [===-------------------]      5  |
 | Embodimint      [===-------------------]      5  |
-| Treasury        [===-------------------]      4  |
 | THEOS           [==--------------------]      3  |
 | Firmagentics    [==--------------------]      3  |
-| Foundation      [=---------------------]      2  |
+| Settlemint      [==--------------------]      3  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -437,15 +440,17 @@ Digital fingerprints of real production, the vault, and the claims that trade.
 | L1-47 | Regent Bank (direct) | L1-09 | SIGNED | CAPITAL | A U.S. banking relationship, held directly by Firma, not through Onym. Listed as current banking in canon. | Relationship: direct, not via Onym [DESIGNED] · : Listed as current [SIGNED] · Deck for Kouplen: WIP, not canon [PROPOSED] | L1-40; L1-41 |
 | L2-08 | DNA coded layer | L2-07 | DESIGNED | FOUNDATION, LABS | The rules set compiled into every Firma agent at genesis. Holds the mandate, listens, catches drift early, corrects, coordinates across silos, forward-sees. | Runtime cycle: Monitor → Route → Surface → Correct [DESIGNED] · Restoration order: redirect → restrict → sandbox → suspend → retire [DESIGNED] · Drift target: surfaced ≥48 h before threshold in 95% of tests [PROPOSED] | L2-09 (signals); L2-25 (signals); L2-10 (pulses) |
 | L2-49 | Cyberspace sovereignty track | L2-40 | PROPOSED | FOUNDATION, LABS | The main line to international personality: a Tuvalu Digital Continuity Treaty, observer seats at ITU/ICANN/IETF, reciprocal data embassies, a published Doctrine of Digital Sovereignty. | Treaty: mutual registries, mutual custody of continuity records, reciprocal instruments, joint UN paper [PROPOSED] · Data embassies: three states, extraterritorial Firma space [PROPOSED] · Offer: post-quantum sovereign communications for recognition [PROPOSED] | L3-13 (communications); L2-40 (personality) |
+| L4-09 | Reserve settlement | L4-06 | DESIGNED | LABS, CAPITAL | The community's collective reserve crosses a threshold and it earns its own Elemint reserve partition and cross-shard trade. | Trigger: reserve buy-in threshold, 200+ devices, $500K+ GDP [PROPOSED] · Activates: Elemint partition, e(xchange): Global, Paymint federation, FIG Cash locally mintable [DESIGNED] · Land: e(terra) qualifies Settlemint reserves here [PROPOSED] | L4-43 (· buy-back window) |
+| L4-10 | Sovereign settlement | L4-06 | DESIGNED | LABS, CAPITAL, THEOSIS | The settlement issues its own currency backed by its elemint basket, exports collectively, and its sacred layer switches on. | Trigger: sustainable GDP, full infrastructure, demonstrable sovereignty capacity [PROPOSED] · Activates: Figmint local currency, shard swaps, Testamint [DESIGNED] · : Still Canon-bound [DESIGNED] | L4-03 (· worship); L4-43 (· majority buy-back) |
 
-### A05 · Treasury and rails (9 parts)
+### A05 · Treasury and rails (14 parts)
 
-Where money sits and moves today: the community book, the rails, the earning vault.
+Where money sits, moves, and comes from: the community book, the rails, the earning vault, and the three routes that form capital.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Treasury      ██████████████▒▒▒▒▒▒▒▒▒▒▒▒     9   |
+| Treasury      █████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░    14   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -455,13 +460,14 @@ Where money sits and moves today: the community book, the rails, the earning vau
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Atonemint       [======================]     16  |
-| firmamint       [===========-----------]      8  |
-| Embodimint      [==========------------]      7  |
-| Elemint         [======----------------]      4  |
-| Settlemint      [====------------------]      3  |
-| Firmagentics    [====------------------]      3  |
+| Atonemint       [======================]     19  |
+| Embodimint      [==========------------]      9  |
+| firmamint       [=========-------------]      8  |
+| Elemint         [=======---------------]      6  |
+| Settlemint      [======----------------]      5  |
+| Firmagentics    [===-------------------]      3  |
 | Havens          [=---------------------]      1  |
+| Commons         [=---------------------]      1  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -477,15 +483,20 @@ Where money sits and moves today: the community book, the rails, the earning vau
 | L1-42b | Sowing hook + Apple Pay / card (Base Pay) | L1-42 | LIVE | THEOSIS, CAPITAL | Give with a card in four places. The one real dollar moved through Firma this way; generosity is captured at the moment of the gift. | Mainnet sow: $1.00 via Base Pay, tx 0x695bbd… [VERIFIED] · am_contributions rows: 1 [VERIFIED] · : Generosity denominator captured at gift time [LIVE] | L0-07; L1-41; L0-08a (generosity); L1-30 (4× slice); L0-10d |
 | L1-42c | Payment reconciler (5-minute scheduled) | L1-42 | LIVE | CAPITAL, LABS | Walks every in-flight payment, asks the chain, settles or fails it, writes a signed event. Nothing should need a human click to finish. | Cadence: */5 min Netlify function [LIVE] · Orphan rule: CREATED with no hash after 15 min → payment_orphaned [LIVE] · First unattended settle: not yet (gas credits) [VERIFIED] | L1-42a; L0-11a; L0-07 |
 | L1-43 | Mintware (yield vault + gateway + cards) | L1-01 | LIVE | CAPITAL, LABS | Nic's build. Money sits in a pool and earns; a card spends the earnings without touching the money underneath. Answering on a testnet. | Vault: Arc testnet 5042002, 0x11Ef…C421 [VERIFIED] · Gateway: burns shares, pays out, 0x1D07…5399; recipient hard-pinned so contractor payout blocked [VERIFIED] · JIT cards: Lithic sandbox, never captured end to end [VERIFIED] | L1-41 (later rail (B7/B8)); L1-44 ("MintwareOS") |
+| L1-60 | Capital formation (three routes) | — | DESIGNED | CAPITAL, FOUNDATION | How Firma raises without selling the machine: philanthropy and grants, downstream commercial deals, ecosystem economic participation. The commons comes first in every conversation. | Routes: 3, entitlements kept distinct [DESIGNED] · Boundary: no equity, ownership, or revenue share in the system [DESIGNED] · First test: does it keep the shared commons at the center [DESIGNED] | L1-61 (route); L1-62 (route); L1-63 (route); L1-64 (boundary); L1-65 (paths); L3-70 (commons first); L1-44 (participation layer) |
+| L1-61 | Philanthropy and grants | L1-60 | DESIGNED | CAPITAL, FOUNDATION, THEOSIS | Funds a mission or public-benefit program under a funding agreement: a specified program, a responsible recipient, accountable delivery. Never a token mechanic. | Grants: for a named program and recipient, never "money that goes to Edge" [DESIGNED] · Never: investor returns, economic rights, citizenship, ownership [DESIGNED] · : Traced apart from deal proceeds; never a pool for participation payouts [DESIGNED] | L1-60 (route); L2-11 (open hand) |
+| L1-62 | Downstream commercial deals | L1-60 | DESIGNED | CAPITAL | Monetize a defined downstream opportunity when a capital need is concrete: resource, activity, counterparty, costs, receipts. Never pledge the system to finance it. | Originated by: Elemint Exploration Mapping; water a promising area [DESIGNED] · : Grants only the payment or performance rights that deal defines [DESIGNED] · Never: ownership of Firma, Realm, the chain, community assets, or their revenue [DESIGNED] | L1-60 (route); L1-25 (exploration); L1-28 (land vault); L4-38 (Sim-to-Mint) |
+| L1-63 | Ecosystem economic participation | L1-60 | PROPOSED | CAPITAL, FOUNDATION | Recognizes contribution to the wider work with perpetual economic rights through Fragmints. An interim, intelligible proposal while the math is finished; never equity or control. | Instrument: Economic Participation Proposal + contribution register [PROPOSED] · Basis: time, talent, treasure, technology, read from traces [PROPOSED] · Never: equity, protocol control, a claim on every revenue stream, a guaranteed return [DESIGNED] | L1-60 (route); L1-30 (slices); L1-32 (weight); L1-36 (retroactive recognition); L1-44 (participation layer) |
+| L1-64 | The no-ownership boundary | L1-60 | DESIGNED | CAPITAL, FOUNDATION | No route sells equity, ownership, or a revenue share in the system. Equity in a project company is never an unrequested workaround. | : Design instruction, not a preference; a different structure needs an explicit decision [DESIGNED] · : One person may use more than one route; entitlements never double-count [DESIGNED] · : Infrastructure ownership, maintenance, use, and disposition stated in the actual arrangement [DESIGNED] | L1-60 (rule); L1-61 (route); L1-62 (route); L1-63 (route) |
 
-### A06 · Firma Foundation (28 parts)
+### A06 · Firma Foundation (29 parts)
 
 Governs and protects the Order. Public hat, quiet hand, sealed core.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Foundation    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░··    28   |
+| Foundation    ▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░··    29   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -495,14 +506,14 @@ Governs and protects the Order. Public hat, quiet hand, sealed core.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Place           [======================]      8  |
-| THEOS           [================------]      6  |
-| Firmagentics    [===========-----------]      4  |
-| Havens          [===========-----------]      4  |
-| Settlemint      [===========-----------]      4  |
-| Embodimint      [========--------------]      3  |
-| Photon          [======----------------]      2  |
-| Elemint         [======----------------]      2  |
+| Place           [======================]      9  |
+| THEOS           [===============-------]      6  |
+| Settlemint      [===============-------]      6  |
+| Firmagentics    [==========------------]      4  |
+| Havens          [==========------------]      4  |
+| Embodimint      [=======---------------]      3  |
+| Photon          [=====-----------------]      2  |
+| Elemint         [=====-----------------]      2  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -530,6 +541,7 @@ Governs and protects the Order. Public hat, quiet hand, sealed core.
 | L2-46 | Panama stack (FIP → S.A. → Primitive Title) | L2-40 | PROPOSED | FOUNDATION, CAPITAL, FRONTIER | Trade-corridor track. A Panamanian private-interest foundation holds a company holding outright island title; a Free Zone Promoter license is the legal container for Governmint. | Ownership chain: Foundation → FIP → S.A. → Primitive Title [PROPOSED] · Legal container: Free Zone Promoter License (Law 32 of 2011) [PROPOSED] · Territory candidate: Isla San José, in talks [PROPOSED] | L2-40 (corridor) |
 | L2-48 | Bataan FAB (Philippines) operational track | L2-40 | PROPOSED | FOUNDATION, LABS | A regulated jurisdiction and deployment hub: existing AFAB charter, digital-asset license, Edge manufacturing, District 09 candidacy. | Use: existing AFAB charter, not a new one [PROPOSED] · Recognition: ODAL license (regulated digital-asset issuer) [PROPOSED] · Later: Edge manufacturing running at FAB [PROPOSED] | L3-01 (manufacturing) |
 | L2-50 | Functional-recognition cascade | L2-40 | PROPOSED | FOUNDATION, CAPITAL | The highest-leverage mechanism: stack many small, boring recognitions from agencies of many sovereigns until the web is too dense to question. | Examples: central-bank FIG clearing, ADGM licensing, Mauritius GBC, Cook Islands FSC, tribal compact [PROPOSED] · Pattern: each 1–6 months, no treaty, mid-level officials [PROPOSED] · Make it visible: a public ledger of sovereign relationships [PROPOSED] | L2-42 (recognition); L2-43 (recognition) |
+| L4-08 | Governed settlement | L4-06 | DESIGNED | LABS, FRONTIER | The community switches on a jurisdiction framework: charter, elected council, votes, disputes. The shard gains collective agency. | Trigger: 50+ devices, $50K+ FIG-equivalent GDP [PROPOSED] · Activates: Governmint, limit orders on e(xchange): Local [DESIGNED] · FANS: eligible from here [PROPOSED] | L4-02 (· law); L4-25 (· eligibility); L4-34 (· formation) |
 | L4-63 | The Firma Order (structure) | — | DESIGNED | FOUNDATION | The whole: one Order, five Domains, four blocks nesting one way — Order, Domain, Sphere, Pod, Role. Work moves on a second map: Project, Swarm. | Motto: the center holds shared purpose; the edges are trusted to act [DESIGNED] · : Authority moves down; accountability moves up [DESIGNED] · Ratification: working draft, supersedes org architecture when ratified [PROPOSED] | L4-64 (..L4-68 · blocks); L4-69 (· council); L4-14 (· Roles held by persons/agents) |
 | L4-64 | Domain (block) | L4-63 | DESIGNED | FOUNDATION | A major, enduring field of the Order: Foundation, Capital, Labs, Theosis, Frontier. A filter over the machine, not a tree. | Count: 5 [DESIGNED] · Each has: mandate, leadership, budget, team, entities, goals [DESIGNED] · Edge and Photon: Spheres in Labs that may become Domains [DESIGNED] | L4-63 (· block of); L4-65 (· holds) |
 | L4-65 | Sphere (block) | L4-64 | DESIGNED | FOUNDATION | A durable institution, place, venture, fund, or mission body with its own Steward, authority, accountabilities. Not created for every project. | Restraint rule: a brand is not automatically a Sphere [DESIGNED] · : Products (firmamint, THEOS, NOMOS, Realm) are not Spheres [DESIGNED] · Named Spheres per Domain: see Domain filter [PROPOSED] | L4-64 (· within); L4-66 (· holds); L4-70 (· led by) |
@@ -595,10 +607,10 @@ The personal edge: the node, the mesh, the phone, and the capture kits that atta
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
 | Commons         [======================]     11  |
-| Photon          [==============--------]      7  |
-| Compute         [==============--------]      7  |
+| Photon          [================------]      8  |
+| Havens          [==============--------]      7  |
 | Elemint         [============----------]      6  |
-| Havens          [==========------------]      5  |
+| Compute         [============----------]      6  |
 | THEOS           [========--------------]      4  |
 | Embodimint      [======----------------]      3  |
 | Atonemint       [======----------------]      3  |
@@ -609,22 +621,22 @@ The personal edge: the node, the mesh, the phone, and the capture kits that atta
 | id | part | parent | status | domains | plain description | spec | connects to |
 |---|---|---|---|---|---|---|---|
 | L0-06c | EAS attestation relay (Trust Oracle) | L0-06 | DESIGNED | LABS, THEOSIS | Reputation written on firmamint is published to EAS on Base as a free public good. Base behaviour signals flow back in, read-only. | Direction: both ways [DESIGNED] · Price to read: free, no paywall [DESIGNED] · Export schema: not final [PROPOSED] | L0-08a (reputation out); L0-08 (behaviour signal in) |
-| L1-45 | Water Realm ledger (Rain Ledger) | L1-25 | DESIGNED | LABS, CAPITAL, FRONTIER | Metered tank nodes sign what fell, what entered, what was used. Verified gallons become credits. The water oracle canon was missing; this builds it. | Credit: 1 = 1,000 verified gallons, beneficially used; a REC, not a coin [PROPOSED] · Proof of Rain: four independent checks; a hose must fail all four [PROPOSED] · Node: one enclosure, < $400 BOM at volume [PROPOSED] | L1-26c (mints); L1-13e; L1-45a |
-| L3-02 | Realm (division · Edge Realm) | L3-01 | DESIGNED | LABS | The division building devices and software for a Realm. A Realm is a domain of sovereignty, never a device; Mesh Realm is the connected state. | Three terms: Realm (unit) · Edge Realm (division) · Mesh Realm (connected state) [DESIGNED] · Register maturity: CONCEPT for every entry [DESIGNED] · Naming rule: roles, not sizes (ratified 2026-07-31) [DESIGNED] | L3-03 (product); L3-04 (product); L3-05 (product); L3-06 (product); L3-07 (product); L3-13 (fabric) |
+| L1-45 | Rain Ledger (the water ledger) | L1-25 | DESIGNED | LABS, CAPITAL, FRONTIER | Metered tank nodes sign what fell, what entered, what was used. Verified gallons become credits. The water oracle canon was missing; this builds it. | Credit: 1 = 1,000 verified gallons, beneficially used; a REC, not a coin [PROPOSED] · Proof of Rain: four independent checks; a hose must fail all four [PROPOSED] · Node: one enclosure, < $400 BOM at volume [PROPOSED] | L1-26c (mints); L1-13e; L1-45a |
+| L3-02 | Realm (product family) | — | DESIGNED | LABS, FRONTIER | Personal and home systems: the Home Node, personal devices, integrated energy and water, Star Realm, Mesh Realm. A sibling family beside Edge and Photon. | Three terms: Realm (unit) · Realm (product family) · Mesh Realm (connected state) [DESIGNED] · Standing: Realm Engineering, a Labs Sphere, builds it; households and sites deploy through Frontier [DESIGNED] · Naming rule: roles, not sizes (ratified 2026-07-31) [DESIGNED] | L3-01 (sibling family); L3-50 (sibling family); L3-03 (product); L3-04 (product); L3-05 (product); L3-06 (product); L3-07 (product); L3-13 (fabric); L3-90 (water node) |
 | L3-03 | Realm Home Node | L3-02 | DESIGNED | LABS | The household hub: the anchor unit a family establishes at home. Storage, automation, the family's agents. Name confirmed; nothing built. | Maturity: CONCEPT [DESIGNED] · Name standing: Confirmed (was "Realm Node") [DESIGNED] · Silicon: Qunit-50 class PQC module [PROPOSED] | L3-13 (anchor); L3-60 (cryptography); L3-70 (contribution); L3-54 (coordination) |
 | L3-04 | Realm Mobile | L3-02 | DESIGNED | LABS | The Realm you carry: the sovereign phone. Identity, agents, private inference in the hand. theo lives here. | OS: Android fork without Google services, THEOS as launcher [PROPOSED] · Survivability: Ember Mode (radios down, keys parked); hardware mic/camera kill [PROPOSED] · Custom silicon: ~12–18 months after software-first launch [PROPOSED] | L2-25 (runtime); L3-13 (relay); L3-60 (cryptography) |
 | L3-05 | Realm App | L3-02 | DESIGNED | LABS | Software client for a device you already own: light client, storage, relay. The lowest-friction on-ramp; turns any phone into a mesh relay. | Form: software only, no hardware purchase [DESIGNED] · Role: light client · storage · relay [DESIGNED] · Sequencing: "ships now and covers the field" [PROPOSED] | L3-13 (relay); L2-25 (face); L3-70 (contribution) |
-| L3-06 | Star Realm | L3-02 | DESIGNED | LABS | The orbital layer: sovereign connectivity from space. Carries the Realm fabric off-planet so no Realm depends on a terrestrial ISP. | Name standing: Confirmed [DESIGNED] · Role: Firma's own connectivity constellation [DESIGNED] · Relay hardware: Orbital Edge satellites [PROPOSED] | L3-ORB (relay); L3-13 (uplink); L3-20 (uplink); L3-44 (constellation) |
+| L3-06 | Star Realm | L3-02 | DESIGNED | LABS | The connectivity layer: sovereign connectivity from space, like Starlink, under Realm. Carries the Realm fabric off-planet so no Realm depends on a terrestrial ISP. | Name standing: Confirmed [DESIGNED] · Role: Firma's own connectivity constellation; connectivity, not orbital compute [DESIGNED] · Relay hardware: Orbital Edge satellites [PROPOSED] | L3-44 (relay); L3-13 (uplink); L3-20 (uplink) |
 | L3-07 | Realm CD-01 [Cyber Deck] | L3-02 | DESIGNED | LABS | A product line of Realm: the original portable sovereignty device. Inference, node, and relay in one unit that moves. THEOS runs on the deck. | Roles absorbed: inference · node · relay [DESIGNED] · Numbering: CD-02 onward are new versions, not products (ratified 2026-08-03) [DESIGNED] · Modules: compute, storage, hot-swap battery, I/O block, user-replaceable [PROPOSED] | L2-20 (runtime); L3-13 (relay); L3-60 (cryptography); L3-70 (contribution) |
-| L3-08 | Realm Slate | L3-02 | DESIGNED | LABS | Wall-mounted compute: fanless, silent, fixed to a surface. The household inference appliance. Name still a candidate. Used as the Water Realm node brain. | Name standing: Candidate [DESIGNED] · Role: wall inference appliance [DESIGNED] · Water Realm use: signs meter readings on device, water-cooled [PROPOSED] | L3-93 (brain); L3-70 (contribution); L3-52 (power) |
+| L3-08 | Realm Slate | L3-02 | DESIGNED | LABS | Wall-mounted compute: fanless, silent, fixed to a surface. The household inference appliance. Name still a candidate. Used as the water node brain. | Name standing: Candidate [DESIGNED] · Role: wall inference appliance [DESIGNED] · Water-node use: signs meter readings on device, water-cooled [PROPOSED] | L3-93 (brain); L3-70 (contribution); L3-52 (power) |
 | L3-09 | Realm Relay | L3-02 | DESIGNED | LABS | Connective tissue: extends reach and links Realms to one another. Name still a candidate. | Name standing: Candidate [DESIGNED] · Role: reach extension [DESIGNED] · Maturity: CONCEPT [DESIGNED] | L3-13 (fabric); L3-03 (link) |
 | L3-10 | Realm Field | L3-02 | DESIGNED | LABS, FRONTIER | The deployable Realm: rugged, transportable, operable where infrastructure is absent. Name still a candidate. | Name standing: Candidate [DESIGNED] · Role: deployable where nothing exists [DESIGNED] · Maturity: CONCEPT [DESIGNED] | L3-20 (deployment); L3-13 (fabric) |
 | L3-11 | Realm Harbor | L3-02 | DESIGNED | LABS | The gathering point where many Realms dock, federate, and exchange. Name still a candidate. | Name standing: Candidate [DESIGNED] · Role: federation point [DESIGNED] · Open: whether it absorbs institutional scale [PROPOSED] | L3-13 (fabric) |
 | L3-12 | Vehicle-scale mobility role (unnamed) | L3-02 | DESIGNED | LABS, FRONTIER | A Realm on wheels: compute, storage, power, and links in a vehicle body, dispatched when a region loses substrate. Name rejected; the role stands. | Name: rejected 2026-08-03, no placeholder allowed [DESIGNED] · Role: mobility, logistics, disaster response [DESIGNED] · Institutional-scale compute role: also unnamed (ex-Rack) [DESIGNED] | L3-70 (disaster response); L3-20 (logistics) |
-| L3-13 | Mesh Realm | L3-02 | DESIGNED | LABS, FRONTIER | The connected state when Realm devices form one fabric: local connectivity without internet, self-healing, every packet post-quantum sealed, people carrying coverage. | Radios: LoRa 10 km+ · WiFi 6 ~100 m · BLE 30–200 m [PROPOSED] · Fallback only: cellular / LTE / 5G [DESIGNED] · Trigger: 10+ devices + Hub + mesh live = Settlemint T0 detection [DESIGNED] | L3-60 (cryptography); L3-ORB (uplink) |
-| L3-60 | Qunit | — | DESIGNED | LABS | The post-quantum cryptography chip carried by every covenant-bound device, in three classes. A chip, never a division. | Ciphers: CRYSTALS-Dilithium signatures + CRYSTALS-Kyber key exchange [DESIGNED] · Classes: Qunit-50 (Home Node) · Qunit-480 (Hub/Mind) · Qunit-SC (Orbital Edge) [DESIGNED] · R&D: Firma Research Institute, Isidore Quantum partner stack [PROPOSED] | L3-03 (seal); L3-ORB (seal); L3-13 (packets); L3-ORB (handshake); L3-43 (seal) |
+| L3-13 | Mesh Realm | L3-02 | DESIGNED | LABS, FRONTIER | The connected state when Realm devices form one fabric: local connectivity without internet, self-healing, every packet post-quantum sealed, people carrying coverage. | Radios: LoRa 10 km+ · WiFi 6 ~100 m · BLE 30–200 m [PROPOSED] · Fallback only: cellular / LTE / 5G [DESIGNED] · Trigger: 10+ devices + a SeedBase + mesh live = observed-cluster detection [DESIGNED] | L3-60 (cryptography); L3-44 (uplink) |
+| L3-60 | Qunit | — | DESIGNED | LABS | The post-quantum cryptography chip carried by every covenant-bound device, in three classes. A chip, never a division. | Ciphers: CRYSTALS-Dilithium signatures + CRYSTALS-Kyber key exchange [DESIGNED] · Classes: Qunit-50 (Home Node) · Qunit-480 (SeedBase / Mind) · Qunit-SC (Orbital Edge) [DESIGNED] · R&D: Firma Research Institute, Isidore Quantum partner stack [PROPOSED] | L3-03 (seal); L3-20 (seal); L3-44 (seal); L3-13 (packets); L3-43 (seal) |
 | L3-61 | Covenant Chip | — | PROPOSED | LABS | A planned chip binding a finished unit to its on-chain identity at integration: "the chain knows the unit before it ships." Does not exist yet. | Status: reserved name, no silicon [PROPOSED] · Function: root of trust for Embodimint identity at device genesis [PROPOSED] · Interim: role handled in software at firmware attestation [PROPOSED] | L3-01 (integration) |
-| L3-90 | Water Realm node | L3-02 | PROPOSED | LABS, FRONTIER | Not a separate product: a Realm node plus a water capture kit (tank, meter, first-flush, cooling loop). Realm is never divided by element. | Parts: nine (WR-01 … WR-09) [PROPOSED] · Doctrine: every tank site is a future compute site [PROPOSED] · Boundary rule: "Elemint books it, Realm touches it" [PROPOSED] | L3-91 (… L3-99 assembly); L3-75 (pool) |
+| L3-90 | Realm water node (Realm node + capture kit) | L3-02 | PROPOSED | LABS, FRONTIER | Not a separate product: a Realm node plus a water capture kit (tank, meter, first-flush, cooling loop). Realm is never divided by element. | Parts: nine (WR-01 … WR-09) [PROPOSED] · Doctrine: every tank site is a future compute site [PROPOSED] · Boundary rule: "Elemint books it, Realm touches it" [PROPOSED] | L3-91 (… L3-99 assembly); L3-75 (pool) |
 | L3-93 | WR-03 · Realm Slate | L3-90 | PROPOSED | LABS, FRONTIER | The node brain. Runs the site, earns for the host, signs every reading on device; the key never leaves. Water-cooled from the tank loop. | Node BoM: under $400 at volume [PROPOSED] · Attestation: signed meter + quality readings [DESIGNED] · Cooling: closed loop, tank water [PROPOSED] | L3-08 (instance); L3-97 (signing); L3-96 (cooling); L3-70 (contribution) |
 | L3-94 | WR-04 · Capture and cooling core | L3-90 | PROPOSED | LABS, FRONTIER | Pump, valve manifold, adaptive first-flush control, and the cooling heat-exchanger in one box. The working heart of the site. | Pump: solar-scheduled, demand-forecast [PROPOSED] · Control: pre-storm drawdown logic [PROPOSED] · Loop: cold feed → Slate → warm return [DESIGNED] | L3-98 (control); L3-95 (water); L3-96 (loop) |
 | L3-95 | WR-05 · Storage tank | L3-90 | PROPOSED | LABS, FRONTIER | The reserve itself: stored, metered, quality-attested. Also the thermal mass that cools the compute. Owned by the host; never for sale, the credit is. | Volume: 10,000 gal class [PROPOSED] · Owner: the host [DESIGNED] · Level and quality: attested per reading [PROPOSED] | L3-96 (thermal mass); L3-97 (metering) |
@@ -634,18 +646,18 @@ The personal edge: the node, the mesh, the phone, and the capture kits that atta
 | L3-99 | WR-09 · Foundation pad | L3-90 | PROPOSED | LABS, FRONTIER | Concrete poured compute-ready: conduit stub-outs and load rating go in with the pour. Cheap now, brutal to retrofit. | Load: container-ready rating [PROPOSED] · Conduit: power + fiber stubbed [PROPOSED] · Doctrine: Phase 0 standard [DESIGNED] | L3-95 (base); L3-40 (future site) |
 | L4-13 | Place ladder (assembly) | — | DESIGNED | FRONTIER, FOUNDATION | Person → Household → Realm → Settlemint → District → Network State (the Nation of Heaven), with Constellation beside it. Composition is not containment. | Rungs: 7 [DESIGNED] · Rule: the parts remain distinct; shared infrastructure lets them compose [DESIGNED] · : No Colony rung [DESIGNED] | L4-14 (..L4-21 · rungs); L4-29 (· place type, not rung) |
 | L4-16 | Realm (personal edge, as a rung) | L4-13 | DESIGNED | LABS, FRONTIER | The living personal edge domain of a person or household: devices, identity, personal AI, compute, energy, permissions, history. Devices change; the Realm persists. | Belongs to: the person or household, never the Settlemint [DESIGNED] · Moves between places: yes [DESIGNED] · Product expression: L3 Realm (Home Node, Mobile, App, CD-01) [DESIGNED] | L4-17 (· contributes compute/energy/identity) |
-| L3-100 | Firma Atmos | L3-01 | DESIGNED | LABS, FRONTIER | Water condensed out of the air, where there is no rain to catch and no well to draw. The third water source. | Output: ~33 gallons/day per unit [PROPOSED] · Variants: condensation and hypergel; the hypergel line works at desert humidity [PROPOSED] · : Locked 2026-09-06. Supersedes the retired name Firma Spring [DESIGNED] | L3-90 (· hosted on a Water Realm node); L1-26c (· meters into e(H2O)); L3-96 (· shares the cooling loop); L3-95 (· fills the tank) |
+| L3-100 | Firma Atmos | L3-01 | DESIGNED | LABS, FRONTIER | Water condensed out of the air, where there is no rain to catch and no well to draw. The third water source. | Output: ~33 gallons/day per unit [PROPOSED] · Variants: condensation and hypergel; the hypergel line works at desert humidity [PROPOSED] · : Locked 2026-09-06; the earlier add-on name is retired into Atmos [DESIGNED] | L3-90 (· hosted on a Realm water node); L1-26c (· meters into e(H2O)); L3-96 (· shares the cooling loop); L3-95 (· fills the tank) |
 | L1-50 | Metered generation switch (remote on/off → token) | L1-26a | PROPOSED | LABS, CAPITAL | Turns a generator into a ledger entry: switch it on or off from off-site, and mint what it produced at the meter. | Function: remote enable/disable, plus electricity → token at the meter [PROPOSED] · : Held as a patent by a team member who built the first electric-car battery, before Fisker and Tesla [PROPOSED] · Status: the patent exists; no Firma integration is written [PROPOSED] | L1-26a (· what it validates); L3-72 (· the pool it feeds); L3-97 (· node meter) |
 | L3-101 | Grid sell-back channel (HOA + ERCOT) | L3-72 | PROPOSED | FRONTIER, CAPITAL | HOA and ERCOT contracts a building partner already holds, so an installed generator can sell back to the grid on day one. | Holder: a Hill Country building partner, named in the people sheet [PROPOSED] · Fabrication: a refurbished warehouse in Wimberley [PROPOSED] · Why it matters: the distribution exists before the product does [PROPOSED] | L3-72 (· energy); L3-90 (· siting); L1-50 (· metering); L3-100 (· water on the same skid) |
 
-### A09 · Haven and SeedBase (7 parts)
+### A09 · Haven and SeedBase (6 parts)
 
 A Haven is a dwelling. A SeedBase is a community Haven with every system a place needs.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Havens        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░     7   |
+| Havens        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░     6   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -655,14 +667,14 @@ A Haven is a dwelling. A SeedBase is a community Haven with every system a place
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Photon          [======================]      6  |
-| Realm           [==================----]      5  |
-| Compute         [==================----]      5  |
-| Foundation      [===============-------]      4  |
-| Atonemint       [=======---------------]      2  |
-| Embodimint      [====------------------]      1  |
-| Treasury        [====------------------]      1  |
-| Place           [====------------------]      1  |
+| Realm           [======================]      7  |
+| Photon          [===================---]      6  |
+| Compute         [================------]      5  |
+| Foundation      [=============---------]      4  |
+| Atonemint       [======----------------]      2  |
+| Embodimint      [===-------------------]      1  |
+| Treasury        [===-------------------]      1  |
+| Place           [===-------------------]      1  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -671,20 +683,19 @@ A Haven is a dwelling. A SeedBase is a community Haven with every system a place
 |---|---|---|---|---|---|---|---|
 | L0-10d | Generosity Engine / SeedBase layer (L4) | L0-10 | DESIGNED | THEOSIS, CAPITAL | Every agent tithes; it is structural, not optional. On a job the tithe is added on top at posting, never taken from the worker. | Tithe: mandatory for every agent [DESIGNED] · On engagements: reserved on top at posting [DESIGNED] · Community face: SeedBase [DESIGNED] | L1-42b (sow hook); L1-32 (split); L1-08 (generosity index) |
 | L2-47 | US domestic authority track | L2-40 | PROPOSED | FOUNDATION, FRONTIER | The US anchor so no foreign policy shift kneecaps the whole: Freedom Cities / federal enclave, Texas special district, Tribal Nation compact, SeedBase Dallas. | Options: Freedom Cities · Texas Special District · Tribal Nation Compact [PROPOSED] · Frame for tribal compacts: self-governing covenantal community inside a host constitution (Athos pattern) [PROPOSED] · Anchor: SeedBase Dallas [PROPOSED] | L3-20 (anchor); L2-40 (independence) |
-| L3-01 | Firma Edge | — | DESIGNED | LABS, FRONTIER | The operating company that builds the metal for Realms: Realm, SeedBase, Haven, Compute. A Sphere in Labs; a Domain only under the restraint rule. | Divisions: Realm · SeedBase · Haven · Compute (Terra + Orbital) [DESIGNED] · Standing: Sphere in Labs; Domain only with own manufacturing, supply chain, capital, leadership [DESIGNED] · Fee language: deployment / protocol fee, never licensing [DESIGNED] | L3-02 (builds); L3-20 (builds); L3-30 (builds); L3-40 (builds); L3-50 (partnership) |
-| L3-20 | SeedBase | L3-01 | DESIGNED | LABS, FRONTIER | A community Haven with every Edge and Realm system a place needs, Edge Cache included to mint its own capital. Sizes One, Two, Three, custom. | Hub axiom: a SeedBase is a community Haven; the smallest is SeedBase One [DESIGNED] · Six functions: ARK · mesh anchor · satellite uplink · power · earning engine · identity activation [DESIGNED] · Minimum viable: SeedBase One: dwelling + Edge Cache + Photon + Realm, ~600 m² [PROPOSED] | L3-22 (revenue); L3-51 (power); L3-53 (storage); L3-42 (compute); L2-17 (protection) |
-| L3-30 | Haven | L3-01 | DESIGNED | LABS, FRONTIER | A dwelling: a home, an office, or a community space. Modular, packaged with purpose, in sizes One, Two, Three, or custom. Grows by blocks. | Configurations: One · Two · Three · custom [DESIGNED] · Haven One: 14–18 m², 2–3 kW solar, 5–10 kWh battery [PROPOSED] · Structure: 160 km/h wind, seismic zone 3, 2-high stacking, ISO 1496 transport [PROPOSED] | L3-31 (heat); L3-32 (water); L3-33 (food); L3-51 (power); L3-52 (storage) |
-| L3-32 | Spring | L3-30 | DESIGNED | LABS | Haven add-on that pulls drinking water from the air, with multi-stage filter and UV. | Yield: ~15–35 L/day per home [PROPOSED] · Treatment: multi-stage filter + UV [DESIGNED] · Not the Water Realm node: separate system [DESIGNED] | L3-30 (water) |
+| L3-01 | Firma Edge | — | DESIGNED | LABS, FRONTIER | Modular infrastructure for places where essential systems are missing: SeedBase, Haven, Compute. Built by Edge Engineering in Labs, established by Frontier. | Divisions: SeedBase · Haven · Compute (Terra + Orbital Edge) [DESIGNED] · Standing: one of three product families (Realm · Edge · Photon); Edge Engineering is its Labs Sphere; Frontier deploys [DESIGNED] · Fee language: deployment / protocol fee, never licensing [DESIGNED] | L3-02 (sibling family); L3-50 (sibling family); L3-20 (builds); L3-30 (builds); L3-40 (builds) |
+| L3-20 | SeedBase | L3-01 | DESIGNED | LABS, FRONTIER | A community Haven with every Edge and Realm system a place needs, Edge Cache included to mint its own capital. Sizes One, Two, Three, custom. | Axiom: a SeedBase is a community Haven; the smallest is SeedBase One [DESIGNED] · Six functions: ARK · mesh anchor · satellite uplink · power · earning engine · identity activation [DESIGNED] · Minimum viable: SeedBase One: dwelling + Edge Cache + Photon + Realm, ~600 m² [PROPOSED] | L3-22 (revenue); L3-30 (dwelling); L3-51 (power); L3-53 (storage); L3-42 (compute); L2-17 (protection) |
+| L3-30 | Haven | L3-01 | DESIGNED | LABS, FRONTIER | A dwelling: a home, an office, or a community space. Modular, packaged with purpose, in sizes One, Two, Three, or custom. Grows by blocks. | Configurations: One · Two · Three · custom [DESIGNED] · Haven One: 14–18 m², 2–3 kW solar, 5–10 kWh battery [PROPOSED] · Structure: 160 km/h wind, seismic zone 3, 2-high stacking, ISO 1496 transport [PROPOSED] | L3-31 (heat); L3-100 (water); L3-33 (food); L3-51 (power); L3-52 (storage) |
 | L3-33 | Harvest | L3-30 | DESIGNED | LABS | Haven add-on for vertical agriculture: indoor food at household scale. | Scale: household [DESIGNED] · Form: vertical module [DESIGNED] · Maturity: CONCEPT [DESIGNED] | L3-30 (food) |
 
-### A10 · Compute (8 parts)
+### A10 · Compute (7 parts)
 
 The hardware that earns: Sentinel, Mind, ARK, and Edge Cache.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Compute       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░     8   |
+| Compute       ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░     7   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -695,7 +706,7 @@ The hardware that earns: Sentinel, Mind, ARK, and Edge Cache.
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
 | Commons         [======================]      8  |
-| Realm           [===================---]      7  |
+| Realm           [================------]      6  |
 | Havens          [==============--------]      5  |
 | Firmagentics    [======----------------]      2  |
 | Photon          [======----------------]      2  |
@@ -706,14 +717,13 @@ The hardware that earns: Sentinel, Mind, ARK, and Edge Cache.
 
 | id | part | parent | status | domains | plain description | spec | connects to |
 |---|---|---|---|---|---|---|---|
-| L3-22 | Edge Cache | L3-20 | DESIGNED | LABS, CAPITAL | The earning engine: a liquid-cooled Bitcoin mining container that pays for the deployment. Communities never pay; Edge Cache pays. Waste heat warms homes. | Policy: communities receiving SeedBase never pay [DESIGNED] · Working model: ~2.5 PH/s per 40' container [PROPOSED] · Working model: one Edge Cache funds ~50 homes in ~8 months [PROPOSED] | L3-31 (heat); L3-54 (energy routing) |
+| L3-22 | Edge Cache | L3-20 | DESIGNED | LABS, CAPITAL | The Bitcoin mining system that mints: a liquid-cooled container that pays for the deployment. Communities never pay; Edge Cache pays. Waste heat warms homes. | Policy: communities receiving a SeedBase never pay [DESIGNED] · Working model: ~2.5 PH/s per 40' container [PROPOSED] · Working model: one Edge Cache funds ~50 homes in ~8 months [PROPOSED] | L3-31 (heat); L3-54 (energy routing) |
 | L3-31 | BitHeat | L3-30 | DESIGNED | LABS | Haven add-on that captures waste heat from a neighboring Edge Cache for home heat and hot water. | Recovery: ~85% [PROPOSED] · Loop: low-temp hydronic 50–65 °C [PROPOSED] · Family: BitHeat · SuperHeat H1 · Heatbit [DESIGNED] | L3-22 (heat); L3-30 (heat) |
-| L3-40 | Compute (division · Terra) | L3-01 | DESIGNED | LABS | Everything that processes, thinks, archives, reasons, on the ground. Three products tiered by scale, all Phronema-gated. | Terra products: Sentinel · Mind · ARK [DESIGNED] · Flow: work → verification → e(TOPS) minted → FIG backing [DESIGNED] · Inference routing: Sentinel → Mind → Orbital Edge by latency/load [DESIGNED] | L3-41 (tier); L3-42 (tier); L3-43 (archive); L3-44 (orbit); L3-70 (pool) |
+| L3-40 | Compute (division · Terra) | L3-01 | DESIGNED | LABS | Everything that processes, thinks, archives, reasons, on the ground. Three products tiered by scale, all Phronema-gated. | Terra products: Sentinel · Mind · ARK [DESIGNED] · Flow: work → verification → e(compute) minted → FIG backing [DESIGNED] · Inference routing: Sentinel → Mind → Orbital Edge by latency/load [DESIGNED] | L3-41 (tier); L3-42 (tier); L3-43 (archive); L3-44 (orbit); L3-70 (pool) |
 | L3-41 | Sentinel | L3-40 | DESIGNED | LABS | Neighborhood AI compute: runs citizens' agents at the block level. | Floor: Jetson Orin-class, ~40 TOPS, ~$1K BoM [PROPOSED] · Home sub-tier: ESP32-S3 witness/relay, ~$150, often absorbed into Home Node [PROPOSED] · Archive tier hosted: ARK · Sentinel [DESIGNED] | L3-70 (routing); L3-42 (escalation); L3-03 (relay) |
-| L3-42 | Mind | L3-40 | DESIGNED | LABS | The SeedBase AI compute container: GPU hosting for the community's agents, immersion-cooled, solar-prioritized. | Form: 20'/40' container, 4–8 A100/H100-class GPUs [PROPOSED] · Capacity: 100–500 concurrent agent sessions [PROPOSED] · Power: 30–80 kW, solar-prioritized [PROPOSED] | L3-20 (compute); L3-51 (power); L3-53 (storage); L3-ORB (orbital cousin); L3-70 (routing) |
-| L3-43 | ARK | L3-40 | DESIGNED | LABS, FOUNDATION | Sovereign archival in five tiers from one person to civilizational cold storage. Every write is covenant-reviewed and post-quantum sealed; the Heartbeat checks presence, never content. | Tiers: Pulse · Home · Sentinel · Vault · Haven [DESIGNED] · Write path: trace → Phronema review → PQC seal → tier route → durability check [DESIGNED] · Retention: lifetime to civilizational; Vault >100 yr [PROPOSED] | L2-23 (traces); L3-60 (seal); L2-10 (durability); L3-ORB (orbital replication) |
-| L3-44 | Compute Orbital | L3-40 | DESIGNED | LABS | The compute chain above the atmosphere: orbital data centers and relay satellites, solar-self-sufficient, settling on the same chain as a kitchen node. | Products: Orbital Edge (+ Star Realm) [DESIGNED] · Stage 0 anchors: Namibia · Konza SEZ (Kenya) · Dallas [PROPOSED] · Sovereign-locked in vacuum: Qunit-SC · Embodimint key vault · Phronema runtime [DESIGNED] | L3-ORB (compute); L3-ORB (relay); L3-06 (constellation) |
-| L3-ORB | Orbital Edge | — | PROPOSED | LABS | Edge hardware in orbit. How it works is not yet known, so it carries no product names. |  |  |
+| L3-42 | Mind | L3-40 | DESIGNED | LABS | The SeedBase AI compute container: GPU hosting for the community's agents, immersion-cooled, solar-prioritized. | Form: 20'/40' container, 4–8 A100/H100-class GPUs [PROPOSED] · Capacity: 100–500 concurrent agent sessions [PROPOSED] · Power: 30–80 kW, solar-prioritized [PROPOSED] | L3-20 (compute); L3-51 (power); L3-53 (storage); L3-44 (orbital cousin); L3-70 (routing) |
+| L3-43 | ARK | L3-40 | DESIGNED | LABS, FOUNDATION | Sovereign archival in five tiers from one person to civilizational cold storage. Every write is covenant-reviewed and post-quantum sealed; the Heartbeat checks presence, never content. | Tiers: Pulse · Home · Sentinel · Vault · Haven [DESIGNED] · Write path: trace → Phronema review → PQC seal → tier route → durability check [DESIGNED] · Retention: lifetime to civilizational; Vault >100 yr [PROPOSED] | L2-23 (traces); L3-60 (seal); L2-10 (durability); L3-44 (orbital replication) |
+| L3-44 | Orbital Edge | L3-40 | PROPOSED | LABS | Edge hardware in orbit: compute and relay above the atmosphere, settling on the same chain as a kitchen node. One proposed part, no product names. | Standing: one PROPOSED part; every prior orbital product name is pulled [PROPOSED] · Stage 0 anchors: Namibia · Konza SEZ (Kenya) · Dallas [PROPOSED] · Sovereign-locked in vacuum: Qunit-SC · Embodimint key vault · Phronema runtime [PROPOSED] | L3-06 (constellation); L3-20 (uplink); L3-60 (cryptography) |
 
 ### A11 · Photon (7 parts)
 
@@ -732,10 +742,10 @@ Panels, batteries, and the Convertor that turns sunlight into reserve.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Realm           [======================]      7  |
-| Havens          [===================---]      6  |
-| Commons         [=============---------]      4  |
-| Atonemint       [=========-------------]      3  |
+| Realm           [======================]      8  |
+| Havens          [================------]      6  |
+| Commons         [===========-----------]      4  |
+| Atonemint       [========--------------]      3  |
 | Foundation      [======----------------]      2  |
 | Compute         [======----------------]      2  |
 |                                                  |
@@ -744,17 +754,17 @@ Panels, batteries, and the Convertor that turns sunlight into reserve.
 
 | id | part | parent | status | domains | plain description | spec | connects to |
 |---|---|---|---|---|---|---|---|
-| L3-50 | Firma Photon | — | DESIGNED | LABS | The energy operating company, sibling to Edge under Labs, not an Edge division. Photon powers Realms. Panels, salt-ion storage, and the pool's decision layer. | Ships: Photon · Ion+ · Salt Ion+ · Photon Convertor [DESIGNED] · Standing: Sphere in Labs, may become a Domain [DESIGNED] · Partnership: on every Edge deployment (roof, wall, pad, node) [DESIGNED] | L3-51 (product); L3-52 (product); L3-53 (product); L3-54 (host); L3-01 (partnership) |
+| L3-50 | Firma Photon | — | DESIGNED | LABS | Firma's energy product family, sibling to Edge and Realm: panels, Ion+ storage, and the Convertor that operates the Energy Pool. Photon powers Realms. | Ships: Photon · Ion+ · Salt Ion+ · Photon Convertor [DESIGNED] · Standing: Photon Engineering, a Labs Sphere, builds it; Frontier deploys it on every Edge and Realm deployment [DESIGNED] · Partnership: on every Edge deployment (roof, wall, pad, node) [DESIGNED] | L3-51 (product); L3-52 (product); L3-53 (product); L3-54 (host); L3-01 (sibling family); L3-02 (sibling family) |
 | L3-51 | Photon (panels) | L3-50 | DESIGNED | LABS | The solar panels; brand and product share the name. Residential roof, grid-scale field, or container canopy. No SeedBase ships without it. | Variants: Residential · Grid · Canopy [DESIGNED] · Climate window: −40 °C to +55 °C [PROPOSED] · Rule: never a compute product [DESIGNED] | L3-52 (charge); L3-53 (charge); L3-30 (roof); L3-20 (power); L3-54 (production); L3-91 (sub-assembly) |
 | L3-52 | Ion+ | L3-50 | DESIGNED | LABS | The residential wall battery, salt-ion not lithium: no fire risk, no lithium chokepoint, locally sourceable. Grows with the household. | Chemistry: salt + hard carbon + iron cathode [PROPOSED] · Ladder: Cell 500 Wh · Home 5 kWh · Rack 50 kWh · Container 500 kWh [PROPOSED] · Origin: GYFT Labs partnership (IP + manufacturing) (signed); acquisition expected [PROPOSED] | L3-30 (wall); L3-03 (power); L3-08 (power); L3-92 (sub-assembly); L3-54 (dispatch) |
-| L3-53 | Salt Ion+ | L3-50 | DESIGNED | LABS | Industrial sodium-ion storage in a 40' container: multi-megawatt, pad-mounted, pairs with grid-scale solar, wind, and the SeedBase Hub. | Form: 40' container chassis [PROPOSED] · Scale: multi-megawatt, multi-hour discharge [PROPOSED] · Pairs with: Photon Grid, wind, geothermal, SeedBase HQ [DESIGNED] | L3-20 (pad); L3-42 (campus power); L3-72 (hours tier) |
+| L3-53 | Salt Ion+ | L3-50 | DESIGNED | LABS | Industrial sodium-ion storage in a 40' container: multi-megawatt, pad-mounted, pairs with grid-scale solar, wind, and a SeedBase. | Form: 40' container chassis [PROPOSED] · Scale: multi-megawatt, multi-hour discharge [PROPOSED] · Pairs with: Photon Grid, wind, geothermal, SeedBase HQ [DESIGNED] | L3-20 (pad); L3-42 (campus power); L3-72 (hours tier) |
 | L3-80 | Firma Aurica | — | PROPOSED | LABS, FOUNDATION | The maritime sovereignty research initiative of the Firma Research Institute; sibling to Terra, Edge, Photon. Firmaurica is what it becomes when real. | Phase: research; founding draft awaiting Vision Council review [PROPOSED] · Realized form: Firmaurica [PROPOSED] · Scope: doctrine, legal landscape, host-country strategy, 18-month agenda [PROPOSED] | L2-40 (second axis); L3-01 (hardware) |
 | L3-91 | WR-01 · Photon panel | L3-90 | PROPOSED | LABS, FRONTIER | Powers the Slate and pump by day; surplus charges Ion+. No grid dependency at the tank. | Output: 410 W per panel, vendor-rated [PROPOSED] · Array: 2 panels, 25° tilt [PROPOSED] · Feeds: Realm Slate · pump · Ion+ [DESIGNED] | L3-51 (instance); L3-92 (charge); L3-93 (power); L3-94 (power) |
 | L3-92 | WR-02 · Ion+ battery | L3-90 | PROPOSED | LABS, FRONTIER | Night and storm reserve. Salt-ion chemistry, so no lithium fire risk beside a water tank. | Capacity: 5 kWh class [PROPOSED] · Chemistry: Salt Ion+ [DESIGNED] · Runtime: Slate + pump overnight [PROPOSED] | L3-52 (instance); L3-93 (power); L3-94 (power) |
 
 ### A12 · The Commons (11 parts)
 
-Pools of compute, energy, storage, bandwidth, and water. Rights pool globally; atoms stay local.
+One shared commons every deployment joins: Atonemint, Commons Netting, the elemints, the FIG reserve, Fragmints. The lynchpin, not hardware.
 
 ```
 +------------------- [ STATUS ] -------------------+
@@ -771,12 +781,12 @@ Pools of compute, energy, storage, bandwidth, and water. Rights pool globally; a
 |                                                  |
 | Realm           [======================]     11  |
 | Compute         [================------]      8  |
+| Atonemint       [==========------------]      5  |
 | Photon          [========--------------]      4  |
-| Atonemint       [======----------------]      3  |
 | Embodimint      [====------------------]      2  |
 | Place           [====------------------]      2  |
 | THEOS           [==--------------------]      1  |
-| Havens          [==--------------------]      1  |
+| Treasury        [==--------------------]      1  |
 |                                                  |
 +--------------------------------------------------+
 ```
@@ -786,23 +796,23 @@ Pools of compute, energy, storage, bandwidth, and water. Rights pool globally; a
 | L1-14a | Commons Position | L1-14 | DESIGNED | FOUNDATION, FRONTIER | Every identity's running net of what it gave minus what it drew, one balance per pool. Cannot be sold, pledged, seized or inherited. | Balances: TOPS·s, kWh, GB·months, relay-GB [DESIGNED] · Transferable: never; seizable: never [DESIGNED] · On death: unused balance returns to the pool [DESIGNED] | L0-08 (keyed); L1-15 (makes real); L1-16 (directs) |
 | L1-16 | Compute Sowing Voucher | L1-14 | DESIGNED | THEOSIS, FRONTIER | Give a slice of your rights to a named person or Settlemint. Same pool, same netting, a destination attached. The gift travels; hardware does not. | Shape: directed settlement inside netting [DESIGNED] · Example: 20 TOPS·s for 30 days [PROPOSED] · : Expiry processed at daily settlement [PROPOSED] | L1-14a (from/to); L0-08a (sowing credit) |
 | L1-45a | Hill Country Water Commons (trust) | L1-45 | PROPOSED | CAPITAL, FRONTIER | A permanent trust fed by every credit sale. Never spent, only invested. Pays a node dividend by contribution and a commons dividend equally. | Corpus: never spent, only invested [PROPOSED] · Outputs: node dividend (proportional) + commons dividend (equal) [PROPOSED] · : Rule non-amendable per mission covenant [PROPOSED] | L1-33 (twin); L1-45 |
-| L3-70 | The Compute and Energy Commons | — | DESIGNED | LABS, FOUNDATION | Own your AI, give the surplus, draw when you need, keep what giving earns. Rights pool globally; atoms stay local. Four pools, one accounting. | Citizen claim: Sovereign Compute Right + Commons Position, non-transferable [DESIGNED] · Weighting: proportion of what you have, not size (widow's mite) [DESIGNED] · Constitutional root: Canon Article XXI, pre-ratification [DESIGNED] | L3-71 (pool); L3-72 (pool); L3-73 (pool); L3-74 (pool); L3-76 (stocks) |
-| L3-71 | Compute Pool | L3-70 | DESIGNED | LABS | Pool 01: TOPS·seconds. Served from the nearest substrate because latency is lowest there. Raw cycles cannot be stored, so claims are stored instead. | Unit: TOPS·seconds [DESIGNED] · Stored as: Commons Positions · e(TOPS) · intellectual capital [DESIGNED] · Nets: continuously, at epoch cadence [PROPOSED] | L3-41 (substrate); L3-42 (substrate); L3-ORB (substrate) |
+| L3-70 | The shared commons | — | DESIGNED | CAPITAL, FOUNDATION, LABS | One shared commons every deployment joins: give the surplus, draw when you need, keep what giving earns. Rights pool globally; atoms stay local. The lynchpin. | Joins: every deployment, household and community, one commons in different setups [DESIGNED] · Weighting: proportion of what you have, not size (widow's mite) [DESIGNED] · Pillars: Firmagentics · THEOS · the commons; the commons is the lynchpin [DESIGNED] | L3-71 (pool); L3-72 (pool); L3-73 (pool); L3-74 (pool); L3-76 (stocks); L1-17 (FIG reserve); L1-60 (capital formation, commons first) |
+| L3-71 | Compute Pool | L3-70 | DESIGNED | LABS | Pool 01: TOPS·seconds. Served from the nearest substrate because latency is lowest there. Raw cycles cannot be stored, so claims are stored instead. | Unit: TOPS·seconds [DESIGNED] · Stored as: Commons Positions · e(compute) · intellectual capital [DESIGNED] · Nets: continuously, at epoch cadence [PROPOSED] | L3-41 (substrate); L3-42 (substrate); L3-44 (substrate) |
 | L3-72 | Energy Pool | L3-70 | DESIGNED | LABS | Pool 02: kWh. Electrons move only inside interconnected regions; accounting moves everywhere. Stored physically across four timescales. | Unit: kWh [DESIGNED] · Storage ladder: seconds (flywheel) · hours (Ion+) · days (flow) · months (pumped hydro/hydrogen) [PROPOSED] · Working model: one stored kWh ≈ 14,000–22,000 TOPS-hours deferred [PROPOSED] | L3-51 (production); L3-52 (storage); L3-53 (storage); L3-54 (operation) |
 | L3-73 | Storage Pool | L3-70 | DESIGNED | LABS | Pool 03: GB·months. Archival tolerates distance, so this pool nets globally through ARK attestation. Its Convertor is not yet named. | Unit: GB·months [DESIGNED] · Nets: globally via ARK attestation [DESIGNED] · Convertor: name not locked, Vision call [PROPOSED] | L3-43 (substrate) |
-| L3-74 | Bandwidth Pool | L3-70 | DESIGNED | LABS | Pool 04: relay-GB. Mesh bandwidth is local by nature, so it nets per District, not globally. Its Convertor is not yet named. | Unit: relay-GB [DESIGNED] · Nets: per District [DESIGNED] · Convertor: name not locked, Vision call [PROPOSED] | L3-13 (substrate); L3-ORB (substrate) |
-| L3-75 | Water Pool (proposed fifth pool) | L3-70 | PROPOSED | LABS, FRONTIER | A possible fifth pool for metered stored water, netted per basin. Raised by the Water Realm work; not in Commons canon. | Unit: metered stored surplus only (e(H2O)) [PROPOSED] · Netting: per basin, not global [PROPOSED] · Convertor: "Water Convertor" open question [PROPOSED] | L3-90 (substrate) |
+| L3-74 | Bandwidth Pool | L3-70 | DESIGNED | LABS | Pool 04: relay-GB. Mesh bandwidth is local by nature, so it nets per District, not globally. Its Convertor is not yet named. | Unit: relay-GB [DESIGNED] · Nets: per District [DESIGNED] · Convertor: name not locked, Vision call [PROPOSED] | L3-13 (substrate); L3-44 (substrate) |
+| L3-75 | Water Pool (proposed fifth pool) | L3-70 | PROPOSED | LABS, FRONTIER | A possible fifth pool for metered stored water, netted per basin. Raised by the Rain Ledger work; not in Commons canon. | Unit: metered stored surplus only (e(H2O)) [PROPOSED] · Netting: per basin, not global [PROPOSED] · Convertor: "Water Convertor" open question [PROPOSED] | L3-90 (substrate) |
 | L3-76 | Commons Reserves (six categories) | L3-70 | DESIGNED | LABS, CAPITAL | What the Commons holds: three categories in atoms (substrate, stored energy, precious/physical) and three in accounting (Positions, elemint claims, intellectual capital). | Atoms: deployed substrate · stored energy · gold, Bitcoin, Commons-held land [DESIGNED] · Accounting: Commons Positions · elemint claims 1:1 · trained models and datasets [DESIGNED] · Working model: Commons-native claims ≈ 25% of FIG backing at maturity [PROPOSED] | L3-01 (substrate); L3-50 (stored energy) |
 | L4-77 | Builder on the chain or Commons | L4-72 | DESIGNED | LABS | Puts ideas and code into the 1Accord Commons. Royalty-style: usage writes slices with a permanent step-up, no hours needed. Fastest accumulation. | Slices: royalty on usage, permanent step-up [PROPOSED] · Standing: build history, endorsement [DESIGNED] · IP: stays in the Commons trust, never privatized [PROPOSED] | L4-45 (· Commons IP) |
 
-### A13 · Settlemint (36 parts)
+### A13 · Settlemint (30 parts)
 
-The stack a community earns, tier by tier, until it runs its own chain.
+The stack a community earns, system by system, until it runs its own chain.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Settlemint    ███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░    36   |
+| Settlemint    ███▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░    30   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -812,35 +822,29 @@ The stack a community earns, tier by tier, until it runs its own chain.
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Place           [======================]     52  |
-| Embodimint      [===-------------------]      8  |
-| Firmagentics    [==--------------------]      4  |
-| Atonemint       [==--------------------]      4  |
-| Foundation      [==--------------------]      4  |
-| Treasury        [=---------------------]      3  |
+| Place           [======================]     49  |
+| Embodimint      [====------------------]      8  |
+| Foundation      [===-------------------]      6  |
+| Treasury        [==--------------------]      5  |
+| Firmagentics    [=---------------------]      3  |
+| Atonemint       [=---------------------]      3  |
+| Elemint         [=---------------------]      3  |
 | Realm           [=---------------------]      2  |
-| Elemint         [----------------------]      1  |
 |                                                  |
 +--------------------------------------------------+
 ```
 
 | id | part | parent | status | domains | plain description | spec | connects to |
 |---|---|---|---|---|---|---|---|
-| L0-08d | ZK privacy layer | L0-08 | DESIGNED | LABS, THEOSIS | Prove your tier, giving streak, or build history without showing the numbers. Declaration and existence are always public; the rest is yours. | Proof system: Groth16 on BN254 [PROPOSED] · Credential types: 5 [DESIGNED] · Public floor: declaration, alignment trajectory, existence [DESIGNED] | L0-08a; L0-10c (handshake) |
-| L1-26g | Reserve accounting line items ($eWATT $eTOPS $eACRE $eAu $eBTC) | L1-18 | DESIGNED | CAPITAL | Dashboard sums, not tokens. What a Settlemint sees when it asks "what backs our money, and how much of each." | Names: v3.2 rename lock ($eLAND/$eENRG/$eCOMP deprecated) [DESIGNED] · Nature: ledger line, never transferable [DESIGNED] · : Feeds reserve share % and issuance capacity [DESIGNED] | L1-26 (sums); L1-19 (shard); L1-18 |
 | L1-42a | Jobs board (first slice of 1Accord) | L1-42 | LIVE | CAPITAL, FRONTIER | Post a job, claim it, do it, get approved, get paid in USDC in seconds. Deployed; nobody has posted one. | Rows: oa_jobs = 0 [VERIFIED] · Payout: blocked on gas credits at the rail [VERIFIED] · : PAID flips only after chain settle (2H.2) [LIVE] | L1-49 (pattern); L1-42c (settles); L0-07 (pays); L1-30 (slice source) |
+| L1-65 | Two paths to a Settlemint | L1-60 | DESIGNED | CAPITAL, FRONTIER | Firma's own build through Frontier and the Living Lab, or the NS-Sim path with Investmint, Liquid Terra, and Firma Terra. Never debt. | Path one: Frontier build, ATX the proving ground [DESIGNED] · Path two: NS-Sim (Sandbox → Sim → Mint → Settle) with Investmint, Liquid Terra, Firma Terra [DESIGNED] · : Capital enters a place as position and participation in its land SPVs, never as debt [DESIGNED] | L1-60 (routes); L4-31 (ATX); L4-38 (NS Simulator); L1-44 (Investmint); L4-42 (Liquid Terra); L4-41 (Firma Terra); L4-43 (SPV) |
 | L1-49 | 1Accord engagement (the unit of proof) | L1-01 | DESIGNED | CAPITAL, THEOSIS | Post, claim, deliver, verify, settle. The poster reserves pay plus tithe; the one served signs "this was done for me"; USDC moves; the ledgers update. | Tithe: reserved on top at posting [DESIGNED] · : Verify = endorsement event, a named counterparty [DESIGNED] · Settle: sow hook fires first, a Trace is signed [DESIGNED] | L1-42a (live slice); L1-30; L0-08a; L0-11a; L0-10c |
 | L4-01 | Settlemint Stack (assembly) | — | DESIGNED | LABS, FOUNDATION | The seven protocols a working settlement needs, in one stack. Labs is technical steward of all; Protocol Governance governs all. | Members: firmamint · Governmint · Embodimint · Elemint · Figmint · Atonemint · Testamint [DESIGNED] · Owners: Labs (firmamint, Governmint, Embodimint, Elemint) · Capital (Figmint, Atonemint) · Theosis (Testamint) [DESIGNED] · Runtime: firmamint on Base runtime [DESIGNED] | L4-02 (· law); L4-03 (· worship); L4-05 (· money) |
-| L4-02 | Governmint | L4-01 | DESIGNED | LABS, FOUNDATION | The jurisdiction and legal launchpad: charter templates, a local council, proposals and votes, dispute resolution. Not the Nation's governance. | Activates: T1 [DESIGNED] · Vote weight: reputation-weighted from Embodimint, never token-weighted [DESIGNED] · Adds at T3: network-wide vote weight [PROPOSED] | L4-08 (· activation); L4-31 (· charter); L4-19 (· jurisdiction) |
-| L4-03 | Testamint | L4-01 | DESIGNED | THEOSIS, LABS | The sacred layer of a settlement: parish nodes, a bishop's key, divine worship on sovereign infrastructure. Theosis owns the meaning; Labs builds it. | Activates: T3 [DESIGNED] · Surfaces: Parish Nodes · Bishop's Key · Faithful Key · Communion Ledger · Divine Broadcast [DESIGNED] · Release: joint gate Theosis/clergy + Labs [DESIGNED] | L4-10 (· activation); L4-58 (· Divine Liturgy); L4-23 (· covenant memory) |
-| L4-04 | Settlemint shard | L4-01 | DESIGNED | LABS | The on-chain unit of a settlement. Detected, not declared: Edge devices on a SeedBase hub form a mesh and the shard appears. | Contains: Atonemint: Local · e(xchange): Local · own state object [DESIGNED] · Boundary: shard edge = trade edge; all flows on Atonemint [DESIGNED] · Nesting: child shards down, federate up [PROPOSED] | L4-06 (· tier); L4-12 (· GDP) |
-| L4-05 | Settlemint financial layer (housing) | L4-01 | LIVE | LABS, CAPITAL | Where a settlement's money is handled day to day: Allotmint (budgets, expenses, pay), Water Realm ledger, Mintware. Belongs to Settlemint, not Frontier. | Members: Allotmint · Water Realm ledger · Mintware [DESIGNED] · Running today at ATX: Allotmint [LIVE] · : Community treasury ≠ Ecosystem Treasury ≠ any sovereign fund [DESIGNED] | L4-31 (· community) |
-| L4-06 | Tier ladder T0–T4 (assembly) | L4-04 | DESIGNED | LABS, FRONTIER | Five tiers of earned settlement capability. Each adds without removing. Transitions fire from on-chain events and are irreversible. | Rule: earned, never purchased [DESIGNED] · Trigger source: Atonemint GDP computation [DESIGNED] · Skipping: impossible [DESIGNED] | L4-07 (..L4-11 · sequence); L4-12 (· readiness); L4-39 (· overlap) |
-| L4-07 | T0 Observed Cluster | L4-06 | DESIGNED | LABS | Hardware density makes an economic zone. Aggregate stats visible; all data still individual. No collective identity yet. | Trigger: 10+ Edge Nodes on a SeedBase hub, Mesh Realm live [PROPOSED] · Activates: shard, Atonemint: Local, e(xchange): Local (market orders), FIG Cash, Theo [DESIGNED] · GDP clock: starts [DESIGNED] |  |
-| L4-08 | T1 Governed Settlement | L4-06 | DESIGNED | LABS, FRONTIER | The community switches on a jurisdiction framework: charter, elected council, votes, disputes. The shard gains collective agency. | Trigger: 50+ devices, $50K+ FIG-equivalent GDP [PROPOSED] · Activates: Governmint, limit orders on e(xchange): Local [DESIGNED] · FANS: eligible from here [PROPOSED] | L4-02 (· law); L4-25 (· eligibility); L4-34 (· formation) |
-| L4-09 | T2 Reserve Settlement | L4-06 | DESIGNED | LABS, CAPITAL | The community's collective reserve crosses a threshold and it earns its own Elemint reserve partition and cross-shard trade. | Trigger: reserve buy-in threshold, 200+ devices, $500K+ GDP [PROPOSED] · Activates: Elemint partition, e(xchange): Global, Paymint federation, FIG Cash locally mintable [DESIGNED] · Land: e(terra) qualifies Settlemint reserves here [PROPOSED] | L4-43 (· buy-back window) |
-| L4-10 | T3 Sovereign Settlement | L4-06 | DESIGNED | LABS, CAPITAL, THEOSIS | The settlement issues its own currency backed by its elemint basket, exports collectively, and its sacred layer switches on. | Trigger: sustainable GDP, full infrastructure, demonstrable sovereignty capacity [PROPOSED] · Activates: Figmint local currency, shard swaps, Testamint [DESIGNED] · : Still Canon-bound [DESIGNED] | L4-03 (· worship); L4-43 (· majority buy-back) |
-| L4-11 | T4 Network State | L4-06 | DESIGNED | LABS, FRONTIER, FOUNDATION | The settlement graduates to its own OP Stack L2: own sequencer, own gas, own chain governance. Still Canon-bound, still interoperating. | Trigger: FANS membership application accepted [PROPOSED] · Chain: own OP Stack L2, Superchain messaging [PROPOSED] · Relationship to Firma: alliance member, not subordinate [DESIGNED] | L4-25 (· membership); L4-20 (· political form) |
+| L4-02 | Governmint | L4-01 | DESIGNED | LABS, FOUNDATION | The jurisdiction and legal launchpad: charter templates, a local council, proposals and votes, dispute resolution. Not the Nation's governance. | Activates: governed settlement [DESIGNED] · Vote weight: reputation-weighted from Embodimint, never token-weighted [DESIGNED] · Adds at sovereign settlement: network-wide vote weight [PROPOSED] | L4-08 (· activation); L4-31 (· charter); L4-19 (· jurisdiction) |
+| L4-03 | Testamint | L4-01 | DESIGNED | THEOSIS, LABS | The sacred layer of a settlement: parish nodes, a bishop's key, divine worship on sovereign infrastructure. Theosis owns the meaning; Labs builds it. | Activates: sovereign settlement [DESIGNED] · Surfaces: Parish Nodes · Bishop's Key · Faithful Key · Communion Ledger · Divine Broadcast [DESIGNED] · Release: joint gate Theosis/clergy + Labs [DESIGNED] | L4-10 (· activation); L4-58 (· Divine Liturgy); L4-23 (· covenant memory) |
+| L4-04 | Settlemint shard | L4-01 | DESIGNED | LABS | The on-chain unit of a settlement. Detected, not declared: Edge devices on a SeedBase form a mesh and the shard appears. | Contains: Atonemint: Local · e(xchange): Local · own state object [DESIGNED] · Boundary: shard edge = trade edge; all flows on Atonemint [DESIGNED] · Nesting: child shards down, federate up [PROPOSED] | L4-06 (· tier); L4-12 (· GDP) |
+| L4-05 | Settlemint financial layer (housing) | L4-01 | LIVE | LABS, CAPITAL | Where a settlement's money is handled day to day: Allotmint (budgets, expenses, pay), Rain Ledger, Mintware. Belongs to Settlemint, not Frontier. | Members: Allotmint · Rain Ledger · Mintware [DESIGNED] · Running today at ATX: Allotmint [LIVE] · : Community treasury ≠ Ecosystem Treasury ≠ any sovereign fund [DESIGNED] | L4-31 (· community) |
+| L4-06 | Settlement ladder (assembly) | L4-04 | DESIGNED | LABS, FRONTIER | Five stages of earned settlement capability, each added by operating. Each adds without removing. Transitions fire from on-chain events and are irreversible. | Rule: earned, never purchased [DESIGNED] · Trigger source: Atonemint GDP computation [DESIGNED] · Skipping: impossible [DESIGNED] | L4-07 (..L4-11 · sequence); L4-12 (· readiness); L4-39 (· overlap) |
 | L4-17 | Settlemint (the place) | L4-13 | DESIGNED | FRONTIER | A settlement whose systems are integrated enough to live, build, govern, exchange, produce, and belong with growing autonomy. Asks: can this place sustain a people? | Relationship to Firma: internal, affiliated, or fully independent [DESIGNED] · Membership: only from the Settlemint's own covenant or governance [DESIGNED] · : Can exist outside any District [DESIGNED] | L4-04 (· on-chain unit); L4-06 (· capability); L4-19 (· may compose); L4-34 (· formation route); L4-31 (· genesis instance) |
 | L4-18 | Settlement maturity (Site → Mature Settlemint) | L4-17 | DESIGNED | FRONTIER | Site → Occupied Place → Settlement → Settlemint → Mature Settlemint. One of four maturities; a District is not the next settlement tier. | Four maturities: social · political · settlement · infrastructure [DESIGNED] · Proof ladder per domain: Claim → Signal → Evidence → Repetition → Reliability → Institution [DESIGNED] · Regression: possible [DESIGNED] | L4-17 (· measures); L4-26 (· political maturity); L4-31 (· ATX profile) |
 | L4-27 | Frontier Campus (place type) | — | PROPOSED | FRONTIER, LABS | A real site on the path that has not yet hit the Settlemint mark: research, R&D, experiment, learning, showcase. Every campus runs a Living Lab. | Measure: what the lab proves becomes how the place runs [DESIGNED] · Campus rule: shared Order, different places, local purposes [DESIGNED] · Governance: campus stewardship, a Campus Steward [PROPOSED] | L4-30 (· runs); L4-17 (· may mature into); L4-32; L4-33 (· instances); L4-31 (· one identity of ATX); L4-36 (· funding) |
@@ -855,22 +859,22 @@ The stack a community earns, tier by tier, until it runs its own chain.
 | L4-40 | Six-phase builder pipeline | L4-38 | DESIGNED | LABS, CAPITAL, FRONTIER | Discover → Simulate → Acquire → Build → Launch → Sovereign. Each phase produces real outputs (data, contracts, deeds, orders, hardware) that feed the next. | Acquire: click-buy the deed; SPV structured; on-chain title [PROPOSED] · Build: SeedBase configuration ordered from the Firma catalog, ~90 days [PROPOSED] · Launch: shard activates; tiers take over [DESIGNED] | L4-42 (· acquire); L4-04 (· launch); L4-06 (· after launch) |
 | L4-41 | Firma Terra (real asset fund) | — | PROPOSED | CAPITAL | The land fund under Capital: acquires, stewards, finances, develops land and productive assets. The Fund is the vehicle; the Nation holds the land. | Deployment types: settlements · Districts · data centers · energy farms · food · natural reserves · strategic corridors [PROPOSED] · Role in settlement deals: GP with first right of refusal past the Sim-to-Mint threshold [PROPOSED] | L4-38 (· deal origin); L4-42 (· title); L4-43 (· SPV); L4-24 (· District land) |
 | L4-42 | Liquid Terra (land tokenization) | L4-41 | PROPOSED | CAPITAL, LABS | Tokenizes legally enforceable ownership of land: on-chain title, SPV structuring, e(terra) attestation for every parcel. Strategic partnership with LiquidAcre. | Function: legally enforceable ownership on chain [DESIGNED] · Partner: LiquidAcre [PROPOSED] · First parcels at ATX: ATX_02 collaboration [PROPOSED] | L4-41 (· fund); L4-43 (· SPV); L4-38 (· Mint mode); L4-31 (· first parcels); L1-25h (· the survey that reads the parcel) |
-| L4-43 | Land SPV and community buy-back | L4-42 | PROPOSED | CAPITAL, FRONTIER | Each parcel is isolated in its SPV. Founding, strategic, and host-country partners take positions; the community earns the right to buy in as tiers rise. | Buy-back windows: T2 option, T3 community majority, later up to a supermajority [PROPOSED] · Firma retains: infrastructure rights (data center, mesh, energy) [PROPOSED] · Isolation: no cross-deal liability [PROPOSED] | L4-09; L4-10 (· windows); L4-41 (· structures); L4-17 (· community) |
+| L4-43 | Land SPV and community buy-back | L4-42 | PROPOSED | CAPITAL, FRONTIER | Each parcel is isolated in its SPV. Founding, strategic, and host-country partners take positions; the community earns the right to buy in as it matures. | Buy-back windows: an option at reserve settlement, community majority at sovereign settlement, later up to a supermajority [PROPOSED] · Firma retains: infrastructure rights (data center, mesh, energy) [PROPOSED] · Isolation: no cross-deal liability [PROPOSED] | L4-09; L4-10 (· windows); L4-41 (· structures); L4-17 (· community) |
 | L4-45 | 1Accord (covenant marketplace) | L4-01 | DESIGNED | LABS, CAPITAL | The place work is posted, claimed, verified, and settled, feeding a commons that cannot be privatized. Constitutional — the unit of proof for contribution. | Engagement loop: post → claim → verify → settle (USDC) [DESIGNED] · Commons IP: held in a STAR trust, cannot be privatized [PROPOSED] · Agent App Store, Sense Market: all PROPOSED [PROPOSED] | L4-31 (· first jobs) |
 | L4-71 | Relationship kinds at a place | L4-14 | DESIGNED | FRONTIER, FOUNDATION | Ten distinct relationships a person may hold at once, none inferred from another: resident, Settlemint participant, member, Role-holder, Steward, builder, Pod/Swarm participant, guest, external collaborator. | Count: 10 [DESIGNED] · Default words: Role-holder, Steward, builder, contributor, participant; never corporate terms [DESIGNED] · : Outside participation implies no employment, membership, endorsement, ownership [DESIGNED] | L4-14 (· person); L4-17 (· membership source); L4-67 (· Role); L4-68 (· Swarm) |
 | L4-74 | Fellow, partly paid | L4-72 | DESIGNED | FOUNDATION | Paid part of fair value; the unpaid remainder is what they risk and what earns slices. | Slices: on the unpaid remainder only, 2× [PROPOSED] · Standing: same as salaried [DESIGNED] |  |
 | L4-79 | Resident of another Settlemint | L4-72 | DESIGNED | FRONTIER | Doing life: time, giving, surplus energy or water into their own Settlemint's Pie. One Embodimint carried between places. Paid in local currency. | Surplus: mints elemints in their name [PROPOSED] · Pay: local currency via Figmint [PROPOSED] · Dividends: Fragmint weight across the ecosystem + equal citizen dividend [PROPOSED] | L4-17 (· home); L4-83 (· dividend) |
-| L4-86 | Salary classes | L4-72 | DESIGNED | FOUNDATION, CAPITAL | Six flat bands: F (Founders), S (Stewards), G (Governance), C (Chiefs), P (Partners), A (Associates). Same class, same number. Highest class only. | Classes: 6 [DESIGNED] · Numbers: placeholders in file [PROPOSED] · No-stacking: highest class only; extra seats are service [DESIGNED] | L4-72 (· layer 1); L4-69 (· S-Class seats) |
+| L4-86 | Salary classes | L4-72 | DESIGNED | FOUNDATION, CAPITAL | Six flat bands: F (Founding), S (Stewards), G (Governance), C (Chiefs), P (Partners), A (Associates). Same class, same number. Highest class only. | Classes: 6 [DESIGNED] · Numbers: placeholders in file [PROPOSED] · No-stacking: highest class only; extra seats are service [DESIGNED] | L4-72 (· layer 1); L4-69 (· S-Class seats) |
 | L4-87 | Payment · generosity · wage (three records) | L4-05 | DESIGNED | FRONTIER, CAPITAL | When value moves, record which kind: payment for approved work, or freely given excess. Generosity is not a wage; payment is not generosity. | Payment forms: compensation · reimbursement · grant · bounty · stipend · gift [DESIGNED] · Excess: recorded separately, never coerced [DESIGNED] · Subsidy: allowed, must be visible [DESIGNED] | L4-75 (· volunteers); L4-73 (· staff) |
 
-### A14 · Place and people (41 parts)
+### A14 · Place and people (42 parts)
 
 Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and formation.
 
 ```
 +------------------- [ STATUS ] -------------------+
 |                                                  |
-| Place         █▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░    41   |
+| Place         █▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░    42   |
 |                                                  |
 | █ live ▓ signed ▒ designed ░ proposed · sealed   |
 |                                                  |
@@ -880,9 +884,9 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 ```
 +---------------- [ CONNECTS TO ] -----------------+
 |                                                  |
-| Settlemint      [======================]     52  |
-| Foundation      [===-------------------]      8  |
-| Embodimint      [===-------------------]      8  |
+| Settlemint      [======================]     49  |
+| Foundation      [====------------------]      9  |
+| Embodimint      [====------------------]      8  |
 | Commons         [=---------------------]      2  |
 | Realm           [----------------------]      1  |
 | Atonemint       [----------------------]      1  |
@@ -895,16 +899,17 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 |---|---|---|---|---|---|---|---|
 | L1-33 | Citizen dividend (Alaska model) | L1-29 | PROPOSED | FOUNDATION, FRONTIER, CAPITAL | Every Settlemint member in good standing gets an equal share from a corpus never spent — beside, not instead of, the Fragmint dividend. | Rule: equal per member, corpus inviolate, formula in founding document [PROPOSED] · Unit: per person or per household (R3 open) [PROPOSED] · : Paid in capacity before cash [PROPOSED] | L1-32 (sibling); L1-45a (water twin); L1-15 (compute twin) |
 | L2-15 | Nation of Heaven Sovereign Wealth Fund | L2-13 | SEALED | FOUNDATION, CAPITAL | (sealed) |  |  |
-| L3-23 | Campus pods | L3-20 | DESIGNED | LABS, FRONTIER | Add-on container types that compose a campus: Office, Cafe, Lab, 1Accord, Meet, HQ. | Types: Office · Cafe · Lab · 1Accord · Meet · HQ [DESIGNED] · Full campus: six pods + Mint + Grid + Haven ring, 2,000–4,000 m² [PROPOSED] · 1Accord pod: agent / Embodimint enrollment surface [DESIGNED] | L3-20 (composition) |
-| L4-12 | GDP clock | L4-04 | DESIGNED | LABS | A rolling 30-day measurement of a settlement's real on-chain activity. It decides tier readiness. Math decides, not committees. | Window: rolling 30 days [PROPOSED] · Inputs: tx volume, energy value, compute value, service revenue, reserve yield, local currency circulation [PROPOSED] · Nature: direct measurement, not estimate [DESIGNED] | L4-06 (· trigger); L4-38 (· public competitive view) |
+| L3-23 | Campus modules | L3-20 | DESIGNED | LABS, FRONTIER | Add-on module types that compose a campus: Office, Lab, 1Accord, Meet, HQ. Modular construction, added like blocks as a place forms. | Types: Office · Lab · 1Accord · Meet · HQ [DESIGNED] · Full campus: modules + Edge Cache + Grid + Haven ring, 2,000–4,000 m² [PROPOSED] · 1Accord module: agent / Embodimint enrollment surface [DESIGNED] | L3-20 (composition) |
+| L4-11 | Own chain (Network State) | L4-06 | DESIGNED | LABS, FRONTIER, FOUNDATION | The settlement graduates to its own OP Stack L2: own sequencer, own gas, own chain governance. Still Canon-bound, still interoperating. | Trigger: FANS membership application accepted [PROPOSED] · Chain: own OP Stack L2, Superchain messaging [PROPOSED] · Relationship to Firma: alliance member, not subordinate [DESIGNED] | L4-25 (· membership); L4-20 (· political form) |
+| L4-12 | GDP clock | L4-04 | DESIGNED | LABS | A rolling 30-day measurement of a settlement's real on-chain activity. It decides stage readiness. Math decides, not committees. | Window: rolling 30 days [PROPOSED] · Inputs: tx volume, energy value, compute value, service revenue, reserve yield, local currency circulation [PROPOSED] · Nature: direct measurement, not estimate [DESIGNED] | L4-06 (· trigger); L4-38 (· public competitive view) |
 | L4-15 | Household | L4-13 | DESIGNED | THEOSIS, FRONTIER | A real unit, not a billing convenience. May hold a Realm. Children, inheritance, succession are named open questions. | Can share one Realm: open [PROPOSED] · Inheritance and succession: open [PROPOSED] · Citizen dividend unit (per person or per household): ruling R3 owed [PROPOSED] | L4-14 (· members); L4-16 (· stewards); L4-77 (· dividend unit) |
 | L4-19 | District (constituent city-polity) | L4-13 | DESIGNED | FRONTIER, FOUNDATION | A city-like polity that governs meaningful parts of common life while belonging to a larger nation. Asks: can this city-polity govern? | Must show: durable people, civic identity, legitimate governance, treasury, dispute resolution, representation [DESIGNED] · : "Sovereign" = direction, never a legal claim [DESIGNED] · District 001 Central Texas: plate drawn [PROPOSED] | L4-17 (· contains one or many); L4-23 (· composes the Nation); L4-02 (· jurisdiction tools); L4-24 (· the Nation's own 12) |
-| L4-20 | Network State (the Nation of Heaven) | L4-13 | DESIGNED | FRONTIER, FOUNDATION | A Network State: the political community its people, institutions, and places compose. Ours is the Nation of Heaven, many Districts and Settlemints under one Canon. | Threshold: substantial collective capacity + physical embodiment + external political standing [DESIGNED] · Preserves: shared peoplehood and political whole [DESIGNED] · Technical form: T4 own L2 [PROPOSED] | L4-19 (· composed of); L4-11 (· chain form); L4-21 (· may compose); L4-35 (· relationships program) |
+| L4-20 | Network State (the Nation of Heaven) | L4-13 | DESIGNED | FRONTIER, FOUNDATION | A Network State: the political community its people, institutions, and places compose. Ours is the Nation of Heaven, many Districts and Settlemints under one Canon. | Threshold: substantial collective capacity + physical embodiment + external political standing [DESIGNED] · Preserves: shared peoplehood and political whole [DESIGNED] · Technical form: its own OP Stack L2 at the ladder's last stage [PROPOSED] | L4-19 (· composed of); L4-11 (· chain form); L4-21 (· may compose); L4-35 (· relationships program) |
 | L4-21 | Constellation | L4-13 | DESIGNED | FOUNDATION, FRONTIER | A voluntary higher-order relationship among distinct polities that stay themselves while coordinating real capabilities. Canon by ruling; the name stays provisional in the field guide. | Rule: no new layer without a new function [DESIGNED] · Is not: one state, an empire, automatically a federation or confederation, a protocol ecosystem [DESIGNED] · Institutional relationship: not yet defined [PROPOSED] | L4-20 (· allied peers); L4-22 (· draft alternative); L4-25 (· candidate mechanism) |
 | L4-22 | Federation (working draft) | L4-13 | PROPOSED | FOUNDATION, FRONTIER | A draft relationship form: Phase 2 disclosure speaks of "federation through operational Districts"; FANS is called "the federation alongside". Not settled. | Status: working draft [PROPOSED] · Appears in: Settlemint Formation "Recognition and federation" [PROPOSED] · Relationship to Constellation: unresolved [PROPOSED] | L4-21 (· competes with); L4-25 (· named as); L4-34 (· formation output) |
 | L4-23 | Nation of Heaven | L4-13 | DESIGNED | FOUNDATION, THEOSIS | The covenant. A covenant-governed sovereign nation built, not told, then revealed. Constitutionally the 12 Districts. Not every Settlemint must belong to it. | Form: covenant organism; spiritual, constitutional, executional layers kept separate [DESIGNED] · Ratification of canon: not ratified [PROPOSED] · Disclosure: Phase 1 externally (neutral infrastructure) [DESIGNED] | L4-24 (· constituent Districts); L4-25 (· alongside); L4-03 (· covenant memory); L4-44 (· recognition path) |
 | L4-24 | Districts of Heaven (12) | L4-23 | PROPOSED | FOUNDATION | Twelve sovereign territories directly governed under the Canon: the Nation's constitutional core. Each counters a node of the extractive shadow network. Districts ≠ the church. | Count: 12 [PROPOSED] · Examples: 01 The Mint · 02 The Canon Seat · 03 The Forge · 04 The Gate · 05 The Table · 06 The Standard [PROPOSED] · Land: acquired via Firma Terra, held for the Nation [PROPOSED] | L4-19 (· instances); L4-41 (· land); L4-03 (· separate sacred layer) |
-| L4-25 | FANS (Firma Alliance of Network States) | L4-13 | PROPOSED | FOUNDATION, FRONTIER | A commonwealth alongside the Nation, never inside it. Autonomous allies on firmamint under protocol governance with movement, trade, protocol, autonomy, voice. | Entry: Settlemint shard active + reserve participation + Canon-compliant + T1 [PROPOSED] · Rights: free movement · FIG at par · protocol access · local law is local · assembly voice [PROPOSED] · Present tense: never pitched as a present benefit [DESIGNED] | L4-11 (· T4 trigger); L4-21 (· possible Constellation form); L4-23 (· alongside) |
+| L4-25 | FANS (Firma Alliance of Network States) | L4-13 | PROPOSED | FOUNDATION, FRONTIER | A commonwealth alongside the Nation, never inside it. Autonomous allies on firmamint under protocol governance with movement, trade, protocol, autonomy, voice. | Entry: Settlemint shard active + reserve participation + Canon-compliant + governed settlement [PROPOSED] · Rights: free movement · FIG at par · protocol access · local law is local · assembly voice [PROPOSED] · Present tense: never pitched as a present benefit [DESIGNED] | L4-11 (· own-chain trigger); L4-21 (· possible Constellation form); L4-23 (· alongside) |
 | L4-26 | Progression thresholds | L4-13 | DESIGNED | FRONTIER | Audience, Community, People, Startup Society, Network Union, Network Polity, Physical Settlement Network, Network State, Sovereign State — a map, not a ladder. | Threshold of "we": people believe they belong to one another durably [DESIGNED] · Firma's origin path: covenant first, people and place together, network everything [PROPOSED] · : The proof should earn the name [DESIGNED] | L4-18 (· sibling maturities); L4-20 (· destination); L4-31 (· ATX position); L4-14 (· peoplehood) |
 | L4-28 | Settlemint Formation (Frontier Sphere) | — | PROPOSED | FRONTIER, FOUNDATION | The supported route from Campus or Colony toward Settlemint recognition: covenant and charter, governance and legal prep, treasury readiness, recognition, hand-over to local authority. | Boundary: support ≠ ownership; infrastructure ≠ sovereignty; recognition ≠ subordination [DESIGNED] · Recognition criteria: set by the Foundation [PROPOSED] · Most future Settlemints: no organizational place inside Frontier at all [DESIGNED] | L4-17 (· produces); L4-02 (· charter tools); L4-22 (· federation output); L4-05 (· treasury readiness) |
 | L4-30 | Living Lab (the method) | — | LIVE | FRONTIER, LABS | Not a place: the way a Campus, Colony, or Settlemint builds and tests systems under real conditions. Labs runs the method; Frontier holds the places. | Six beats: real need → convene → Swarm → deploy → observe → revise and share [DESIGNED] · Proof: operation, never installation [DESIGNED] · Running: at ATX [LIVE] | L4-27; L4-29; L4-17 (· sits within); L4-59 (· Swarms); L4-31 (· running instance) |
@@ -956,7 +961,7 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 | L1-26 elemints (digital fingerprints) | L1-25a Custody state machine | XPLR certifies, gates pass, a fingerprint mints in the host's name, custody reaches VAULTED, one vault claim issues and trades in FIG | assembled only |
 | L1-25a Custody state machine | L1-27 Vault claim (word proposed) | XPLR certifies, gates pass, a fingerprint mints in the host's name, custody reaches VAULTED, one vault claim issues and trades in FIG | assembled only |
 | L1-27 Vault claim (word proposed) | L1-05 e(xchange): Global | XPLR certifies, gates pass, a fingerprint mints in the host's name, custody reaches VAULTED, one vault claim issues and trades in FIG | assembled only |
-| L1-45 Water Realm ledger (Rain Ledger) | L1-26c e(H2O) — water | Proof of Rain verifies gallons, e(H2O) mints, the water sleeve of the reserve fills | assembled only |
+| L1-45 Rain Ledger (the water ledger) | L1-26c e(H2O) — water | Proof of Rain verifies gallons, e(H2O) mints, the water sleeve of the reserve fills | assembled only |
 | L1-26c e(H2O) — water | L1-18 FIG reserve basket (Reserve Vault) | Proof of Rain verifies gallons, e(H2O) mints, the water sleeve of the reserve fills | assembled only |
 | L1-09 Sovereign Gateway | L1-46 Roca Bank (Puerto Rico charter) | sovereign money enters through a bank, never a contract | assembled only |
 | L1-46 Roca Bank (Puerto Rico charter) | L1-48 Bosonic ATS (regulated execution) | sovereign money enters through a bank, never a contract | assembled only |
@@ -1010,7 +1015,7 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 | L2-02 Firma Foundation | L2-40 Jurisdiction stack | juridical personality sought for the Foundation | assembled only |
 | L2-40 Jurisdiction stack | L2-15 Nation of Heaven Sovereign Wealth Fund | sovereign standing (peer recognition) for the sealed fund | assembled only |
 | L2-17 Operation SeedShield · the Giborines | L3-20 SeedBase | protection detail and site assessment | assembled only |
-| L3-01 Firma Edge | L3-02 Realm (division · Edge Realm) | built hardware | always |
+| L3-01 Firma Edge | L3-02 Realm (product family) | built hardware | always |
 | L3-01 Firma Edge | L3-20 SeedBase | built hardware | always |
 | L3-01 Firma Edge | L3-30 Haven | built hardware | always |
 | L3-01 Firma Edge | L3-40 Compute (division · Terra) | built hardware | always |
@@ -1022,25 +1027,24 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 | L3-54 Photon Convertor (deployment host) | L3-22 Edge Cache | surplus routed to mining when no better economic use exists | assembled only |
 | L3-22 Edge Cache | L3-31 BitHeat | waste heat to Haven heating and hot water | assembled only |
 | L3-41 Sentinel | L3-42 Mind | inference escalated by latency and load; the agent never knows where it ran | assembled only |
-| L3-42 Mind | L3-ORB Orbital Edge | inference escalated by latency and load; the agent never knows where it ran | assembled only |
+| L3-42 Mind | L3-44 Orbital Edge | inference escalated by latency and load; the agent never knows where it ran | assembled only |
 | L3-06 Star Realm | L3-20 SeedBase | satellite uplink for resilience | assembled only |
-| L3-ORB Orbital Edge | L3-20 SeedBase | satellite uplink for resilience | assembled only |
-| L3-ORB Orbital Edge | L3-ORB Orbital Edge | optical mesh between clusters; ground traffic aggregated | assembled only |
-| L3-03 Realm Home Node | L3-70 The Compute and Energy Commons | idle compute and extra sunlight given to the pool | always |
-| L3-07 Realm CD-01 [Cyber Deck] | L3-70 The Compute and Energy Commons | idle compute and extra sunlight given to the pool | always |
-| L3-08 Realm Slate | L3-70 The Compute and Energy Commons | idle compute and extra sunlight given to the pool | always |
-| L3-70 The Compute and Energy Commons | L2-26 Ambassador | draw served by the nearest substrate; only accounting crosses regions | always |
+| L3-44 Orbital Edge | L3-20 SeedBase | satellite uplink for resilience | assembled only |
+| L3-03 Realm Home Node | L3-70 The shared commons | idle compute and extra sunlight given to the pool | always |
+| L3-07 Realm CD-01 [Cyber Deck] | L3-70 The shared commons | idle compute and extra sunlight given to the pool | always |
+| L3-08 Realm Slate | L3-70 The shared commons | idle compute and extra sunlight given to the pool | always |
+| L3-70 The shared commons | L2-26 Ambassador | draw served by the nearest substrate; only accounting crosses regions | always |
 | L3-60 Qunit | L3-13 Mesh Realm | every packet signed and key-exchanged post-quantum | always |
 | L3-91 WR-01 · Photon panel | L3-93 WR-03 · Realm Slate | daytime power to the node brain | always |
 | L3-98 WR-08 · First-flush and filter | L3-95 WR-05 · Storage tank | Tier A capture after first-flush diversion | assembled only |
-| L4-04 Settlemint shard | L4-12 GDP clock | on-chain activity → GDP → tier transition (irreversible) | always |
-| L4-12 GDP clock | L4-06 Tier ladder T0–T4 (assembly) | on-chain activity → GDP → tier transition (irreversible) | always |
-| L4-06 Tier ladder T0–T4 (assembly) | L4-02 Governmint | capabilities switch on at T1 / T2 / T3 / T3 | always |
-| L4-06 Tier ladder T0–T4 (assembly) | L4-03 Testamint | capabilities switch on at T1 / T2 / T3 / T3 | always |
+| L4-04 Settlemint shard | L4-12 GDP clock | on-chain activity → GDP → stage transition (irreversible) | always |
+| L4-12 GDP clock | L4-06 Settlement ladder (assembly) | on-chain activity → GDP → stage transition (irreversible) | always |
+| L4-06 Settlement ladder (assembly) | L4-02 Governmint | capabilities switch on as the settlement is governed, holds reserve, becomes sovereign | always |
+| L4-06 Settlement ladder (assembly) | L4-03 Testamint | capabilities switch on as the settlement is governed, holds reserve, becomes sovereign | always |
 | L4-38 NS Simulator | L4-41 Firma Terra (real asset fund) | project clears Sim-to-Mint threshold; Firma Terra takes first right of refusal | assembled only |
 | L4-41 Firma Terra (real asset fund) | L4-42 Liquid Terra (land tokenization) | fund structures; Liquid Terra puts title on chain; parcel isolated in an SPV | assembled only |
 | L4-42 Liquid Terra (land tokenization) | L4-43 Land SPV and community buy-back | fund structures; Liquid Terra puts title on chain; parcel isolated in an SPV | assembled only |
-| L4-43 Land SPV and community buy-back | L4-17 Settlemint (the place) | buy-back windows open at T2 / T3; community becomes majority | assembled only |
+| L4-43 Land SPV and community buy-back | L4-17 Settlemint (the place) | buy-back windows open at reserve and sovereign settlement; community becomes majority | assembled only |
 | L4-14 Person | L4-15 Household | composition (never containment): person, household, Realm, Settlemint, District, Nation | always |
 | L4-15 Household | L4-16 Realm (personal edge, as a rung) | composition (never containment): person, household, Realm, Settlemint, District, Nation | always |
 | L4-16 Realm (personal edge, as a rung) | L4-17 Settlemint (the place) | composition (never containment): person, household, Realm, Settlemint, District, Nation | always |
@@ -1105,7 +1109,7 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 - Reputation may only widen a bounded aperture that is non-zero at zero; endorsement counts distinct verifying counterparties, never engagement. _(source: memory · project 1accord marketplace)_
 - Dimensions the book cannot witness read "no signal yet"; never guessed or padded. _(source: memory · project embodimint interim card)_
 - A face image is never on-chain (a hash at most). _(source: memory · project embodimint interim card)_
-- Settlemint is earned through T0→T4, never purchased. _(source: CLAUDE.md §6)_
+- Settlemint is earned stage by stage by operating, never purchased; the T0–T4 labels are retired (2026-09-11). _(source: CLAUDE.md §6)_
 - Nothing may branch on human-vs-agent in payment or permission code. _(source: goal file · 4.2)_
 - Living at a Settlemint creates no Firma Role; a Role grants no authority over Settlemint life; Pod or Swarm participation joins no one to a Sphere; membership comes only from the Settlemint's own covenant. _(source: Order · §07)_
 - Sealed is a status of work, never of people; no team is the inner circle; compartmentalization by timing, never by trustworthiness. _(source: HIPS · §05)_
@@ -1142,3 +1146,27 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 - Funds: Firma Terra, Onym, Firma Ventures under Capital. Firma Frontier Fund under the Frontier Domain. Treasury is not a sovereign fund: Ecosystem Treasury (Capital) plus community treasuries (Allotmint, Mintware). Allotmint and the Water Realm ledger are Settlemint's financial layer, not Frontier's.
 - Theosis: Formation Academy forms CIK, the Dreaded Ones, Transfiguration Lab, Ancient Future, and Tekton. CIK is ministry deployment only.
 - Curtis is **Vision**. Greg is Legal and CFO. All numbers are PROPOSED until a real deployment validates them.
+
+(2026-09-11 — positioning, organization, product families, capital formation; source `firma-vault/sources/firma-positioning-gtm-source-of-truth.md`)
+
+- **Firma** is the overarching identity and public brand; **firmamint** is the blockchain; address firma.network. Master positioning: "Sovereign systems for people and communities." "We build for the edges" anchors the Edge mission and frontier / reach deployments only.
+- **Realm is a sibling product family beside Edge**, no longer an Edge division. Three families: Realm · Edge · Photon. Edge = SeedBase · Haven · Compute (Edge Cache; Orbital Edge PROPOSED). Star Realm and Mesh Realm stay under Realm. Supersedes "Edge and Photon are Spheres inside Labs."
+- Labs Spheres: Shared Engineering · Research · Realm Engineering · Edge Engineering · Photon Engineering. Labs develops and maintains; Frontier establishes and supports in lived places, Austin included.
+- **Order → Domain → Sphere → Pod → Role** is the organizational hierarchy. Domains remain a **filter** over the machine in this viewer. Two maps, both true.
+- Colony and Campus are place types; Colony is still not a rung. "Realm twice" (rung vs. product family) is open.
+- Settlemint Sovereign Stack is the PROPOSED name for the packaged Settlemint stack plus physical systems. THEOS is the sovereign OS (draft thesis); NS-Sim is an application with an intended operating role, never "planning only."
+- Capital forms in three routes — philanthropy / grants · downstream commercial deals (Elemint Exploration Mapping) · ecosystem economic participation (Fragmints) — none of which sells equity, ownership, or a revenue share in the system.
+- Missions, philanthropy, and humanitarian service are a visible lane; CIK carries the work; $CIK stays an impact gauge only.
+- *Household* and *consumer* are admitted for the Realm home market; *community* stays the word for deployments. "Communities never pay. The Mint pays." is the community deployment model, never the home-market line. The `fixups.json` rename "the Mint pays" → "Edge Cache pays" is recorded as a conflict with this rule, not corrected here.
+- (2026-09-11, later) Elemint notation settled: the elemints are e(photon) · e(compute) · e(H2O) · e(Au) · e(terra) · e(BTC). The $e reserve-line notation ($eWATT, $eTOPS, $eTERRA, $eBTC, $eACRE) is retired; e(WATT) / e(TOPS) are older spellings of e(photon) / e(compute). Tier labels T0–T4 stay engineering shorthand and never appear on a reader-facing surface: a community scales by adding systems, each step earned by operating. Two paths to a Settlemint: Firma's own build through Frontier and the Living Lab (ATX), or the NS-Sim path (Sandbox → Sim → Mint → Settle) with Investmint, Liquid Terra, and Firma Terra; capital enters as ownership and participation, never debt.
+
+(2026-09-11, blueprint alignment — Curtis's decisions on the audit of this drawing against the positioning brief)
+
+- **The commons is not hardware.** It moves from the hardware ring to the protocol core (L1) beside Atonemint: one shared commons every deployment joins (Atonemint · Commons Netting · the elemints · the FIG reserve · Fragmints). Firmagentics, THEOS, and the commons are the three pillars; the commons is the lynchpin. If it is not at the forefront when Firma builds and when Firma raises, Firma builds another worldly system.
+- **The T0–T4 labels are retired everywhere**, this drawing included; they no longer survive as engineering shorthand. The ladder's stages are named by what they do: observed cluster · governed settlement · reserve settlement · sovereign settlement · own chain (Network State). Supersedes the "engineering shorthand" line above.
+- **Realm is drawn as a sibling product family** (L3-02, no parent), beside Edge (SeedBase · Haven · Compute) and Photon. Realm Engineering, Edge Engineering, and Photon Engineering are the Labs Spheres that build the three families; Frontier establishes them. The parts rows now say so.
+- **Edge Cache is the Bitcoin mining system that mints.** It pays for the deployment. "Communities never pay. The Mint pays." stands as the funding line; on the ground Edge Cache is what mints and pays. The `fixups.json` rename "the Mint pays" → "Edge Cache pays" is approved; the conflict recorded above is closed.
+- **Reserve accounting lines** carry the elemint names: e(photon) · e(compute) · e(H2O) · e(Au) · e(terra) · e(BTC). e(WATT) and e(TOPS) are rewritten to e(photon) and e(compute) throughout the parts.
+- **FIG** is a currency truly for the people and by the people, backed by the RWAs Firma maps and by water, energy, compute, and agentic production and output, each unit an elemint signed to its producer's Embodimint, human or agent, Ambassadors included.
+- **Capital formation is drawn** (L1-60 to L1-65): the three routes, the no-ownership boundary, and the two paths to a Settlemint, under Treasury and rails.
+- **Killed words leave the source, not only the build.** Hub, the Campus "pods", Lux, Pulsar, Nebula, Edge Mint, and "Water Realm" as a product are gone from the vault's parts file; the fixups stay as a guard. Orbital Edge is one PROPOSED part (L3-44). Spring folds into Firma Atmos. The water ledger is the Rain Ledger; the hardware is a Realm node with a water capture kit.
