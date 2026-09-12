@@ -34,5 +34,6 @@ source: blueprint.md "Words"; firma-vault CLAUDE.md §6 killed terms
 | Founder, CEO (for Curtis) | Vision |
 | Paperclip, Keph | retired prototypes; theo |
 | OmniMesh, Edge Pulse | gone |
+| "a Settlemint is not declared — it is detected"; "Realm Hub axiom"; hardware-density auto-instantiation; the "10+ devices" T0 trigger | a Settlemint begins when the community claims it on-chain on firmamint; criteria undecided, do not invent one |
 
 **When sweeping a killed word:** rewrite current-tense claims; leave kill notices and build history alone, marking historical mentions "(retired)". See [[killed-term-sweeps]].
