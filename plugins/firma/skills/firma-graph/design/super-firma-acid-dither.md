@@ -1,14 +1,14 @@
 ---
 name: super-firma-acid-dither
-description: The default design system for documents and artifacts. super-firma layout with the Frontier acid palette: warm white, charcoal ink, acid yellow as fill never as text on white, Space Grotesk + DM Sans + DM Mono, real dithers at full strength.
+description: A super-firma layout with the Frontier acid palette — warm white, charcoal ink, acid yellow as fill never as text on white, Space Grotesk + DM Sans + DM Mono, real dithers at full strength. super-firma is banned for any new artifact (2026-09-11); this system is reference-only, kept for reading and maintaining pages already built in it.
 type: design
-status: DEFAULT since 2026-06-24
-source: ~/Downloads/the-more-excellent-way-final.html; portal Company Culture artifacts
+status: RETIRED for new work 2026-09-11 (was DEFAULT since 2026-06-24)
+source: ~/Downloads/the-more-excellent-way-final.html; portal Company Culture artifacts; CLAUDE.md §11
 ---
 
 # super-firma-acid-dither
 
-Use this first for any document or artifact unless Curtis says otherwise. Canonical example: the Code of Conduct artifact (`the-more-excellent-way-final.html`), self-contained with embedded dithers.
+**Do not use this for a new document or artifact.** Curtis, 2026-09-11: "No super Firma. Stop that. Ban it." A surface wears the design system of its subject instead — see [[design-index]]. This spec is kept only so pages already built in it (e.g. the Code of Conduct artifact, `the-more-excellent-way-final.html`) can still be read and maintained.
 
 **Palette.** Canvas `#ffffff`, wells `#faf9f6`. Ink is warm charcoal `#38353b`, never pure black. Muted `rgba(56,53,59,.64)`. Borders `#e7e3e6`. Accent acid yellow `#f7ff05` (press `#e6ee00`, readable line `#cdd400`, ink-on-accent `#2b2930`). Warm dark ground `#2b2930`.
 

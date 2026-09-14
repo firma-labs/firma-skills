@@ -1,20 +1,20 @@
 ---
 name: rulings
-description: Curtis's rulings from 2026-09-05, 06 and 13 that shape the Blueprint drawing and the document library. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder, FIG floats, elemint and vault claim, Fragmints, Convertors, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles, and the ten headings of the document library.
+description: Curtis's rulings from 2026-09-05, 06, 11 and 13 that shape the Blueprint drawing and the document library. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder (T0–T4 retired), FIG floats and its backing, elemint and vault claim, Fragmints, Convertors, Realm as a sibling family, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles, and the ten headings of the document library.
 type: blueprint
 status: LOCKED
-source: blueprint.md "Rulings from Curtis"
+source: blueprint.md "Rulings from Curtis"; sites/blueprint/data/blueprint-md-rulings.md
 ---
 
 # Rulings that shape the drawing
 
 
-- Domains (Foundation · Capital · Labs · Theosis · Frontier) are a **filter** over the machine, not a tree. Research sits inside Labs. Edge and Photon are Spheres inside Labs.
+- Domains (Foundation · Capital · Labs · Theosis · Frontier) are a **filter** over the machine, not a tree. Research sits inside Labs. Realm, Edge, and Photon are three sibling product families, each built by its own Labs Sphere — Realm Engineering, Edge Engineering, Photon Engineering — superseding "Edge and Photon are Spheres inside Labs" (2026-09-11). See [[edge-and-photon]].
 - People live at the **center** as Embodimint, touching every layer. Not on the outer ring.
 - Three concentric rings is the recurring grammar at every scale: citizen of the Nation of Heaven / the alliance beside it (FANS) / outside the Canon. Also: Foundation public hat / quiet vehicles / sealed core. Also: fingerprint / vault claim / market.
-- Place ladder: Person → Household → Realm → Settlemint → District → Network State, with Constellation beside it. Realm is not a location on the ladder: it is the personal edge a person or household holds and carries between places, never owned by the Settlemint. The Nation of Heaven is a Network State: the one Firma is building. Composition, not containment. No "Colony" rung.
-- One Settlemint ladder T0–T4. T3 Sovereign = a community's own sovereign treasury. The word SWF is reserved for the Nation's sealed fund and never appears as a rung.
-- FIG floats. Settlemint local coins (figmints) are pegged to FIG. An elemint is one non-transferable fingerprint, e(photon) e(H2O) e(Au) e(BTC) style, signed to its host's Embodimint, never a token. A vault claim is the tradeable piece, issued only against a vaulted elemint, one claim per elemint.
+- Place ladder: Person → Household → Realm → Settlemint → District → Network State, with Constellation beside it. Realm is not a location on the ladder: it is the personal edge a person or household holds and carries between places, never owned by the Settlemint. The Nation of Heaven is a Network State: the one Firma is building. Composition, not containment. No "Colony" rung. Colony and Campus are place types (2026-09-11).
+- The Settlemint ladder's stages are named by what they do — observed cluster · governed settlement · reserve settlement · sovereign settlement · own chain — never T0–T4; the tier labels are retired everywhere, engineering shorthand included (2026-09-11, superseding an earlier same-day ruling that had kept them as shorthand). Sovereign settlement = a community's own sovereign treasury. The word SWF is reserved for the Nation's sealed fund and never appears as a rung. See [[settlemint-and-place]].
+- FIG floats — "a currency truly for the people and by the people" (2026-09-11) — backed by a distributed reserve of elemints and the real-world assets Elemint Exploration Mapping maps, plus agentic production and output, never by government debt. See [[fig]]. Settlemint local coins (figmints) are pegged to FIG. An elemint is one non-transferable fingerprint, e(photon) e(H2O) e(Au) e(BTC) style, signed to its host's Embodimint (human or agent, Ambassadors included), never a token. A vault claim is the tradeable piece, issued only against a vaulted elemint, one claim per elemint.
 - Fragmints are on-chain representation of you and your slice of the pie: inheritable, never transferable, connected to Embodimint. Fragmint capacity ("reap what you sow") is the founding principle from 2021, never presented as new.
 - Atonemint makes the system whole after every trade. Reconciliation is done by the system, never forced on people. Convertors (Photon, Compute, Storage, Bandwidth, Water proposed) are agentic layers of Atonemint running Commons Netting. Photon Convertor's home is hardware, with a line to Atonemint.
 - Elemint is drawn in its 2023 shape: treasury and custody, the RWA chain with the custody state machine (in-ground → raw → transit → refined → vaulted), RWA banking, trading, exploration and mining, the RWA fund.

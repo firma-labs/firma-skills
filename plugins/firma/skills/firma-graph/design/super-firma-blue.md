@@ -1,9 +1,9 @@
 ---
 name: super-firma-blue
-description: The original blue super-firma system for site pages and diagrams. Space Grotesk, DM Sans, DM Mono, blue #0562ef, borders not shadows, sticky section labels, strict page rhythm and diagram rules. Available, not the default.
+description: The original blue super-firma system for site pages and diagrams. Space Grotesk, DM Sans, DM Mono, blue #0562ef, borders not shadows, sticky section labels, strict page rhythm and diagram rules. super-firma is banned for any new artifact (2026-09-11); this system is reference-only, kept for reading and maintaining pages already built in it.
 type: design
-status: AVAILABLE
-source: firma-vault assets/site/super-firma-design-system.md
+status: RETIRED for new work 2026-09-11 (was AVAILABLE)
+source: firma-vault assets/site/super-firma-design-system.md; CLAUDE.md §11
 ---
 
 # super-firma (blue)
@@ -18,4 +18,4 @@ source: firma-vault assets/site/super-firma-design-system.md
 
 **Diagram rules:** light ground only, hexagons for nodes, leader-line callouts, at most two colors, no filters or glow or animation, bezier connections, isometric for layered views.
 
-The acid variant in [[super-firma-acid-dither]] is the default now.
+**Do not use this for a new page.** Curtis, 2026-09-11: "No super Firma. Stop that. Ban it." See [[super-firma-acid-dither]] and [[design-index]] for what wears which system now.

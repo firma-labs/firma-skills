@@ -1,14 +1,14 @@
 ---
 name: settlemint-and-place
-description: Settlemint is the stack a community earns tier by tier, T0 to T4, until it runs its own chain. Never purchased. It begins when the community claims it on-chain on firmamint — claimed, never detected; the claim criteria are undecided and must not be invented. The place ladder runs Person → Household → Realm → Settlemint → District → Nation of Heaven, Constellation beside it. Realm is the personal edge a person or household carries, not a location. Composition, not containment.
+description: Settlemint is the stack a community earns stage by stage — observed cluster · governed settlement · reserve settlement · sovereign settlement · own chain — until it runs its own chain. Never purchased. The T0–T4 labels are retired everywhere, engineering shorthand included. It begins when the community claims it on-chain on firmamint — claimed, never detected; the claim criteria are undecided and must not be invented. The place ladder runs Person → Household → Realm → Settlemint → District → Nation of Heaven, Constellation beside it. Realm is the personal edge a person or household carries, not a location. Composition, not containment.
 type: truth
-status: LOCKED 2026-09-05; Realm rung glossed and Settlemint origin ruled 2026-09-12 (claim criteria OPEN, owed by the team)
-source: firma-blueprint rulings; blueprint L4-13/L4-15/L4-16/L4-17; field guide ch.7; handbook
+status: LOCKED 2026-09-05; Realm rung glossed and Settlemint origin ruled 2026-09-12; T0–T4 labels retired 2026-09-11 (claim criteria still OPEN, owed by the team)
+source: firma-blueprint rulings; blueprint L4-13/L4-15/L4-16/L4-17; field guide ch.7; handbook; CLAUDE.md §6 Settlemint
 ---
 
 # Settlemint and place
 
-**Settlemint** is the stack a community earns through T0 → T4, never purchased. T3 Sovereign is the community's own sovereign treasury. The word SWF is reserved for the Nation's sealed fund and never appears as a rung. Figmint lets a Settlemint mint its own FIG-pegged coin; Governmint and Figmint are critical to the stack. Each Settlemint shards a portion of FIG reserve to stabilize its coin, and writes its own DNA-equivalent within Firmagentics.
+**Settlemint** is the stack a community earns stage by stage, never purchased: observed cluster · governed settlement · reserve settlement · sovereign settlement · own chain. **The T0–T4 tier labels are retired everywhere, engineering shorthand included** (directed 2026-09-11: "get rid of the T's") — name a stage by what it does. Sovereign settlement is the community's own sovereign treasury. The word SWF is reserved for the Nation's sealed fund and never appears as a rung. Figmint lets a Settlemint mint its own FIG-pegged coin; Governmint and Figmint are critical to the stack. Each Settlemint shards a portion of FIG reserve to stabilize its coin, and writes its own DNA-equivalent within Firmagentics.
 
 **How a Settlemint begins.** A Settlemint begins when the community **claims it on-chain on firmamint**. It is claimed, not detected — a deliberate act by the people, never an automatic trigger fired by hardware.
 

@@ -12,8 +12,8 @@ source: firma-skills plugins/firma/skills; portal.firmalabs.org/ds
 |---|---|---|
 | Edge, Photon, Realm, hardware, the Blueprint, deployment pages | [[firma-edge-design]] | `portal.firmalabs.org/ds/firma-edge/`; render library in [[asset-library]] |
 | Colony apps (Allotmint, Sojourn, Hive Mind, Increase, 1Accord, Converge) | [[colony-design-law]] + [[hive-masthead]] + [[mobile-first]] | `firma-websites/DESIGN-LAW.md` |
-| Documents, artifacts, handbook pages, culture docs | [[super-firma-acid-dither]] | `~/Downloads/the-more-excellent-way-final.html` |
-| Older site pages and diagrams | [[super-firma-blue]] with [[page-rhythm]] | `firma-vault/assets/site/` |
+| Documents, artifacts, handbook pages, culture docs | super-firma banned for new work 2026-09-11; no default named yet — wear the subject's own system, or ask Curtis | — |
+| Existing pages already built in super-firma (read/maintain only, never a template for new work) | [[super-firma-acid-dither]], [[super-firma-blue]] with [[page-rhythm]] | `firma-vault/assets/site/` |
 | THEOS surfaces | `theos-design` skill (indigo night room, liquid glass, "Send theo") | beside this graph |
 | firmamint, chain, protocol surfaces | `firmamint-design` skill | beside this graph |
 | Frontier and Onym capital sites | `firma-frontier-design` skill (Space Grotesk + Satoshi + mono, dot matrix, orb) | beside this graph |

@@ -8,7 +8,7 @@ source: firma-blueprint rulings D2, D11; firma-vault wiki/elemint-master-knowled
 
 # Elemint
 
-**An elemint** is a digital fingerprint of real production, matched to the person or place that produced it. It is signed to the host's [[embodimint]], never moves, and is never a token you hold or trade. "Digital fingerprints matching you, not tokens you hold." Notation: **e(photon)**, **e(compute)**, **e(H2O)**, **e(Au)**, **e(terra)**, **e(BTC)**. The parentheses are part of the name. Never `$eWATT`, never `eWATT` in body copy.
+**An elemint** is a digital fingerprint of real production, matched to whoever or wherever produced it — a person, an agent (Ambassadors included), or a place. It is signed to the host's [[embodimint]], never moves, and is never a token you hold or trade. "Digital fingerprints matching you, not tokens you hold." Notation: **e(photon)**, **e(compute)**, **e(H2O)**, **e(Au)**, **e(terra)**, **e(BTC)**. The parentheses are part of the name. Never `$eWATT`, never `eWATT` in body copy.
 
 **A vault claim** (word PROPOSED; Curtis may pick a Firma word) is the tradeable piece, issued only against a **vaulted** elemint, one claim per elemint (single-encumbrance registry). Claims trade on e(xchange) in FIG and count toward FIG backing. Three rings: fingerprint / vault claim / market.
 

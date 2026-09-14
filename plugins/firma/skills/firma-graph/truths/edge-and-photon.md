@@ -1,23 +1,25 @@
 ---
 name: edge-and-photon
-description: Firma Edge (Realm, SeedBase, Haven, Compute) and Firma Photon (Photon panels, Ion+, Salt Ion+, Atmos) are sibling Spheres inside Labs. Edge Cache is THE capital block. Orbital compute is one PROPOSED part with no product names.
+description: Realm, Firma Edge (SeedBase, Haven, Compute), and Firma Photon (Photon panels, Ion+, Salt Ion+, Atmos) are three sibling product families, each with its own Labs Sphere. Edge Cache is THE capital block. Orbital compute is one PROPOSED part with no product names.
 type: truth
-status: LOCKED (2026-05-12, updated 2026-09-05/06)
-source: firma-vault wiki/edge-master-knowledge.md v3+; wiki/firma-photon-master-knowledge.md
+status: LOCKED (2026-05-12, updated 2026-09-05/06); Realm made a sibling family and Edge and Photon's "Spheres inside Labs" framing superseded 2026-09-11
+source: firma-vault wiki/edge-master-knowledge.md v3+; wiki/firma-photon-master-knowledge.md; CLAUDE.md §6 Edge & Photon
 ---
 
-# Firma Edge and Firma Photon
+# Realm, Firma Edge, and Firma Photon
 
 ```
-            Firma Labs
-           /          \
-    Firma Edge      Firma Photon
-    (hardware)      (energy)
-    ├── Realm       ├── Photon (the panels; brand and product share the name)
-    ├── SeedBase    ├── Ion+ (residential battery)
-    ├── Haven       ├── Salt Ion+ (industrial sodium-ion)
-    └── Compute     └── Atmos (atmospheric water capture array)
+                    Firma Labs
+           /            |            \
+        Realm       Firma Edge     Firma Photon
+     (personal)      (hardware)      (energy)
+                     ├── SeedBase   ├── Photon (the panels; brand and product share the name)
+                     ├── Haven      ├── Ion+ (residential battery)
+                     └── Compute    ├── Salt Ion+ (industrial sodium-ion)
+                                    └── Atmos (atmospheric water capture array)
 ```
+
+**Realm is a sibling product family beside Edge, not an Edge division** (directed 2026-09-11, supersedes the earlier framing). Three families — Realm · Edge · Photon — each built by its own Labs Sphere: Realm Engineering, Edge Engineering, Photon Engineering. This supersedes "Edge and Photon are sibling Spheres inside Labs." Labs develops and maintains the three families; Frontier establishes and supports them in lived places. See [[realm]].
 
 Photon partners with Edge on every deployment: Photon on the roof, Ion+ on the wall, Salt Ion+ on the pad, the **Photon Convertor** coordinating with Realm (see [[atonemint]]). Reserve accounting (kWh → e(photon) → FIG) crosses the boundary through firmamint.
 

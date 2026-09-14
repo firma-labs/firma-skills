@@ -35,5 +35,7 @@ source: blueprint.md "Words"; firma-vault CLAUDE.md §6 killed terms
 | Paperclip, Keph | retired prototypes; theo |
 | OmniMesh, Edge Pulse | gone |
 | "a Settlemint is not declared — it is detected"; "Realm Hub axiom"; hardware-density auto-instantiation; the "10+ devices" T0 trigger | a Settlemint begins when the community claims it on-chain on firmamint; criteria undecided, do not invent one |
+| T0, T1, T2, T3, T4 as Settlemint tier labels (retired 2026-09-11, engineering shorthand included) | observed cluster · governed settlement · reserve settlement · sovereign settlement · own chain |
+| super-firma, super firma (for any new page, deck, briefing, one-pager, or diagram; banned 2026-09-11) | the subject's own design system — Firma Edge for Edge and Realm; see [[design-index]] |
 
 **When sweeping a killed word:** rewrite current-tense claims; leave kill notices and build history alone, marking historical mentions "(retired)". See [[killed-term-sweeps]].
