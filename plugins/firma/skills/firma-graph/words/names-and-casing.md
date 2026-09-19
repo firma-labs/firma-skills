@@ -16,6 +16,8 @@ source: firma-vault CLAUDE.md §6; blueprint.md "Words"
 
 **Spellings that matter:** Convertor (never Converter) · Kouplen (not Kouplan) · Buda, Texas (not Budu) · "Fragmint slice" (never shard) · "vault claim" (PROPOSED word).
 
+**The Elemint family (2026-09-19):** **Elemint** (the platform) · **Elemint Exploration** (the surveys) · **Elemint Holdings** (reserve custody). Capitalized when naming the company, lowercase when naming the fingerprint. No fourth name in that family, and no third brand between Elemint and a partner's own marketplace.
+
 **Notation:** elemints are written e(photon), e(compute), e(H2O), e(Au), e(terra), e(BTC). The parentheses are part of the name.
 
 **Roles:** Curtis is Vision. Never Founder, never CEO. Foundation Resolutions, never "General Partner decisions".
