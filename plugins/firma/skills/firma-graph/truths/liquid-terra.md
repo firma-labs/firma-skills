@@ -1,19 +1,21 @@
 ---
 name: liquid-terra
-description: Liquid Terra puts legally enforceable ownership of land on chain — title, SPV, and an e(terra) attestation per parcel. It is step three of the capital-formation chain and the thing the exploration survey reads a parcel for.
+description: RETIRED as a name 2026-09-19. What it did — land title on chain, an SPV per parcel, an e(terra) attestation for each — is Elemint's. The capital chain now reads NS Simulator → Investmint → Elemint → Settlemint → firmamint.
 type: truth
-status: LOCKED in the capital chain 2026-07-18 (structure PROPOSED); the NAME is under question — Curtis 2026-09-19
-source: firma-blueprint parts L4-42, L1-44, L1-25h; Curtis 2026-09-08
+status: RETIRED 2026-09-19 (the function lives in [[elemint]]; blueprint part L4-42 still carries the old name)
+source: Curtis 2026-09-19; the retired node's own history below
 ---
 
-# Liquid Terra
+# Liquid Terra (retired)
 
-**Liquid Terra** tokenizes legally enforceable ownership of land: on-chain title, an SPV around each parcel, and an **e(terra)** attestation for every one. Strategic partnership with **LiquidAcre**. First parcels at ATX. Blueprint part **L4-42**, status PROPOSED.
+**The name is retired.** Curtis, 2026-09-19: "adding another name in like liquid terra doesn't make sense — our RWA platform needs to just be Elemint, Elemint Exploration is mapping and Elemint Holdings. i was trying to appease wes with liquid terra but its just confusing."
 
-It sits third in the capital-formation chain, locked 2026-07-18: **NS Simulator → Investmint → Liquid Terra → Settlemint → [[firmamint]]**. No debt anywhere in it.
+**Where the work went.** Land title on chain, the SPV around each parcel and the **e(terra)** attestation per parcel are [[elemint]]'s, under the Elemint name. Nothing about the function changed; only the name it carried. A partner's own marketplace — LiquidAcre — keeps its own name and runs on Elemint, with no third brand between them.
 
-**What reads the land first.** The Digital Signature survey ([[elemint]] exploration, blueprint part L1-25h) returns what is in a parcel — coordinates, depth, quality, flow rate — before title goes on chain. The survey is the proof; the asset never moves. Its archive is the Drive folder "Elemint Exploration".
+**The capital-formation chain**, first locked 2026-07-18 and re-read with this ruling: **NS Simulator → Investmint → Elemint → Settlemint → [[firmamint]]**. No debt anywhere in it.
 
-Keep the pieces distinct: the RWA token is the SPV claim, not the fingerprint. **RWA token ≠ e(terra)** (part L1-28a). The e(terra) elemint is signed to its host and never trades; the vault claim is the tradeable piece. See [[elemint]].
+**What it was.** Liquid Terra tokenized legally enforceable ownership of land: on-chain title, an SPV around each parcel, an e(terra) attestation for every one. Strategic partnership with LiquidAcre, first parcels at ATX, blueprint part **L4-42**, structure PROPOSED. The Digital Signature survey (blueprint part L1-25h, now Elemint Exploration) read a parcel before its title went on chain; the survey is the proof and the asset never moves. Its archive is the Drive folder "Elemint Exploration".
 
-**The name is under question (2026-09-19).** Curtis, working the Wes deal: "adding another name in like liquid terra doesn't make sense — our RWA platform needs to just be Elemint, Elemint Exploration is mapping and Elemint Holdings. i was trying to appease wes with liquid terra but its just confusing." The name is out of the Elemint deal documents already. What is open is whether the node retires entirely — land title on chain, the per-parcel SPV and the e(terra) attestation folding into [[elemint]], and the capital chain reading NS Simulator → Investmint → Elemint → Settlemint → [[firmamint]]. The function is not in question; only the name it carries. Until Curtis rules, this node stands and no surface uses the name.
+**Still open, and why this node stays.** Blueprint part **L4-42** is still titled "Liquid Terra (land tokenization)", and parts L1-65, L4-41 and L4-43 name it in their own text. The name is not in [[killed-words]] yet for that reason: the blueprint lint refuses a part carrying a killed term, so the part is renamed in `sites/blueprint/data` first, in the same change that adds the row. Until then this node is the record of the retirement, and no surface uses the name.
+
+Keep the distinction the old node carried: the RWA token is the SPV claim, not the fingerprint. **RWA token ≠ e(terra)** (part L1-28a). The e(terra) elemint is signed to its host and never trades; the vault claim is the tradeable piece. See [[elemint]].
