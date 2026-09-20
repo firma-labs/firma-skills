@@ -8,7 +8,7 @@ source: firma-vault handbook; apps/noh-deploy/ds/firma-order.html
 
 # The Firma Order
 
-The Firma Order is the collective of all, in the pattern of the Order of Melchizedek. Instead of a company or an org chart, Firma *is* an Order: a covenant collective holding many fields of stewardship. Never present it as a company with a tagline. The Order framing gets one plain sentence in handbook docs; House of Saints governance is the spine. The Order is who; **Firma** is what the whole system is called, and never one product inside it — see [[firma-the-house]].
+The Firma Order is the collective of all, in the pattern of the Order of Melchizedek. Instead of a company or an org chart, Firma *is* an Order: a covenant collective holding many fields of stewardship. Never present it as a company with a tagline. The Order framing gets one plain sentence in handbook docs; House of Saints governance is the spine. **Firma is the Order** — one sense of the word, not two: the collective and the name of the whole system are the same thing, and never one product inside it. See [[firma-the-name]] for the anchor sentence and how to speak about it.
 
 **Five Domains, one verb each.** Foundation governs ✴ Capital stewards ✴ Labs builds ✴ Theosis forms ✴ Frontier establishes. The Domains are a filter over the machine, not a tree. Research sits inside Labs. Edge and Photon are Spheres inside Labs that may become entities. See [[one-machine]].
 

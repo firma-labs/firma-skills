@@ -1,6 +1,6 @@
 ---
 name: rulings
-description: Curtis's rulings from 2026-09-05, 06, 11, 13 and 20 that shape the Blueprint drawing, the document library, and what the name Firma covers. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder (T0–T4 retired), FIG floats and its backing, elemint and vault claim, Fragmints, Convertors, Realm as a sibling family, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles, the ten headings of the document library, and Firma as the house rather than a product.
+description: Curtis's rulings from 2026-09-05, 06, 11, 13 and 20 that shape the Blueprint drawing, the document library, and what the name Firma covers. Domains as filter, people at the center, three rings, the place ladder, the Settlemint ladder (T0–T4 retired), FIG floats and its backing, elemint and vault claim, Fragmints, Convertors, Realm as a sibling family, Edge Cache, Haven and SeedBase, Water Realm, orbital, banks, funds, Theosis, roles, the ten headings of the document library, and Firma as the Order rather than a product.
 type: blueprint
 status: LOCKED
 source: blueprint.md "Rulings from Curtis"; sites/blueprint/data/blueprint-md-rulings.md
@@ -42,9 +42,9 @@ source: blueprint.md "Rulings from Curtis"; sites/blueprint/data/blueprint-md-ru
 - Firma Edge is a Sphere inside Labs, **not one of the fifteen systems**. An Edge-wide document belongs to no single product.
 - Known gap, not a filing problem: **Treasury and rails is LIVE and has no document written about it.**
 
-## 2026-09-20 — Firma is the house
+## 2026-09-20 — Firma is the Order
 
 - **Firma is the name of the whole system, not one product.** The anchor sentence: *"Firma is a sovereign infrastructure ecosystem spanning software, assets, physical systems, and communities."* Plainly: *"Firma builds the systems that let people, places, and communities own more of the infrastructure they depend on."*
-- **The functions inside the house.** Firma Labs builds the protocols, software, and core systems. Firma Frontier builds and deploys physical infrastructure in the real world. Elemint is the RWA platform. firmamint is the rights and settlement layer. Realm is the human-facing infrastructure layer for homes, places, and communities.
+- **The functions inside it.** Firma Labs builds the protocols, software, and core systems. Firma Frontier builds and deploys physical infrastructure in the real world. Elemint is the RWA platform. firmamint is the rights and settlement layer. Realm is the human-facing infrastructure layer for homes, places, and communities.
 - **Never let "Firma" mean "the software company."** When it does, everything becomes Firma this, Firma that, Firma product, Firma platform, Firma deployment, and the names underneath stop meaning anything. Attribution names the function that did the work: Firma Frontier deployed it · Elemint structured the asset · firmamint handles the rights · it serves a Realm · it's built by Firma Labs.
-- **"We are Firma" is the cultural phrase**, not a corporate one: we belong to the broader ecosystem and mission. "That's Firma" says a thing expresses the Firma way of building. Full record: [[firma-the-house]].
+- **"We are Firma" is the cultural phrase**, not a corporate one: we belong to the broader ecosystem and mission. "That's Firma" says a thing expresses the Firma way of building. Full record: [[firma-the-name]]. Curtis struck the earlier "house" metaphor the same day: Firma is the Order itself, in the sense [[firma-order]] has held since 2026-08-11.

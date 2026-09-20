@@ -27,7 +27,7 @@ The full list lives in [[how-agents-engage]].
 
 ## The machine (truths/)
 
-- [[firma-the-house]] — Firma is the name of the whole system, not one product. The house, the five functions inside it, and the sentences that answer "what's Firma?"
+- [[firma-the-name]] — Firma is the name of the whole system, not one product. The Order, the five functions inside it, and the sentences that answer "what's Firma?"
 - [[one-machine]] — the six purposes every Firma drawing and document must make clear: one machine, people at the center, three rings, abundance outward, honest status, it has to do something.
 - [[mission]] — "we build for the edges": the frontier and the reach, both first class.
 - [[firma-order]] — Firma is an Order, not a company. Five Domains as a filter, the mottos, the operating entities.
@@ -103,8 +103,8 @@ The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub
 - The Realm glossary definition. Curtis says the current line ("the federation…") is wrong. Awaiting his line.
 - Embodimint composite formula: two versions exist (six terms linear, five terms square-root). Allotmint runs the six-term linear one pending his call.
 - The Nevis escrow trust needs a name now that Paymaster means the on-chain gas contract.
-- Which name wears the front door, now that [[firma-the-house]] makes Firma the house and Firma Labs one function inside it. The hero lockup is `FIRMA LABS` / `[ we build for the edges ]` and the apex site is firmalabs.org.
-- Where Firma Edge and Firma Photon sit in the house sentence. Curtis named five functions and Edge and Photon are product families beside Realm, built by Labs and established by Frontier.
+- Which name wears the front door, now that [[firma-the-name]] makes Firma the Order and Firma Labs one function inside it. The hero lockup is `FIRMA LABS` / `[ we build for the edges ]` and the apex site is firmalabs.org.
+- Where Firma Edge and Firma Photon sit in the anchor sentence. Curtis named five functions and Edge and Photon are product families beside Realm, built by Labs and established by Frontier.
 - Realm's scope in that sentence: "the human-facing infrastructure layer for homes, places, and communities" is broader than the [[realm]] node, which is the personal and the home.
 
 ## Keeping it true
