@@ -27,7 +27,7 @@ If you are an agent or a model asked to build or extend the Blueprint, everythin
 - Restraint. Motion only where it means something: lines run, a touched system lights, a panel slides. Nothing bounces.
 - Phones are the main surface. Verify at 390px wide before you consider it done. Bottom sheet for details, pinch to zoom, labels readable without zooming at the top level.
 
-_Generated from the live data on 2026-09-13 19:47 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
+_Generated from the live data on 2026-09-20 09:54 UTC. Rev A. This file is rebuilt on every deploy; download it fresh from the site rather than keeping a copy._
 
 
 ---
@@ -1170,3 +1170,11 @@ Person, household, Realm, Settlemint, District, Nation. Campuses, colonies, and 
 - **FIG** is a currency truly for the people and by the people, backed by the RWAs Firma maps and by water, energy, compute, and agentic production and output, each unit an elemint signed to its producer's Embodimint, human or agent, Ambassadors included.
 - **Capital formation is drawn** (L1-60 to L1-65): the three routes, the no-ownership boundary, and the two paths to a Settlemint, under Treasury and rails.
 - **Killed words leave the source, not only the build.** Hub, the Campus "pods", Lux, Pulsar, Nebula, Edge Mint, and "Water Realm" as a product are gone from the vault's parts file; the fixups stay as a guard. Orbital Edge is one PROPOSED part (L3-44). Spring folds into Firma Atmos. The water ledger is the Rain Ledger; the hardware is a Realm node with a water capture kit.
+
+
+(2026-09-20 — what the name Firma covers)
+
+- **Firma is the name of the whole system, not one product.** Anchor sentence: "Firma is a sovereign infrastructure ecosystem spanning software, assets, physical systems, and communities." Plainly: "Firma builds the systems that let people, places, and communities own more of the infrastructure they depend on."
+- **The functions inside the house.** Firma Labs builds the protocols, software, and core systems. Firma Frontier builds and deploys physical infrastructure in the real world. Elemint is the RWA platform. firmamint is the rights and settlement layer. Realm is the human-facing infrastructure layer for homes, places, and communities.
+- **Never let "Firma" mean "the software company."** When it does, everything becomes Firma this, Firma that, Firma product, Firma platform, Firma deployment, and the names underneath stop meaning anything. Attribution names the function that did the work: Firma Frontier deployed it · Elemint structured the asset · firmamint handles the rights · it serves a Realm · it's built by Firma Labs. "We are Firma" is the cultural phrase, not a corporate one.
+- OPEN from this ruling: which name wears the front door (the hero lockup is FIRMA LABS and the apex is firmalabs.org); where Edge and Photon sit in the house sentence beside Realm; and whether Realm's scope is the personal and the home or homes, places, and communities.
