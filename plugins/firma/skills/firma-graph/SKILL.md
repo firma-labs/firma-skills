@@ -64,8 +64,8 @@ The full list lives in [[how-agents-engage]].
 - [[firma-edge-design]] — the locked Edge system: edge black, bone white, Field Orange, Geist, drafting grids, document plates.
 - [[colony-design-law]] — the orange room and the white face every Colony app stands in. Orange is the action color everywhere.
 - [[hive-masthead]] — every app wears Allotmint's bar, full width atop its own face.
-- [[super-firma-acid-dither]] — the default for documents and artifacts: warm white, charcoal ink, acid yellow as fill, real dithers at full strength.
-- [[super-firma-blue]] — the original blue super-firma, still available, not the default.
+- [[super-firma-acid-dither]] — retired 2026-09-11 for any new document or artifact; kept only for reading and maintaining pages already built in it.
+- [[super-firma-blue]] — retired 2026-09-11 alongside it; same reference-only status.
 - [[mobile-first]] — phones are the surface. Verify at 390px before showing anyone.
 - [[page-rhythm]] — dark interludes, image beside copy, tight scale. No photo stacking.
 - [[restraint]] — craft is type, spacing, hierarchy, contrast. Motion is seasoning. Elevate, never replace.
