@@ -1,14 +1,16 @@
 ---
 name: realm
-description: Realm is Firma's vertical for personal and home. Its purpose is a decentralized mesh network for sovereignty; the naming is secondary. Realm Node (wall-mount), Realm Node (mini), transit, cargo, Realm Slab, and the Realm app. Everything that runs Realm is a Node. "Download Realm. Become a Node."
+description: Realm is the home, consumer part of a Settlemint — the Home Sovereignty System (nodes, water, compute, energy and the rest a home needs). Firma's vertical for personal and home. Its purpose is a decentralized mesh network for sovereignty; the naming is secondary. Realm Node (wall-mount), Realm Node (mini), transit, cargo, Realm Slab, and the Realm app. Everything that runs Realm is a Node. "Download Realm. Become a Node."
 type: truth
-status: LOCKED May 2026; purpose ruled 2026-09-12 (glossary line still OPEN)
+status: LOCKED May 2026; purpose ruled 2026-09-12; scope ruled 2026-09-30 (glossary line still OPEN)
 source: firma-vault wiki/edge-master-knowledge.md; Realm register
 ---
 
 # Realm
 
 **Realm is Firma's vertical for the personal and the home** — the node a person holds or mounts on their house. Its purpose is what governs it: **to create a decentralized mesh network for sovereignty.** The naming is secondary; the purpose is the key. (Curtis, 2026-09-12.)
+
+**Realm is the home part of a Settlemint — the consumer part.** It is the whole home system, not one device: nodes, water, compute, energy, and whatever else a home needs to stand on its own. Called the **Realm Home Sovereignty System**. Elemint is a separate division of Firma; Realm is not an Elemint product. (Curtis, 2026-09-30.)
 
 A Realm is not a location on the [[settlemint-and-place|place ladder]]. It is the personal edge domain a person or household holds — devices, identity, agents, compute, energy, permissions, history — and carries between places. It belongs to the person or household, never to the Settlemint. Devices change; the Realm persists.
 
