@@ -3,7 +3,7 @@ name: firma-edge-design
 description: The Firma Edge Design System v1.1, locked. Edge black, bone white, Field Orange, Geist and Geist Mono, drafting grids, corner brackets, document plates, square status marks. Industrial minimalism, engineering documentation.
 type: design
 status: LOCKED v1.1
-source: firma-vault apps/noh-deploy/ds/firma-edge/ (zip + design.md); portal.firmalabs.org/firma-edge-design-system.html
+source: firma-vault apps/noh-deploy/ds/firma-edge/ (zip + design.md); portal.firmafrontier.org/firma-edge-design-system.html
 ---
 
 # Firma Edge design system

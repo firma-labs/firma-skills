@@ -14,6 +14,6 @@ source: Drive folder "Firma — People Science & Ops"; Basecamp Firma HQ
 
 **Servant Hearted Onboarding** is a one-week shared trial: arrive low → serve → the three assessments → know your people and join the Colony → the table → the press and grit day → the review. Everyone holds one unglamorous shared commitment, founder included, visible, weekly (The Deep End). Earning follows serving. Motto: "We go low and let the Lord elevate us." Forms honor, gratitude, unity.
 
-**Oikos** is the team's workstyle card (reach, hours, focus, feedback, decisions, helps me, please don't) at portal.firmalabs.org/oikos; publishing one is standard by day three.
+**Oikos** is the team's workstyle card (reach, hours, focus, feedback, decisions, helps me, please don't) at portal.firmafrontier.org/oikos; publishing one is standard by day three.
 
 Documents are clean native Google Docs numbered 01–04 in his scheme, jargon-free. See [[team-docs-plain]].

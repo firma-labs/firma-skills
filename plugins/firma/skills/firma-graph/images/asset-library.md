@@ -15,7 +15,7 @@ source: paths as listed
 | Water Realm renders (node enclosure, racks, home and warehouse stacks, church campus, forest haven, water truck, cutaways, logo marks) | `~/Downloads/firma-realm-images/water-realm/` and `realm-classic/`; web copies in `settlemint-realm/public/water/img/` |
 | Ocean platforms (Firmaurica) | `~/Downloads/aurica-edge-imagery/current-images/` |
 | Matte-black container banner | `~/Downloads/EDGE-20.png` |
-| Firma wordmark | `~/Downloads/Group 76.svg`; rasters at `firmalabs.org/edges/ds/firma-logo-*.png` |
+| Firma wordmark | `~/Downloads/Group 76.svg`; rasters at `labs.firmafrontier.org/edges/ds/firma-logo-*.png` |
 | Firma globe mark (Blueprint header) | `firma-websites/sites/colony/public/firma-mark.png` |
 | firma labs lockup and F mark | `firma-vault/apps/noh-deploy/img/fit/firma-labs-lockup.svg`, `firma-f-mark.svg` |
 | Tabler icons (5,093 outline + 1,053 filled) | `firma-vault/assets/icons/tabler/{outline,filled}/`; 145 curated in the Notion "Assets" database |

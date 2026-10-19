@@ -95,7 +95,7 @@ The full list lives in [[how-agents-engage]].
 
 ## Where the deep canon lives
 
-The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub `firma-labs/firma-vault`). Canon on X is in `wiki/X-protocol.md` or `wiki/X-master-knowledge.md`. The handbook is `handbook/`. Hiring and values source of truth is `sources/firma-hiring-source-of-truth.md`. The Blueprint data is `engineering/builds/2026-09-05-firma-blueprint/`. The portal at portal.firmalabs.org renders most of it.
+The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub `firma-labs/firma-vault`). Canon on X is in `wiki/X-protocol.md` or `wiki/X-master-knowledge.md`. The handbook is `handbook/`. Hiring and values source of truth is `sources/firma-hiring-source-of-truth.md`. The Blueprint data is `engineering/builds/2026-09-05-firma-blueprint/`. The portal at portal.firmafrontier.org renders most of it (firmalabs.org is down as of 2026-10-01; the former portal.firmalabs.org address moved here).
 
 ## Open questions the graph knows about
 
@@ -103,7 +103,7 @@ The graph is the map. The territory is the vault at `~/dev/firma-vault/` (GitHub
 - The Realm glossary definition. Curtis says the current line ("the federation…") is wrong. Awaiting his line.
 - Embodimint composite formula: two versions exist (six terms linear, five terms square-root). Allotmint runs the six-term linear one pending his call.
 - The Nevis escrow trust needs a name now that Paymaster means the on-chain gas contract.
-- Which name wears the front door, now that [[firma-the-name]] makes Firma the Order and Firma Labs one function inside it. The hero lockup is `FIRMA LABS` / `[ we build for the edges ]` and the apex site is firmalabs.org.
+- Which name wears the front door, now that [[firma-the-name]] makes Firma the Order and Firma Labs one function inside it. The hero lockup is `FIRMA LABS` / `[ we build for the edges ]`. firmalabs.org is down as of 2026-10-01; the sites now live at firmafrontier.org (root) and labs.firmafrontier.org (Firma Labs) — that move doesn't settle this question, it just changes where it's asked.
 - Where Firma Edge and Firma Photon sit in the anchor sentence. Curtis named five functions and Edge and Photon are product families beside Realm, built by Labs and established by Frontier.
 - Realm's scope in that sentence: "the human-facing infrastructure layer for homes, places, and communities" is broader than the [[realm]] node, which is the personal and the home.
 

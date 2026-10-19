@@ -3,14 +3,14 @@ name: design-index
 description: Which Firma design system applies to which surface, and where the kits live. Four skills beside this graph hold the tokens and components.
 type: design
 status: LOCKED
-source: firma-skills plugins/firma/skills; portal.firmalabs.org/ds
+source: firma-skills plugins/firma/skills; portal.firmafrontier.org/ds
 ---
 
 # Design index
 
 | Surface | System | Where |
 |---|---|---|
-| Edge, Photon, Realm, hardware, the Blueprint, deployment pages | [[firma-edge-design]] | `portal.firmalabs.org/ds/firma-edge/`; render library in [[asset-library]] |
+| Edge, Photon, Realm, hardware, the Blueprint, deployment pages | [[firma-edge-design]] | `portal.firmafrontier.org/ds/firma-edge/`; render library in [[asset-library]] |
 | Colony apps (Allotmint, Sojourn, Hive Mind, Increase, 1Accord, Converge) | [[colony-design-law]] + [[hive-masthead]] + [[mobile-first]] | `firma-websites/DESIGN-LAW.md` |
 | Documents, artifacts, handbook pages, culture docs | super-firma banned for new work 2026-09-11; no default named yet — wear the subject's own system, or ask Curtis | — |
 | Existing pages already built in super-firma (read/maintain only, never a template for new work) | [[super-firma-acid-dither]], [[super-firma-blue]] with [[page-rhythm]] | `firma-vault/assets/site/` |
